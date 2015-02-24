@@ -10,17 +10,17 @@ $(document).ready(function () {
 	}());
 	
 	// disables scroll when hovering interior element with overflow scroll
-	(function disableScroll() {
+	/*(function disableScroll() {
 		$('.past').hover(function () {
 			$('body').css('overflow', 'hidden');
 		}, function () {
 			$('body').css('overflow', 'auto');
 		});
-	}());
+	}());*/
 	
 	
-	// slick slider
-	(function initSlickSlider() {
+	// init hero slider
+	(function initHeroSlider() {
 		$('.clients .slick').slick({
 			infinite: true,
 			slidesToShow: 6,
@@ -32,11 +32,25 @@ $(document).ready(function () {
 			draggable: false
 		});
 	}());
+	// init testimonial slider
+	(function initTestimonialSlider() {
+		$('.testimonials .slick').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 8000,
+			arrows: false,
+			pauseOnHover: true,
+			draggable: false,
+			dots: true
+		});
+	}());
 	
 	// lightbox
 	(function initLightbox() {
 		// establish lightbox btn
-		var lb = $('.lb a');
+		var lb = $('.lb a, .lb-btn');
 		// on click, open lightbox with matching data-target and id
 		lb.on('click', function (e) {
 			e.preventDefault();

@@ -5,6 +5,7 @@
 
 // buttons
 @mixin btn($color) {
+	@include transition(background-color, 0.2s);
 	background: $color;
 	display: inline-block;
 	padding: 9px 28px;
