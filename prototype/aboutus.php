@@ -74,7 +74,7 @@
 	<div class="leader">
 		<a href="#">
 			<i class="fa fa-user"></i>
-			<h5>Mitch</h5>
+			<h5>Mitch Cartwright</h5>
 			<h6>Job Title</h6>
 		</a>
 	</div>
