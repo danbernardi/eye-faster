@@ -13,12 +13,12 @@
 		<a class="logo" href="index.php"><img src="img/ef_logo.svg"></a>
 		<nav>
 			<ul>
-				<li class="current-menu-item"><a href="index.php">Home</a>
-				<li><a href="#">About Us</a>
-				<li><a href="#">Services</a>
-				<li><a href="#">Eye Tracking in Action</a>
-				<li><a href="#">Blog</a>
-				<li class="lb"><a href="#" data-target="contact">Contact Us</a></li>
+				<li><a href="index.php">Home</a>
+				<li><a href="aboutus.php">About Us</a>
+				<li><a href="services.php">Services</a>
+				<li><a href="eye-tracking-in-action.php">Eye Tracking in Action</a>
+				<li><a href="blog.php">Blog</a>
+				<li><a class="contactscroll" href="index.php#connect">Contact Us</a></li>
 			</ul>
 		</nav>
 	</header>

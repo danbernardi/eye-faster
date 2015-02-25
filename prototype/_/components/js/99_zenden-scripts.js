@@ -73,7 +73,7 @@ $(document).ready(function () {
 	
 	// subnav waypoints
 	(function initScrollingSubnav() {
-		var subnavBtn = $('.subnav li a');
+		var subnavBtn = $('.subnav li a, .scrollbtn');
 		subnavBtn.on('click', function (e) {
 			e.preventDefault();
 			// add/remove active class from btn
@@ -83,6 +83,12 @@ $(document).ready(function () {
 			var getHref = $(this).attr('href').split("#"),
 				href = getHref[getHref.length - 1];
 			$("#" + href).velocity('scroll', 1000);
+		});
+		$('.contactscroll').on('click', function (e) {
+			if ($('.flag').hasClass('home')) {
+				e.preventDefault();
+				$('#connect').velocity('scroll', 1000);
+			}
 		});
 	}());
 	

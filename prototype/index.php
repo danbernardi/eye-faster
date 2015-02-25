@@ -1,5 +1,6 @@
 <?php include('header.php')?>
 
+<div class="flag home"></div>
 <!-- hero section -->
 <section class="hero">
 	<h1><span>We use mobile <span class="blue">eye-tracking</span> to analyze the world from</span><br>
@@ -31,44 +32,45 @@
 <section class="services">
 	<div class="anchor" id="services"></div>
 	<h3 class="label">Our Services</h3>
-		
-	<div class="col">
-		<i class="fa fa-mobile-phone"></i>
-		<h6>Discover How Smartphones Have Changed Your Shoppers</h6>
-		<p>While waiting in line to checkout or walking down the aisles, a shopper’s center of attention is no longer focused on your store, but on their smartphone.</p>
-		<a href="#">Learn More</a>
-	</div>
-		
-	<div class="col">
-		<i class="fa fa-fire"></i>
-		<h6>Make Your Products Visible</h6>
-		<p>With as much as 70% of purchase decisions being made  in-store, being noticed in the store is absolutely essential for improving in-store sales.</p>
-		<a href="#">Learn More</a>
-	</div>
-		
-	<div class="col">
-		<i class="fa fa-calendar-o"></i>
-		<h6>Make Your Signs Work</h6>
-		<p>Signs can drive impulse purchases, but few do. Many retailers spend heavily on in-store advertisement that is largely ineffective.</p>
-		<a href="#">Learn More</a>
-	</div>
-		
-	<div class="col">
-		<i class="fa fa-bar-chart-o"></i>
-		<h6>Eye Faster Rapid Signage Assessment</h6>
-		<p>Do you want Signs that Sell? Try a complimentary Eye Faster Rapid Signage Assessment.</p>
-		<a href="#">Learn More</a>
-	</div>
-	
-	<div class="col">
-		<i class="fa fa-video-camera"></i>
-		<h6>Video Analysis</h6>
-		<p>Eye Faster has analyzed over 10,000 videos captured in qualitative and quantitative market research projects.</p>
-		<a href="#">Learn More</a>
-	</div>	
-	
-	<div class="cta">
-		<a class="btn" href="#">Contact Us</a>
+	<div class="row700">
+		<div class="col">
+			<i class="fa fa-mobile-phone"></i>
+			<h6>Discover How Smartphones Have Changed Your Shoppers</h6>
+			<p>While waiting in line to checkout or walking down the aisles, a shopper’s center of attention is no longer focused on your store, but on their smartphone.</p>
+			<a href="#">Learn More</a>
+		</div>
+
+		<div class="col">
+			<i class="fa fa-fire"></i>
+			<h6>Make Your Products Visible</h6>
+			<p>With as much as 70% of purchase decisions being made  in-store, being noticed in the store is absolutely essential for improving in-store sales.</p>
+			<a href="#">Learn More</a>
+		</div>
+
+		<div class="col">
+			<i class="fa fa-calendar-o"></i>
+			<h6>Make Your Signs Work</h6>
+			<p>Signs can drive impulse purchases, but few do. Many retailers spend heavily on in-store advertisement that is largely ineffective.</p>
+			<a href="#">Learn More</a>
+		</div>
+
+		<div class="col">
+			<i class="fa fa-bar-chart-o"></i>
+			<h6>Eye Faster Rapid Signage Assessment</h6>
+			<p>Do you want Signs that Sell? Try a complimentary Eye Faster Rapid Signage Assessment.</p>
+			<a href="#">Learn More</a>
+		</div>
+
+		<div class="col">
+			<i class="fa fa-video-camera"></i>
+			<h6>Video Analysis</h6>
+			<p>Eye Faster has analyzed over 10,000 videos captured in qualitative and quantitative market research projects.</p>
+			<a href="#">Learn More</a>
+		</div>	
+
+		<div class="cta">
+			<a class="btn scrollbtn" href="#connect">Contact Us</a>
+		</div>
 	</div>
 </section>
 
@@ -137,9 +139,9 @@
 
 
 <!-- contact cta section -->
-<section class="contact-cta lb">
+<section class="contact-cta">
 	<h4>Nullam quis risus eget urna mollis ornare vel eu leo risus eget urna!</h4>
-	<a class="btn" href="#" data-target="contact">Contact Us</a>
+	<a class="btn scrollbtn" href="#connect" data-target="contact">Contact Us</a>
 </section>
 
 
@@ -169,12 +171,19 @@
 	</div>
 </section>
 
+
 <!-- contact section -->
 <section class="contact">
 	
 	<div class="contactus">
 		<div class="anchor" id="connect"></div>
 		<h5 class="label"><i class="fa fa-mail-forward"></i>Get in Touch</h5>
+		<div class="address">
+			<ul>
+				<li><i class="fa fa-envelope"></i><a href="mailto:info@eyefaster.com">info@eyefaster.com</a></li>
+				<li><i class="fa fa-phone"></i><a href="tel:19259532022">+1 (925) 953-2022</a></li>
+			</ul>
+		</div>
 		<p>Please fill in the fields below and we will get back to you as soon as possible.</p>
 		<form>
 			<input type="text" placeholder="Name">
