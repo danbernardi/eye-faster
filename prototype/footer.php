@@ -23,8 +23,8 @@
 		</div>
 	</div>
 </footer>
-	
-</div>
+
+</section>
 <script src="_/js/scripts.js"></script>
 <?php include('lightbox.php'); ?>
 </body>
