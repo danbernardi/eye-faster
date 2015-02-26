@@ -10,7 +10,7 @@
 <body class="home">
 <section id="pagewrap">
 	<header>
-		<a class="logo" href="index.php"><img src="img/ef_logo.svg"></a>
+		<a class="logo" href="index.php"><img src="img/ef_logo.svg" alt="Eye Faster"></a>
 		<nav>
 			<ul>
 				<li><a href="index.php">Home</a>
