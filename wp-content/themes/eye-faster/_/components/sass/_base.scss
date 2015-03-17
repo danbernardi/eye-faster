@@ -1,0 +1,985 @@
+// General
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+body {
+	background: url(../../img/shattered_@2X.png) repeat #444;
+	background-size: 500px;
+	font-family: $sans-serif;
+	font-size: 16px;
+	color: $body;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $serif;
+	margin-bottom: .2rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+a {
+	color: $blue;
+	&:hover {
+		color: lighten($blue, 6);
+	}
+}
+p {
+	margin-bottom: 20px;
+}
+em {
+	font-style: italic;
+	font-size: 19px;
+	color: $blue;
+}
+.divider {
+	@extend .fullwidth;
+	clear: both;
+	width: 100%;
+	margin: 80px 0;
+}
+strong {
+	font-weight: bold;
+}
+img {
+	max-width: 100%;
+}
+.btn {
+	@include btn($blue);
+}
+.blue {
+	color: lighten($blue, 20);
+}
+.fullwidth {
+	width: calc(100% + 120px);
+	margin-left: -60px;
+}
+.anchor {
+    display: block;
+    height: 112px;
+    margin-top: -112px;
+    visibility: hidden;
+}
+
+.cols3 {
+	.col {
+		@include span(4 of 12);
+		&:nth-child(3n) {
+			@include last;
+		}
+	}
+}
+
+section {
+	@extend .clearfix;
+	padding: 80px 60px;
+}
+#pagewrap {
+	@include container();
+	max-width: 1200px;
+	background: #fff;
+	padding: 0 60px;
+	border-top: 20px solid #eee;
+	box-shadow: 0 0 22px rgba(black, 0.3);
+}
+.clear {
+	clear: both;
+}
+
+.cols2 {
+
+	.col {
+		@include span(6 of 12);
+		
+		&:nth-of-type(2n) {
+			@include last();
+		}
+	}
+}
+.ul {
+	ul {
+		margin-left: 20px;
+		li {
+			list-style-type: disc;
+			li {
+				list-style-type: circle;
+			}
+			&.hdr {
+				list-style-type: none;
+				margin-left: -20px;
+				color: $blue;
+			}
+		}
+	}
+}
+
+
+// header
+
+header {
+	@extend .clearfix;
+	padding: 20px 0;
+	
+	.logo {
+		@include span(4 of 12);
+		
+		img {
+			height: 52px;
+		}
+	}
+	nav {
+		@include span(8 of 12 last);
+		
+		ul {
+			text-align: right;
+			display: inline-block;
+			float: right;
+		}
+		li {
+			display: inline-block;
+			&.current-menu-item a {
+				
+				color: $blue;
+			}
+			
+			a {
+				line-height: 52px;
+				padding: 0 24px;
+				display: block;
+				font-size: 14px;
+				color: inherit;
+				&:hover {
+					color: lighten($blue, 6);
+				}
+				&.contactscroll {
+				@include btn($blue);
+				margin-left: 17px;
+			}
+			}
+		}
+	}	
+}
+.subnav {
+	@extend .fullwidth;
+	padding: 0 60px;
+	background: #e8e8e8;
+	text-align: center;
+	
+	li {
+		display: inline-block;
+		font-size: 14px;
+		a {
+			@include transition(background, 0.2s);
+			color: inherit;
+			padding: 10px 25px;
+			display: block;
+			&:hover {
+				color: $blue;
+				background: #ddd;
+			}
+			&.active {
+				background: $blue;
+				color: white;
+			}
+		}
+	}
+	&.scroll-to-fixed-fixed {
+		box-shadow: 1px 1px 11px rgba(black, 0.25);
+	}
+}
+.hero {
+	@extend .fullwidth;
+	padding: 0;
+	background: #222;
+	color: white;
+	background: url('../../img/herobg.jpg') no-repeat;
+	background-size: cover;
+	
+	h1 {
+		letter-spacing: 1px;
+		padding: 110px 0 0;
+		text-align: center;
+		text-shadow: 2px 2px 3px rgba(black, 0.4);
+		z-index: 6;
+		
+		span {
+			font-size: 19px;
+		}
+		strong {
+			font-weight: bold;
+			color: $green;
+		}
+	}
+	.video {
+		@extend .clearfix;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 80px;
+		
+		a {
+			@include transition(background-color, 0.2s);
+			color: inherit;
+			margin-top: 37px;
+			display: inline-block;
+			padding: 0px 33px;
+			border-radius: 4px;
+			background: $blue;
+			text-shadow: none;
+			font-size: 32px;
+			&:hover {
+				background: lighten($blue, 6);
+			}
+		}
+		span {
+			display: block;
+		}
+	}
+	div {
+		width: 50%;
+		z-index: 6;
+		display: block;
+		float: left;
+		text-align: center;
+		a {
+			@include transition(all, 0.2s);
+			color: inherit;
+			padding: 42px 0 32px;
+			font-size: 23px;
+			display: block;
+			background: rgba(white, 0.3);
+			&:hover {
+				background: rgba(white, 0.35);
+			}
+			span {
+				font-size: 14px;
+				color: rgba(white, 0.7);
+			}
+		}
+		&.right a {
+			background: rgba(white, 0.2);
+			&:hover {
+				background: rgba(white, 0.15);
+			}
+		}
+	}
+}
+.label {
+	margin-bottom: 30px;
+	color: lighten($body, 20);
+	i {
+		margin-right: 7px;
+	}
+}
+.showcase {
+	padding: 80px 0 0;
+	
+	.featured {
+		@include span(8 of 12 last);
+		
+		h3 {
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		img {
+			width: 72px;
+			float: left;
+			margin: 0 16px 16px 0;
+		}
+		.cta {
+			text-align: left;
+		}
+		.btn {
+			@include btn($blue);
+		}
+	}
+	.past {
+		@include span(4 of 12);
+		
+		.pprojects {
+			
+			li {
+				@include transition(background-color, 0.2s);
+				@extend .pointer;
+				padding: 20px;
+				background: #eaeaea;
+				margin-bottom: 10px;
+				border-radius: 4px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				
+				img {
+					width: 72px; 
+					margin-right: 16px;
+					float: left;
+				}
+				h6 {
+					font-size: 14px;
+				}
+				span {
+					font-size: 14px;
+					display: block;
+				}
+				&:hover {
+					background: #f1f1f1;
+				}
+			}
+		}
+	}
+}
+.clients {
+	@extend .fullwidth;
+	display: block;
+	clear: both;
+	padding-top: 50px;
+	
+	h5 {
+		text-align: center;
+		margin-bottom: 12px;
+		color: #999;
+	}
+	
+	.slick-list {
+		border: 1px solid #ddd;
+		border-bottom: none;
+	}
+	img {
+		opacity: 0.7;
+		text-align: center;
+		display: inline-block;
+		float: left;
+		padding: 30px;
+		border-right: 1px solid #ddd;
+	}
+}
+#overlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(darken($blue, 40), 0.7);
+	z-index: 1000;
+}
+.lightbox {
+	@include transition(transform, 0.3s);
+	transition-timing-function: cubic-bezier(.79,-0.08,.26,1.11);
+	position: fixed;
+	width: 644px;
+	height: 400px;
+	right: 0;
+	z-index: 1001;
+	bottom: 0;
+	margin-top: -200px;
+	left: 50%;
+	margin-left: -322px;
+	background: white;
+	padding: 10px;
+	transform: translateY(150%);
+	border-radius: 4px;
+	
+	&.open {
+		transform: translateY(-50%);
+	}
+	
+	form {
+		input,
+		textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 0px;
+			font-size: 13px;
+			border: 1px solid #ddd;
+			border-bottom: none;
+			box-shadow: none;
+			&:focus {
+				outline: none;
+				background: #eee;
+			}
+		}
+		textarea {
+			width: 100%;
+			height: 150px;
+			margin-bottom: 0;
+			border-bottom: 1px solid #ddd;
+		}
+		input[type=submit] {
+			@extend .pointer;
+			background: $blue;
+			color: white;
+			&:hover {
+				background: lighten($blue, 6);
+			}
+		}
+	}
+	.close:before {
+		@extend .pointer;
+		content: 'x';
+		position: absolute;
+		right: -30px;
+		top: 0;
+		font-size: 26px;
+		color: white;
+	}
+}
+#vgallery {
+	width: 664px;
+	margin-left: -332px;
+	height: auto;
+	margin-bottom: -200px;
+	padding: 20px;
+	
+	h5 {
+		margin-top: 20px;
+		color: $body;
+	}
+	p {
+		margin-bottom: 0;
+		color: $body;
+	}
+	.share {
+		display: block;
+		text-align: right;
+		i {
+			padding: 0 7px;
+		}
+	}
+}
+
+.contact-cta {
+	@extend .fullwidth;
+	padding: 30px 60px;
+	background: darken($blue, 10);
+	color: white;
+	
+	h4 {
+		@include span(10 of 12);
+	}
+	.btn {
+		@include btn($green);
+		@include span(2 of 12 last);
+		text-align: center;
+	}
+}
+
+.services {
+	@extend .fullwidth;
+	background: #eee;
+	
+	.label {
+		text-align: center;
+	}
+	
+	.col {
+		@include transition(border-color, 0.2s);
+		@extend .pointer;
+		position: relative;
+		margin-bottom: 20px;
+		background: #FFF;
+		padding: 30px 30px 30px 120px;
+		border-radius: 4px;
+		border: 1px solid #fff;
+		&:hover {
+			border-color: #555;
+			i {
+				color: $blue;
+			}
+		}
+		i {
+			@include transition(color, 0.2s);
+			font-size: 75px;
+			position: absolute;
+			left: 17px;
+			color: rgba(black, 0.1);
+			width: 86px;
+			text-align: center;
+			&.fa-mobile-phone {
+				font-size: 100px;
+				top: 21px;
+			}
+			&.fa-bar-chart-o {
+				font-size: 67px;
+				top: 24px;
+			}
+		}
+		h6 {
+			line-height: 1.5;
+			margin-bottom: 7px;
+		}
+		p {
+			font-size: 14px;
+		}
+		a {
+			font-weight: bold;
+			&:after {
+				@include fontawesome('\f0da');
+				padding-left: 7px;
+			}
+		}
+	}
+	.cta {
+		display: block;
+		text-align: center;
+		padding: 20px 0;
+		width: 700px;
+		margin: 0 auto;
+			
+		.btn {
+			@include btn($green);
+		}
+	}
+}
+.testimonials {
+	@extend .fullwidth;
+	padding: 80px 80px 130px;
+	background: url('../../img/herobg.jpg') center center no-repeat;
+	background-size: cover;
+	color: #fff;
+	
+	.testimonial {
+		font-size: 23px;
+		font-weight: 300;
+		text-align: center;
+	}
+	.label {
+		text-align: center;
+		color: lighten($blue, 15);
+		margin-bottom: 40px;
+	}
+}
+
+// contact section 
+
+.contact {
+	@extend .fullwidth;
+	padding: 0;
+	background: #fafafa;
+	
+	.address {
+		position: absolute;
+		top: 80px;
+		right: 60px;
+		font-size: 13px;
+		
+		li {
+			margin-right: 0;
+			margin-lefT: 9px;
+		}
+		i {
+			margin-right: 5px;
+			color: #999;
+		}
+		a {
+			@include transition(color, 0.2s);
+			color: #999;
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
+	.contactus {
+		width: 60%;
+		background: #eee;
+		padding: 80px 60px;
+		float: left;
+		position: relative;
+	}
+	.events {
+		width: 40%;
+		padding: 80px 60px 0;
+		float: left;
+		
+		ul li {
+			@include transition(background-color, 0.2s);
+			margin-bottom: 11px;
+			position: relative;
+			background: #DDD;
+			padding: 10px 10px 2px;
+			border-radius: 4px;
+			
+			a {
+				color: $body;
+			}
+			span {
+				font-size: 13px;
+				display: inline-block;
+				&.date {
+					@include transition(background-color, 0.2s);
+					position: absolute;
+					left: 10px;
+					background: #777;
+					color: white;
+					padding: 5px 0;
+					width: 60px;
+					text-align: center;
+					border-radius: 4px;
+				}
+				&.title {
+					padding-left: 74px;
+					width: 100%;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					line-height: 33px;
+				}
+			}
+			&:hover {
+				background: #eaeaea;
+				.date {
+					background: $blue;
+				}
+			}
+		}
+	}
+}
+
+form {
+	input,
+	textarea {
+		@include transition(border-color, 0.2s);
+		display: block;
+		border-radius: 4px;
+		width: 100%;
+		border: 1px solid #eee;
+		background: #fff;
+		padding: 8px 16px;
+		margin-bottom: 5px;
+		font-size: 15px;
+		font-family: $sans-serif;
+		&:focus {
+			outline: none;
+			border-color: darken($blue, 60);
+		}
+	}
+	input[type=submit] {
+		@include btn($green);
+		@extend .pointer;
+	}
+	textarea {
+		height: 184px;
+	}
+}
+
+
+// footer 
+footer {
+	@extend .clearfix;
+	@extend .fullwidth;
+	padding: 20px 60px 0;
+	background: darken($blue, 15);
+	display: block;
+	color: white;
+	font-size: 13px;
+	
+	.topfooter {
+		@extend .clearfix;
+	}
+	
+	.copyright {
+		@extend .fullwidth;
+		background: darken($blue, 20);
+		padding: 10px 60px;
+		margin-top: 17px;
+		color: rgba(white, 0.3);
+		font-size: 12px;
+		clear: both;
+		display: block;
+		text-align: right;
+	}
+	.fa {
+		margin-right: 5px;
+	}
+	a {
+		@include transition(color, 0.2s);
+		color: rgba(white, 0.7);
+		&:hover {
+			color: rgba(white, 0.9);
+		}
+	}
+	.social {
+		float: right;
+	}
+	.address {
+		float: left;
+	}
+}
+
+.address {
+	li {
+		display: inline-block;
+		margin-right: 9px;
+	}
+}
+.social {
+	li {
+		display: inline-block;
+		margin-left: 7px;
+	}
+}
+
+.row700 {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+.mission {	
+	@extend .fullwidth;
+	.label {
+		text-align: center;
+		color: $blue;
+	}
+}
+
+.experience {
+	@extend .fullwidth;
+	background: #eee;	
+	.label {
+		text-align: center;
+		color: $blue;
+	}
+	
+	ul > li {
+		background: #fff;
+		border-radius: 4px;
+		padding: 15px 20px;
+		margin-bottom: 5px;
+		&.hdr {
+			display: block;
+			text-align: center;
+			background: transparent;
+			padding: 0;
+		}
+		
+		ul li {
+			padding: 0;
+			margin-bottom: 0;
+			background: transparent;
+			display: inline-block;
+			margin-right: 4px;
+			&:after {
+				content: '|';
+				padding-left: 7px;
+			}
+			&:last-child:after {
+				display: none;
+			}
+		}
+	}
+	.cols2 {
+		.col {
+			@include span(4 of 12);
+			&:nth-child(2n) {
+				@include span(8 of 12 last);
+			}
+		}
+	}
+	
+	li {
+		font-size: 14px;
+	}
+}
+
+.pagetitle {
+	@extend .fullwidth;
+	background: url(../../img/herobg.jpg) center center no-repeat;
+	background-size: cover;
+	height: 100px;
+	display: block;
+	padding: 0;
+}
+
+.leadership {
+	@extend .fullwidth;
+	padding: 80px 0;
+	
+	.label {
+		text-align: center;
+	}
+	
+	.leader {
+		@include span(4 of 12);
+		text-align: center;
+		
+		&:nth-child(3n) {
+			@include last();
+		}
+		i {
+			font-size: 250px;
+			color: #ddd;
+		}
+	}
+	h5 {
+		margin-bottom: 7px;
+	}
+	h6 {
+		color: $body;
+		font-family: $sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+
+.blog {
+	@extend .clearfix;
+	padding: 80px 0;
+	
+	.post {
+		@include span(8 of 12);
+		
+		h3 {
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		img {
+			width: 72px;
+			float: left;
+			margin: 0 16px 16px 0;
+		}
+		.cta {
+			text-align: left;
+		}
+		.btn {
+			@include btn($blue);
+		}
+	}
+	article {
+		margin-bottom: 30px;
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 30px;
+		&:last-child {
+			border: none;
+		}
+		a:not(.btn) {
+			@include transition(color, 0.2s);
+			color: $body;
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
+	.sidebar {
+		@include span(4 of 12 last);
+		
+		.pprojects {
+			
+			li {
+				@include transition(background-color, 0.2s);
+				@extend .pointer;
+				padding: 20px;
+				background: #eaeaea;
+				margin-bottom: 10px;
+				border-radius: 4px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				
+				img {
+					width: 72px; 
+					margin-right: 16px;
+					float: left;
+				}
+				h6 {
+					font-size: 14px;
+				}
+				span {
+					font-size: 14px;
+					display: block;
+				}
+				&:hover {
+					background: #f1f1f1;
+				}
+			}
+		}
+	}
+}
+
+.pagination {
+	ul li {
+		display: inline-block;
+		margin-right: 5px;
+		
+		a {
+			@include transition(all, 0.2s);
+			display: block;
+			padding: 5px 16px;
+			background: #ddd;
+			color: $body;
+			&.active {
+				background: $blue;
+				color: white;
+				&:hover {
+					background: lighten($blue, 6);
+				}
+			}
+			&:hover {
+				background: #eee;
+			}
+		}
+	}
+}
+
+.videogallery {
+	@extend .fullwidth;
+	background: #eee;
+	
+	.label {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	h6 {
+		@include transition(color, 0.2s);
+		color: $body;
+	}
+	.col {
+		@include transition(border-color, 0.2s);
+		@extend .pointer;
+		padding: 30px;
+		background: white;
+		border-radius: 4px;
+		min-height: 310px;
+		margin-bottom: 30px;
+		border: 1px solid #fff;
+		&:hover {
+			border-color: $body;
+			
+			h6 {
+				color: $blue;
+			}
+			.thumb:before {
+				opacity: 1;
+				color: $blue;
+			}
+		}
+		p {
+			margin-bottom: 0;
+			color: $body;
+		}
+	}
+	.thumb {
+		position: relative;
+		
+		img {
+			display: block;
+			width: 100%;
+			height: 160px;
+			background: #fafafa;
+			margin-bottom: 15px;
+		}
+		&:before {
+			@include transition(all, 0.2s);
+			@include fontawesome('\f04b');
+			opacity: 0.5;
+			font-size: 56px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -22px;
+			margin-top: -28px;
+			color: $body;
+			text-shadow: 0px 2px 1px rgba(black, 0.4);
+		}
+	}
+}
