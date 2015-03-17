@@ -46,7 +46,7 @@ img {
 	max-width: 100%;
 }
 .btn {
-	@include btn($blue);
+  @include btn($blue);
 }
 .blue {
 	color: lighten($blue, 20);
@@ -148,31 +148,30 @@ header {
 		@include span(8 of 12 last);
 		
 		ul {
-			text-align: right;
-			display: inline-block;
-			float: right;
+        text-align: right;
+        display: inline-block;
+        float: right;
 		}
 		li {
-			display: inline-block;
-			&.current-menu-item a {
-				
-				color: $blue;
-			}
+      display: inline-block;
+      &.current-menu-item a {
+        color: $blue;
+      }
 			
-			a {
-				line-height: 52px;
+      a {
+        line-height: 52px;
 				padding: 0 24px;
 				display: block;
 				font-size: 14px;
 				color: inherit;
 				&:hover {
-					color: lighten($blue, 6);
-				}
-				&.contactscroll {
-				@include btn($blue);
-				margin-left: 17px;
-			}
-			}
+            color: lighten($blue, 6);
+        }
+      }
+      &.contactscroll > a {
+        @include btn($blue);
+        margin-left: 17px;
+      }
 		}
 	}	
 }

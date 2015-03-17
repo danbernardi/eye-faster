@@ -27,6 +27,7 @@ a {
 }
 p {
 	margin-bottom: 20px;
+  font-size: 15px;
 }
 em {
 	font-style: italic;
@@ -153,10 +154,14 @@ header {
 					color: lighten($blue, 6);
 				}
 				&.contactscroll {
-				@include btn($blue);
-				margin-left: 17px;
+          @include btn($blue);
+          margin-left: 17px;
+        }
 			}
-			}
+      &.contactscroll > a {
+        @include btn($blue);
+        margin-left: 17px;
+      }
 		}
 	}	
 }
@@ -457,6 +462,9 @@ header {
 	
 	h4 {
 		@include span(10 of 12);
+    font-size: 1.3em;
+    margin-bottom: 0;
+    line-height: 1.5em;
 	}
 	.btn {
 		@include btn($green);
@@ -465,7 +473,7 @@ header {
 	}
 }
 
-.services {
+section.services {
 	@extend .fullwidth;
 	background: #eee;
 	
@@ -718,6 +726,9 @@ footer {
 		display: inline-block;
 		margin-left: 7px;
 	}
+  i {
+    font-size: 16px;
+  }
 }
 
 .row700 {
@@ -725,7 +736,7 @@ footer {
 	max-width: 700px;
 	margin: 0 auto;
 }
-.mission {	
+section.experience {	
 	@extend .fullwidth;
 	.label {
 		text-align: center;
@@ -733,7 +744,7 @@ footer {
 	}
 }
 
-.experience {
+section.mission {
 	@extend .fullwidth;
 	background: #eee;	
 	.label {
@@ -791,19 +802,19 @@ footer {
 	padding: 0;
 }
 
-.leadership {
+section.leadership {
 	@extend .fullwidth;
-	padding: 80px 0;
+	padding: 80px;
 	
 	.label {
 		text-align: center;
 	}
 	
 	.leader {
-		@include span(4 of 12);
+		@include span(3 of 12);
 		text-align: center;
 		
-		&:nth-child(3n) {
+		&:nth-child(4n) {
 			@include last();
 		}
 		i {
@@ -812,7 +823,7 @@ footer {
 		}
 	}
 	h5 {
-		margin-bottom: 7px;
+		margin: 7px 0;
 	}
 	h6 {
 		color: $body;

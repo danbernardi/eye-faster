@@ -109,6 +109,16 @@ function zd_theme_setup() {
 			'before_title'  => '<h6>',
 			'after_title'   => '</h6>',
 		) );
+		
+		// topnav
+		register_sidebar( array(
+			'name'          => 'Top Subnav',
+			'id'            => 'top_subnav',
+			'before_widget' => '<div class="widget">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6>',
+			'after_title'   => '</h6>',
+		) );
 	}
 	add_action( 'widgets_init', 'zd_widgets_init' );
 	

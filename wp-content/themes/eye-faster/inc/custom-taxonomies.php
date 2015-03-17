@@ -1,7 +1,8 @@
 <?php
 
 
-function service_category_taxonomy() {  
+/*
+    function service_category_taxonomy() {  
     register_taxonomy(  
         'service_category',  //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces). 
         'services',        //post type name
@@ -29,6 +30,7 @@ function service_category_taxonomy() {
     );  
 }  
 add_action( 'init', 'service_category_taxonomy');
+*/
 
 
 
