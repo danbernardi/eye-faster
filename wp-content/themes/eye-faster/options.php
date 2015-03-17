@@ -116,34 +116,26 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __('Footer Settings', 'zd'),
         'type' => 'heading');
-        
-    $options[] = array(
-        'name' => __('Call to Action Text', 'zd'),
-        'desc' => __('This text will appear at the top of the footer in the join now section.', 'zd'),
-        'id' => 'zd_cta_text',
-        'std' => '',
-        'type' => 'text');
 		
     $options[] = array(
-        'name' => __('Disclosure Message', 'zd'),
-        'desc' => sprintf( __( 'Enter the text for the disclosure message that will appear at the bottom of the footer.' ) ),
-        'id' => 'zd_disclosure',
-        'type' => 'editor',
-        'settings' => $wp_editor_settings );
+        'name' => __('Contact Email', 'zd'),
+        'desc' => sprintf( __( 'Enter your companies main contact email.' ) ),
+        'id' => 'zd_contact_email',
+        'type' => 'text');
         
     $options[] = array(
-        'name' => __('Copyright', 'zd'),
+        'name' => __('Contact Phone Number', 'zd'),
+        'desc' => __('Enter your companies main contact phone number.', 'zd'),
+        'id' => 'zd_contact_phone',
+        'std' => '',
+        'type' => 'text');
+        
+    $options[] = array(
+        'name' => __('Copyright Info', 'zd'),
         'desc' => __('Enter your copyright information.', 'zd'),
         'id' => 'zd_copyright',
         'std' => '',
         'type' => 'text');
-
-    $wp_editor_settings = array(
-        'wpautop' => true, // Default
-        'textarea_rows' => 3,
-        'media_buttons' => false,
-        'tinymce' => array( 'plugins' => 'wordpress' )
-    );
 
 	return $options;
 }

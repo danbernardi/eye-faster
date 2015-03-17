@@ -47,6 +47,15 @@ function zd_theme_setup() {
 	// hides the admin bar
 	show_admin_bar( false );
 	
+    // disable security warning for uploading svgs
+    function custom_upload_mimes ( $existing_mimes=array() ) {
+        // add the file extension to the array
+        $existing_mimes['svg'] = 'mime/type';
+        // call the modified list of extensions
+        return $existing_mimes;
+    }
+    add_filter('upload_mimes', 'custom_upload_mimes');
+	
 	// define custom thumbnail sizes
 	if ( function_exists( 'add_image_size' ) ) {
         add_image_size( 'b-thumb', 258, 160, true );
@@ -55,14 +64,14 @@ function zd_theme_setup() {
     }
     
     // adds page slug as body class
-	function add_slug_body_class( $classes ) {
-		global $post;
-		if ( isset( $post ) ) {
+    function add_slug_body_class( $classes ) {
+        global $post;
+    if ( isset( $post ) ) {
 			$classes[] = $post->post_type . '-' . $post->post_name;
 		}
 			return $classes;
 		}
-	add_filter( 'body_class', 'add_slug_body_class' );
+    add_filter( 'body_class', 'add_slug_body_class' );
 	
 	// limit exerpt length to custom size
     function custom_excerpt_length( $length ) {
@@ -77,62 +86,24 @@ function zd_theme_setup() {
     add_filter('excerpt_more', 'new_excerpt_more');
 	
 	
-	// load custom scripts & styles
-	function zd_scripts() {
-		// Load our main stylesheet.
-		wp_enqueue_style( 'zd-style', get_stylesheet_uri() );
-		// Load our main javascript file.
-		wp_enqueue_script('jquery');
-		wp_enqueue_script( 'zd-script', get_template_directory_uri() . '/_/js/scripts.js', array(), '1.0.0', true );
-	}
-	add_action( 'wp_enqueue_scripts', 'zd_scripts' );
+    // load custom scripts & styles
+    function zd_scripts() {
+    // Load our main stylesheet.
+        wp_enqueue_style( 'zd-style', get_stylesheet_uri() );
+        // Load our main javascript file.
+        wp_enqueue_script('jquery');
+        wp_enqueue_script( 'zd-script', get_template_directory_uri() . '/_/js/scripts.js', array(), '1.0.0', true );
+    }
+    add_action( 'wp_enqueue_scripts', 'zd_scripts' );
 	
 	
-	 // Register our sidebars and widgetized areas.
-	function zd_widgets_init() {
+    // Register our sidebars and widgetized areas.
+    function zd_widgets_init() {
 		
 		// default right sidebar
 		register_sidebar( array(
 			'name'          => 'Default Sidebar',
 			'id'            => 'default_sidebar',
-			'before_widget' => '<div class="widget">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h6>',
-			'after_title'   => '</h6>',
-		) );
-		
-		
-		// footer widget areas
-		register_sidebar( array(
-			'name'          => 'Footer Block 1',
-			'id'            => 'footer_block_1',
-			'before_widget' => '<div class="widget">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h6>',
-			'after_title'   => '</h6>',
-		) );
-		
-		register_sidebar( array(
-			'name'          => 'Footer Block 2',
-			'id'            => 'footer_block_2',
-			'before_widget' => '<div class="widget">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h6>',
-			'after_title'   => '</h6>',
-		) );
-		
-		register_sidebar( array(
-			'name'          => 'Footer Block 3',
-			'id'            => 'footer_block_3',
-			'before_widget' => '<div class="widget">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h6>',
-			'after_title'   => '</h6>',
-		) );
-		
-		register_sidebar( array(
-			'name'          => 'Footer Block 4',
-			'id'            => 'footer_block_4',
 			'before_widget' => '<div class="widget">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h6>',

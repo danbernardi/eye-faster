@@ -2,8 +2,8 @@
 	<div class="topfooter">
 		<div class="address">
 			<ul>
-				<li><i class="fa fa-envelope"></i><a href="mailto:info@eyefaster.com">info@eyefaster.com</a></li>
-				<li><i class="fa fa-phone"></i><a href="tel:19259532022">+1 (925) 953-2022</a></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:info@eyefaster.com"></a></li>
+				<li><i class="fa fa-phone"></i><a href="tel:19259532022"></a></li>
 				<li><a href="#">Job Opportunities</a></li>
 			</ul>
 		</div>

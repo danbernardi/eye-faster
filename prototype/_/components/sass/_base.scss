@@ -70,6 +70,22 @@ img {
 		}
 	}
 }
+.iconpage {
+    padding: 75px 0;
+    @extend .clearfix;
+    .col-md-4 {
+        border: 1px solid #DDD;
+        padding: 5px;
+        margin-bottom: 5px;
+        @include span(4 of 12);
+        &:nth-of-type(3n) {
+            @include last();
+        }
+    }
+    .fa {
+        font-size: 50px;
+    }
+}
 
 section {
 	@extend .clearfix;
