@@ -101,10 +101,20 @@ function zd_theme_setup() {
     // Register our sidebars and widgetized areas.
     function zd_widgets_init() {
 		
-		// default right sidebar
+		// default sidebar
 		register_sidebar( array(
 			'name'          => 'Default Sidebar',
 			'id'            => 'default_sidebar',
+			'before_widget' => '<div class="widget">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h6>',
+			'after_title'   => '</h6>',
+		) );
+		
+		// blog sidebar
+		register_sidebar( array(
+			'name'          => 'Blog Sidebar',
+			'id'            => 'blog_sidebar',
 			'before_widget' => '<div class="widget">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h6>',
@@ -120,6 +130,7 @@ function zd_theme_setup() {
 			'before_title'  => '<h6>',
 			'after_title'   => '</h6>',
 		) );
+		
 	}
 	add_action( 'widgets_init', 'zd_widgets_init' );
 	

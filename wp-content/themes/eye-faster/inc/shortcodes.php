@@ -297,6 +297,70 @@ function zd_recent_posts( $atts ) {
 add_shortcode( 'recent_posts', 'zd_recent_posts' );
 
 
+// recent blog posts
+function zd_recent_blog_posts( $atts ) {
+
+      ob_start();
+      $query = new WP_Query( array(
+          'post_type' => 'post',
+          'posts_per_page' => 5,
+          'order' => 'ASC',
+      ) );
+      if ( $query->have_posts() ) { ?>
+        
+        <ul class="pprojects">
+          <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+          <li>
+            <a href="<?php the_permalink(); ?>">
+              <?php if( has_post_thumbnail() ) { the_post_thumbnail( 'tiny' ); } ?>
+              <h6><?php the_title(); ?></h6>
+              <span><?php the_excerpt(); ?></span>
+            </a>
+          </li>
+          
+          <?php endwhile; wp_reset_postdata(); ?>
+
+          </div>
+        </div>
+        <?php $myvariable = ob_get_clean();
+        return $myvariable;
+      } else { ?>
+        <ul>
+          <li><span class="noposts">There are currently no posts in this category.</span></li>
+        </ul>
+      <?php }
+    ?>
+
+<?php }
+add_shortcode( 'recent_blog_posts', 'zd_recent_blog_posts' );
+
+/*
+<ul class="pprojects">
+			<li>
+				<img src="img/projects/thumb01.jpg">
+				<h6>Tristique Ipsum Cras Tellus</h6>
+				<span>Nullam quis risus eget urna mollis ornare vel eu leo.</span>
+			</li>
+			<li>
+				<img src="img/projects/thumb01.jpg">
+				<h6>Tristique Ipsum Cras Tellus</h6>
+				<span>Nullam quis risus eget urna mollis ornare vel eu leo.</span>
+			</li>
+			<li>
+				<img src="img/projects/thumb01.jpg">
+				<h6>Tristique Ipsum Cras Tellus</h6>
+				<span>Nullam quis risus eget urna mollis ornare vel eu leo.</span>
+			</li>
+			<li>
+				<img src="img/projects/thumb01.jpg">
+				<h6>Tristique Ipsum Cras Tellus</h6>
+				<span>Nullam quis risus eget urna mollis ornare vel eu leo.</span>
+			</li>
+		</ul>
+*/
+
+
 /* ------------------------------------------------
  * Layout
  * ------------------------------------------------*/
@@ -372,7 +436,7 @@ add_shortcode( 'call_to_action', 'zd_footer_cta' );
 
 // disables automatic spacing & p tags inside selected shortcodes. Add shortcode name to array inside $block
 function the_content_filter($content) {
-	$block = join("|",array( 'list_testimonials', 'section', 'list_team_members', 'list_services', 'label', 'divider', 'call_to_action', 'list_clients', 'list_projects', 'list_past_projects', 'recent_posts' ));
+	$block = join("|",array( 'list_testimonials', 'section', 'list_team_members', 'list_services', 'label', 'divider', 'call_to_action', 'list_clients', 'list_projects', 'list_past_projects', 'recent_posts', 'recent_blog_posts' ));
 	$rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
 	$rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
 return $rep;

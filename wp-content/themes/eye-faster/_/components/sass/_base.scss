@@ -904,6 +904,9 @@ section.leadership {
 				&:last-child {
 					margin-bottom: 0;
 				}
+        a {
+          color: #555;
+        }
 				
 				img {
 					width: 72px; 
@@ -913,9 +916,11 @@ section.leadership {
 				h6 {
 					font-size: 14px;
 				}
-				span {
+				span,
+        p {
 					font-size: 14px;
 					display: block;
+          margin-bottom: 0;
 				}
 				&:hover {
 					background: #f1f1f1;

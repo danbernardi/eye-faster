@@ -1,5 +1,5 @@
 <?php
-	function sfhr_numeric_posts_nav() {
+	function zd_numeric_posts_nav() {
 
 		if( is_singular() )
 			return;
