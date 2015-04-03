@@ -7,6 +7,8 @@
                 $phoneNumber = of_get_option( 'zd_contact_phone');
                 $removeAlpha = preg_replace("/[^A-Za-z0-9 ]/", '', $phoneNumber);
                 $trimmedPhone = preg_replace('/\s+/', '', $removeAlpha);
+                $youtube = of_get_option( 'zd_youtube');
+                $linkedin = of_get_option( 'zd_linkedin');
             ?>
             <li><i class="fa fa-phone"></i><a href="tel:<?php echo $trimmedPhone; ?>"><?php echo $phoneNumber; ?></a></li>
             <li><a href="#">Job Opportunities</a></li>
@@ -14,11 +16,12 @@
         </div>
         <div class="social">
           <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <?php if (strlen($youtube) != 0) { ?>
+              <li><a href="<?php echo $youtube; ?>"><i class="fa fa-youtube"></i></a></li>
+            <?php } ?>
+            <?php if (strlen($linkedin) != 0) { ?>
+              <li><a href="<?php echo $linkedin; ?>"><i class="fa fa-linkedin"></i></a></li>
+            <?php } ?>
           </ul>
         </div>
     </div>

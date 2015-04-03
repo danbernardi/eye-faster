@@ -142,6 +142,23 @@ function optionsframework_options() {
         'desc' => __('Enter the contact form shortcode for the form that appears on the homepage', 'zd'),
         'id' => 'zd_contact_form',
         'type' => 'text');
+        
+    // Footer Settings
+    $options[] = array(
+        'name' => __('Footer Settings', 'zd'),
+        'type' => 'heading');
+        
+    $options[] = array(
+        'name' => __('Linkedin Url', 'zd'),
+        'desc' => __('Enter the url for your linked in profile', 'zd'),
+        'id' => 'zd_linkedin',
+        'type' => 'text');
+    
+    $options[] = array(
+        'name' => __('Youtube Url', 'zd'),
+        'desc' => __('Enter the url for your youtube profile', 'zd'),
+        'id' => 'zd_youtube',
+        'type' => 'text');
 	
 
 	return $options;
