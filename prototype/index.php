@@ -154,6 +154,7 @@
 			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
 			<h6>&ndash; Someone's name</h6>
 		</div>
+  </div>
 		<div class="testimonial">
 			<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
 			
@@ -174,9 +175,8 @@
 
 <!-- contact section -->
 <section class="contact">
-	
+	<div class="anchor" id="connect"></div>
 	<div class="contactus">
-		<div class="anchor" id="connect"></div>
 		<h5 class="label"><i class="fa fa-mail-forward"></i>Get in Touch</h5>
 		<div class="address">
 			<ul>
@@ -184,8 +184,9 @@
 				<li><i class="fa fa-phone"></i><a href="tel:19259532022">+1 (925) 953-2022</a></li>
 			</ul>
 		</div>
-		<p>Please fill in the fields below and we will get back to you as soon as possible.</p>
+
 		<form>
+			<p>Please fill in the fields below and we will get back to you as soon as possible.</p>
 			<input type="text" placeholder="Name">
 			<input type="email" placeholder="Email Address">
 			<input type="text" placeholder="Phone Number">
@@ -194,6 +195,7 @@
 			<input type="submit" value="Submit">
 		</form>
 	</div>
+	
 	<div class="events">
 		<h5 class="label"><i class="fa fa-calendar"></i>Upcoming Events</h5>
 		<ul>
@@ -209,21 +211,21 @@
 				<span class="date">Dec 11</span>
 				<span class="title">Commodo Inceptos Venenatis</span>
 			</a></li>
+		</ul>
+		
+		<h5 class="label"><i class="fa fa-calendar"></i>Recent Posts</h5>
+		<ul>
 			<li><a href="#">
-				<span class="date">Jul 30</span>
-				<span class="title">Nibh Venenatis Sit Euismod</span>
+				<span class="date">Aug 21</span>
+				<span class="title">Vehicula Malesuada Tristique Venenatis</span>
 			</a></li>
 			<li><a href="#">
-				<span class="date">Jun 22</span>
-				<span class="title">Malesuada Mollis Mattis Tortor Fringilla</span>
+				<span class="date">Sep 5</span>
+				<span class="title">Aenean Ipsum Risus Ultricies Condimentum</span>
 			</a></li>
 			<li><a href="#">
-				<span class="date">Oct 31</span>
-				<span class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-			</a></li>
-			<li><a href="#">
-				<span class="date">Nov 22</span>
-				<span class="title">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span>
+				<span class="date">Dec 11</span>
+				<span class="title">Commodo Inceptos Venenatis</span>
 			</a></li>
 		</ul>
 	</div>

@@ -550,9 +550,14 @@ section.services {
 	color: #fff;
 	
 	.testimonial {
-		font-size: 23px;
-		font-weight: 300;
-		text-align: center;
+    p {
+      font-size: 23px;
+      font-weight: 300;
+      text-align: center;
+    }
+    h6 {
+      text-align: center;
+    }
 	}
 	.label {
 		text-align: center;

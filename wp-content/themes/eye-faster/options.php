@@ -111,10 +111,10 @@ function optionsframework_options() {
         'desc' => __('Upload your logo', 'zd'),
         'id' => 'zd_logo',
         'type' => 'upload');
-	
-    // Footer Settings
+        
+    // General Settings
     $options[] = array(
-        'name' => __('Footer Settings', 'zd'),
+        'name' => __('General Settings', 'zd'),
         'type' => 'heading');
 		
     $options[] = array(
@@ -136,6 +136,13 @@ function optionsframework_options() {
         'id' => 'zd_copyright',
         'std' => '',
         'type' => 'text');
+        
+    $options[] = array(
+        'name' => __('Homepage Contact Form', 'zd'),
+        'desc' => __('Enter the contact form shortcode for the form that appears on the homepage', 'zd'),
+        'id' => 'zd_contact_form',
+        'type' => 'text');
+	
 
 	return $options;
 }

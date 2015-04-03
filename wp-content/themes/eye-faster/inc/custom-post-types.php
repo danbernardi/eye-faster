@@ -214,7 +214,7 @@ function register_testimonials() {
 		'label'               => __( 'testimonials', 'zd' ),
 		'description'         => __( 'Featured Testimonials', 'zd' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'thumbnail', 'revisions', ),
+		'supports'            => array( 'title', 'editor', 'revisions', ),
 		'taxonomies'          => array( '' ),
 		'hierarchical'        => false,
 		'public'              => true,
