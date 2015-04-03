@@ -241,11 +241,11 @@ function zd_list_past_projects( $atts ) {
             </a>
             </li>
           </ul>
+        <?php endwhile; wp_reset_postdata(); ?>
         </div>
-      <?php
-        endwhile; wp_reset_postdata();
-        $myvariable = ob_get_clean();
-        return $myvariable;
+        <?php
+          $myvariable = ob_get_clean();
+          return $myvariable;
       }
 }
 add_shortcode( 'list_past_projects', 'zd_list_past_projects' );
