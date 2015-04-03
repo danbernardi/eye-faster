@@ -1017,3 +1017,25 @@ section.leadership {
 		}
 	}
 }
+
+.socialshare {
+  float: right; 
+  li {
+    display: inline-block;
+    
+    a {
+      transition: background 0.2s ease-in-out;
+      width: 29px;
+      text-align: center;
+      border-radius: 4px;
+      background: $blue;
+      color: white;
+      margin-left: 4px;
+      display: block;
+      font-size: 15px;
+      &:hover {
+        background: $green;
+      }
+    }
+  }
+}
