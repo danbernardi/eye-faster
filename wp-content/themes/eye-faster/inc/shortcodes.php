@@ -274,7 +274,7 @@ function zd_recent_posts( $atts ) {
 
           <li>
             <a href="<?php the_permalink(); ?>">
-              <span class="date"><?php the_date('M j'); ?></span>
+              <span class="date"><?php echo get_the_date('M j'); ?></span>
               <span class="title"><?php the_title(); ?></span>
             </a>
           </li>
@@ -290,23 +290,6 @@ function zd_recent_posts( $atts ) {
 
 <?php }
 add_shortcode( 'recent_posts', 'zd_recent_posts' );
-
-/*
-<ul>
-			<li><a href="#">
-				<span class="date">Aug 21</span>
-				<span class="title">Vehicula Malesuada Tristique Venenatis</span>
-			</a></li>
-			<li><a href="#">
-				<span class="date">Sep 5</span>
-				<span class="title">Aenean Ipsum Risus Ultricies Condimentum</span>
-			</a></li>
-			<li><a href="#">
-				<span class="date">Dec 11</span>
-				<span class="title">Commodo Inceptos Venenatis</span>
-			</a></li>
-		</ul>
-*/
 
 
 /* ------------------------------------------------
