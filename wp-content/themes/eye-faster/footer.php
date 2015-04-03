@@ -1,4 +1,4 @@
-<footer>
+<footer class="main">
     <div class="topfooter">
         <div class="address">
           <ul>
