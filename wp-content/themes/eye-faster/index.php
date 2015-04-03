@@ -2,7 +2,7 @@
 	
 	<section class="pagetitle"></section>
 	
-	<section class="blog">
+	<section class="blogroll">
     <div class="anchor" id="blog"></div>
     <div class="post">
       <h5 class="label"><i class="fa fa-trophy"></i>Blog</h5>
