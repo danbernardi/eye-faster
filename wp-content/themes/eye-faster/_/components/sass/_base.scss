@@ -303,7 +303,9 @@ header {
 		@include span(4 of 12);
 		
 		.pprojects {
-			
+			a {
+        color: black;
+      }
 			li {
 				@include transition(background-color, 0.2s);
 				@extend .pointer;

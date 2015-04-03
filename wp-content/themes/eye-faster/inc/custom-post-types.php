@@ -120,7 +120,7 @@ function register_projects() {
 		'label'               => __( 'projects', 'zd' ),
 		'description'         => __( 'Featured Projects', 'zd' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'revisions', 'tags' ),
+		'supports'            => array( 'title', 'editor', 'excerpt', 'revisions', 'tags' ),
 		'taxonomies'          => array( '' ),
 		'hierarchical'        => false,
 		'public'              => true,

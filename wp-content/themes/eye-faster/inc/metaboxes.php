@@ -209,4 +209,34 @@ function zd_client_options( array $meta_boxes ) {
 add_filter( 'cmb2_meta_boxes', 'zd_client_options' );
 
 
+// Project Options
+/*
+function zd_project_options( array $meta_boxes ) {
+    // Start with an underscore to hide fields from custom fields list
+    $prefix = '_zd_';
+
+    $meta_boxes['project_options'] = array(
+        'id'            => 'project_options',
+        'title'         => __( 'Projects Options', 'zd' ),
+        'object_types'  => array( 'projects' ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+            array(
+                'name' => 'Background',
+                'desc' => 'Add the background text for this project',
+                'id' => $prefix . 'background',
+                'type' => 'wysiwyg',
+			     ),
+        ),
+    );
+
+    return $meta_boxes;
+}
+add_filter( 'cmb2_meta_boxes', 'zd_project_options' );
+*/
+
 ?>

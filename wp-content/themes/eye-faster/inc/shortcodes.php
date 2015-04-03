@@ -147,6 +147,148 @@ function zd_list_videos( $atts ) {
 add_shortcode( 'list_videos', 'zd_list_videos' );
 
 
+// list_clients
+function zd_list_clients( $atts ) {
+    
+    extract( shortcode_atts( array(
+		  'title' => 'A few of our clients',
+    ), $atts ) );
+    ?>
+    
+    <?php
+      ob_start();
+      $query = new WP_Query( array(
+          'post_type' => 'clients',
+          'posts_per_page' => -1,
+          'order' => 'ASC',
+      ) );
+      if ( $query->have_posts() ) { ?>
+        
+        <div class="clear"></div>
+        <div class="clients">
+        <h5><?php echo $title; ?></h5>
+        <div class="slick">
+        <?php 
+          while ( $query->have_posts() ) : $query->the_post();
+          $image = get_post_meta( get_the_ID(), '_zd_client_img', true );
+        ?>
+
+        <div>
+          <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>">
+        </div>
+    <?php
+        endwhile; wp_reset_postdata();
+        $myvariable = ob_get_clean();
+        return $myvariable;
+      }
+    ?>
+    
+    </div></div>
+
+<?php }
+add_shortcode( 'list_clients', 'zd_list_clients' );
+
+
+// list_projects
+function zd_list_projects( $atts ) {
+
+      ob_start();
+      $query = new WP_Query( array(
+          'post_type' => 'projects',
+          'posts_per_page' => -1,
+          'order' => 'ASC',
+      ) );
+      if ( $query->have_posts() ) { ?>
+        
+        <div class="featured">
+          <h5 class="label"><i class="fa fa-trophy"></i><?php _e('Featured Project', 'zd'); ?></h5>
+          <?php 
+            while ( $query->have_posts() ) : $query->the_post();
+          ?>
+          <div class="project">
+            <h3><?php the_title(); ?></h3>
+            <p><?php the_content(); ?></p>
+            </div>
+        </div>
+      <?php
+        endwhile; wp_reset_postdata();
+        $myvariable = ob_get_clean();
+        return $myvariable;
+      }
+}
+add_shortcode( 'list_projects', 'zd_list_projects' );
+
+// list_past_projects
+function zd_list_past_projects( $atts ) {
+
+      ob_start();
+      $sidequery = new WP_Query( array(
+          'post_type' => 'projects',
+          'posts_per_page' => 4,
+          'order' => 'ASC',
+      ) );
+      if ( $sidequery->have_posts() ) { ?>
+        
+        <div class="past">
+          <h5 class="label"><i class="fa fa-toggle-left"></i><?php _e('Past Projects', 'zd'); ?></h5>
+          <?php 
+            while ( $sidequery->have_posts() ) : $sidequery->the_post();
+          ?>
+          <ul class="pprojects">
+            <li>
+            <a href="#">
+              <?php if(has_post_thumnail) {
+                the_post_thumbnail();
+              } ?>
+              <h6><?php the_title(); ?></h6>
+            </a>
+            </li>
+          </ul>
+        </div>
+      <?php
+        endwhile; wp_reset_postdata();
+        $myvariable = ob_get_clean();
+        return $myvariable;
+      }
+}
+add_shortcode( 'list_past_projects', 'zd_list_past_projects' );
+
+
+
+/*
+      ob_start();
+      $sidequery = new WP_Query( array(
+          'post_type' => 'projects',
+          'posts_per_page' => 4,
+          'order' => 'ASC',
+      ) );
+      if ( $sidequery->have_posts() ) { ?>
+        
+        <div class="past">
+          <h5 class="label"><i class="fa fa-toggle-left"></i><?php _e('Past Projects', 'zd'); ?></h5>
+          <?php 
+            while ( $sidequery->have_posts() ) : $sidequery->the_post();
+          ?>
+          <ul class="pprojects">
+            <li>
+            <a href="#">
+              <?php if(has_post_thumnail) {
+                the_post_thumbnail();
+              } ?>
+              <h6><?php the_title(); ?></h6>
+              <span><?php the_excerpt(); ?></span>
+            </a>
+            </li>
+          </ul>
+        </div>
+      <?php
+        endwhile; wp_reset_postdata();
+        $myvariable = ob_get_clean();
+        return $myvariable;
+      }
+*/
+
+
 /* ------------------------------------------------
  * Layout
  * ------------------------------------------------*/
@@ -204,67 +346,6 @@ function zd_divider( $atts ) {
 add_shortcode( 'divider', 'zd_divider' );
 
 
-
-// list_clients
-function zd_list_clients( $atts ) {
-    
-    extract( shortcode_atts( array(
-		  'title' => 'A few of our clients',
-    ), $atts ) );
-    ?>
-    
-    <?php
-      ob_start();
-      $query = new WP_Query( array(
-          'post_type' => 'clients',
-          'posts_per_page' => -1,
-          'order' => 'ASC',
-      ) );
-      if ( $query->have_posts() ) { ?>
-        
-        <div class="clients">
-        <h5><?php echo $title; ?></h5>
-        <div class="slick">
-        <?php 
-          while ( $query->have_posts() ) : $query->the_post();
-          $image = get_post_meta( get_the_ID(), '_zd_client_img', true );
-        ?>
-
-        <div>
-          <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>">
-        </div>
-    <?php
-        endwhile; wp_reset_postdata();
-        $myvariable = ob_get_clean();
-        return $myvariable;
-      }
-    ?>
-    
-    </div></div>
-
-<?php }
-add_shortcode( 'list_clients', 'zd_list_clients' );
-/*
-<div class="clients">
-		<h5>A few of our clients</h5>
-		<div class="slick">
-			<div><img src="img/clients/walgreens.png"></div>
-			<div><img src="img/clients/walmart.png"></div>
-			<div><img src="img/clients/wilson.png"></div>
-			<div><img src="img/clients/microsoft.png"></div>
-			<div><img src="img/clients/bedbathbeyond.png"></div>
-			<div><img src="img/clients/target.png"></div>
-			<div><img src="img/clients/walgreens.png"></div>
-			<div><img src="img/clients/walmart.png"></div>
-			<div><img src="img/clients/wilson.png"></div>
-			<div><img src="img/clients/microsoft.png"></div>
-			<div><img src="img/clients/bedbathbeyond.png"></div>
-			<div><img src="img/clients/target.png"></div>
-		</div>
-	</div>
-*/
-
-
 /* ------------------------------------------------
  * Misc Functions
  * ------------------------------------------------*/
@@ -292,7 +373,7 @@ add_shortcode( 'call_to_action', 'zd_footer_cta' );
 
 // disables automatic spacing & p tags inside selected shortcodes. Add shortcode name to array inside $block
 function the_content_filter($content) {
-	$block = join("|",array( 'list_testimonials', 'section', 'list_team_members', 'list_services', 'label', 'divider', 'call_to_action', 'list_clients' ));
+	$block = join("|",array( 'list_testimonials', 'section', 'list_team_members', 'list_services', 'label', 'divider', 'call_to_action', 'list_clients', 'list_projects', 'list_past_projects' ));
 	$rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
 	$rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
 return $rep;
