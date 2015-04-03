@@ -308,7 +308,7 @@ function register_team_members() {
 		'label'               => __( 'team_members', 'zd' ),
 		'description'         => __( 'Featured Team Members', 'zd' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', ),
+		'supports'            => array( 'title', 'editor', 'thumbnail', 'revisions'),
 		'taxonomies'          => array( '' ),
 		'hierarchical'        => false,
 		'public'              => true,
@@ -377,5 +377,53 @@ function register_clients() {
 	register_post_type( 'clients', $args );
 }
 add_action( 'init', 'register_clients', 0 );
+
+
+// register job post type
+function register_jobs() {
+
+	// Set UI labels for Custom Post Type
+	$labels = array(
+		'name'                => _x( 'Jobs', 'Post Type General Name', 'zd' ),
+		'singular_name'       => _x( 'Job', 'Post Type Singular Name', 'zd' ),
+		'menu_name'           => __( 'Jobs', 'zd' ),
+		'parent_item_colon'   => __( 'Parent Job', 'zd' ),
+		'all_items'           => __( 'All Jobs', 'zd' ),
+		'view_item'           => __( 'View Job', 'zd' ),
+		'add_new_item'        => __( 'Add New Job', 'zd' ),
+		'add_new'             => __( 'Add New', 'zd' ),
+		'edit_item'           => __( 'Edit Job', 'zd' ),
+		'update_item'         => __( 'Update Job', 'zd' ),
+		'search_items'        => __( 'Search Jobs', 'zd' ),
+		'not_found'           => __( 'Not Found', 'zd' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'zd' ),
+	);
+	
+	// Set other options for Custom Post Type
+	$args = array(
+		'label'               => __( 'jobs', 'zd' ),
+		'description'         => __( 'Featured Jobs', 'zd' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'revisions' ),
+		'taxonomies'          => array( '' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'menu_icon'			      => 'dashicons-hammer',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+	);
+	
+	// Registering your Custom Post Type
+	register_post_type( 'jobs', $args );
+}
+add_action( 'init', 'register_jobs', 0 );
 
 ?>

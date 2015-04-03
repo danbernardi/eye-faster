@@ -122,7 +122,7 @@ function zd_services_options( array $meta_boxes ) {
     $meta_boxes['services_options'] = array(
         'id'            => 'services_options',
         'title'         => __( 'Services Options', 'zd' ),
-        'object_types'  => array( 'services', 'solutions' ), // Post type
+        'object_types'  => array( 'services', 'solutions', 'jobs' ), // Post type
         'context'       => 'normal',
         'priority'      => 'high',
         'show_names'    => true, // Show field names on the left
