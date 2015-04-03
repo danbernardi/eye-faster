@@ -286,7 +286,11 @@ function zd_recent_posts( $atts ) {
         </div>
         <?php $myvariable = ob_get_clean();
         return $myvariable;
-      }
+      } else { ?>
+        <ul>
+          <li><span class="noposts">There are currently no posts in this category.</span></li>
+        </ul>
+      <?php }
     ?>
 
 <?php }

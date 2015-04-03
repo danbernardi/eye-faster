@@ -607,47 +607,58 @@ section.services {
 		padding: 80px 60px 0;
 		float: left;
 		
-		ul li {
-			@include transition(background-color, 0.2s);
-			margin-bottom: 11px;
-			position: relative;
-			background: #DDD;
-			padding: 10px 10px 2px;
-			border-radius: 4px;
-			
-			a {
-				color: $body;
-			}
-			span {
-				font-size: 13px;
-				display: inline-block;
-				&.date {
-					@include transition(background-color, 0.2s);
-					position: absolute;
-					left: 10px;
-					background: #777;
-					color: white;
-					padding: 5px 0;
-					width: 60px;
-					text-align: center;
-					border-radius: 4px;
-				}
-				&.title {
-					padding-left: 74px;
-					width: 100%;
-					white-space: nowrap;
-					overflow: hidden;
-					text-overflow: ellipsis;
-					line-height: 33px;
-				}
-			}
-			&:hover {
-				background: #eaeaea;
-				.date {
-					background: $blue;
-				}
-			}
-		}
+    .label {
+      margin-bottom: 20px;
+    }
+    
+		ul {
+      margin-bottom: 40px;
+      
+      li {
+        @include transition(background-color, 0.2s);
+        margin-bottom: 11px;
+        position: relative;
+        background: #DDD;
+        padding: 10px 10px 2px;
+        border-radius: 4px;
+
+        a {
+          color: $body;
+        }
+        span {
+          font-size: 13px;
+          display: inline-block;
+          &.date {
+            @include transition(background-color, 0.2s);
+            position: absolute;
+            left: 10px;
+            background: #777;
+            color: white;
+            padding: 5px 0;
+            width: 60px;
+            text-align: center;
+            border-radius: 4px;
+          }
+          &.title {
+            padding-left: 74px;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 33px;
+          }
+          &.noposts {
+            padding-bottom: 10px;
+          }
+        }
+        &:hover {
+          background: #eaeaea;
+          .date {
+            background: $blue;
+          }
+        }
+      }
+    }
 	}
 }
 
