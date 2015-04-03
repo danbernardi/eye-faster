@@ -64,8 +64,8 @@ include('header.php'); ?>
         </section>
 
         <section class="contact">
-          <div class="anchor" id="connect"></div>
           <div class="contactus">
+            <div class="anchor" id="connect"></div>
             <h5 class="label"><i class="fa fa-mail-forward"></i>Get in Touch</h5>
             <div class="address">
               <?php
