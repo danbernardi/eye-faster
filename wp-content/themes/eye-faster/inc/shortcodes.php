@@ -228,10 +228,11 @@ function zd_list_past_projects( $atts ) {
         
         <div class="past">
           <h5 class="label"><i class="fa fa-toggle-left"></i><?php _e('Past Projects', 'zd'); ?></h5>
+          <ul class="pprojects">
           <?php 
             while ( $sidequery->have_posts() ) : $sidequery->the_post();
           ?>
-          <ul class="pprojects">
+          
             <li>
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
               <?php if(has_post_thumnail) {
@@ -240,8 +241,8 @@ function zd_list_past_projects( $atts ) {
               <h6><?php the_title(); ?></h6>
             </a>
             </li>
+            <?php endwhile; wp_reset_postdata(); ?>
           </ul>
-        <?php endwhile; wp_reset_postdata(); ?>
         </div>
         <?php
           $myvariable = ob_get_clean();
