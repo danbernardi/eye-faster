@@ -17,10 +17,10 @@
         <div class="social">
           <ul>
             <?php if (strlen($youtube) != 0) { ?>
-              <li><a href="<?php echo $youtube; ?>"><i class="fa fa-youtube"></i></a></li>
+              <li><a target="_blank" href="<?php echo $youtube; ?>"><i class="fa fa-youtube"></i></a></li>
             <?php } ?>
             <?php if (strlen($linkedin) != 0) { ?>
-              <li><a href="<?php echo $linkedin; ?>"><i class="fa fa-linkedin"></i></a></li>
+              <li><a target="_blank" href="<?php echo $linkedin; ?>"><i class="fa fa-linkedin"></i></a></li>
             <?php } ?>
           </ul>
         </div>
