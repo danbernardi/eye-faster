@@ -1,14 +1,5 @@
 <?php
 
-
-add_filter( 'cmb2_meta_boxes', 'zd_page_options' );
-/**
- * Define the metabox and field configurations.
- *
- * @param  array $meta_boxes
- * @return array
- */
- 
 // page options
 function zd_page_options( array $meta_boxes ) {
 
@@ -45,14 +36,12 @@ function zd_page_options( array $meta_boxes ) {
         ),
     );
 
-    // Add other metaboxes as needed
-
     return $meta_boxes;
 }
+add_filter( 'cmb2_meta_boxes', 'zd_page_options' );
 
 
-add_filter( 'cmb2_meta_boxes', 'zd_success_story_options' );
-// building page
+// success story options
 function zd_success_story_options( array $meta_boxes ) {
 
     // Start with an underscore to hide fields from custom fields list
@@ -85,12 +74,12 @@ function zd_success_story_options( array $meta_boxes ) {
         ),
     );
 
-    // Add other metaboxes as needed
     return $meta_boxes;
 }
+add_filter( 'cmb2_meta_boxes', 'zd_success_story_options' );
 
 
-// Success Story Options
+// Team Member Options
 function zd_member_options( array $meta_boxes ) {
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_zd_';
@@ -116,8 +105,6 @@ function zd_member_options( array $meta_boxes ) {
 			     ),
         ),
     );
-
-    // Add other metaboxes as needed
 
     return $meta_boxes;
 }
@@ -185,11 +172,41 @@ function zd_videos_options( array $meta_boxes ) {
         ),
     );
 
-    // Add other metaboxes as needed
-
     return $meta_boxes;
 }
 add_filter( 'cmb2_meta_boxes', 'zd_videos_options' );
+
+
+// Client Options
+function zd_client_options( array $meta_boxes ) {
+    // Start with an underscore to hide fields from custom fields list
+    $prefix = '_zd_';
+
+    /**
+     * Sample metabox to demonstrate each field type included
+     */
+    $meta_boxes['client_options'] = array(
+        'id'            => 'client_options',
+        'title'         => __( 'Client Options', 'zd' ),
+        'object_types'  => array( 'clients' ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+            array(
+                'name' => 'Client Logo',
+                'desc' => 'Upload the client logo as a png file.',
+                'id' => $prefix . 'client_img',
+                'type' => 'file',
+			     ),
+        ),
+    );
+
+    return $meta_boxes;
+}
+add_filter( 'cmb2_meta_boxes', 'zd_client_options' );
 
 
 ?>

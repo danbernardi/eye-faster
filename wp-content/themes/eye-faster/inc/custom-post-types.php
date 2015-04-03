@@ -330,4 +330,52 @@ function register_team_members() {
 }
 add_action( 'init', 'register_team_members', 0 );
 
+
+// register clients post type
+function register_clients() {
+
+	// Set UI labels for Custom Post Type
+	$labels = array(
+		'name'                => _x( 'Clients', 'Post Type General Name', 'zd' ),
+		'singular_name'       => _x( 'Client', 'Post Type Singular Name', 'zd' ),
+		'menu_name'           => __( 'Clients', 'zd' ),
+		'parent_item_colon'   => __( 'Parent Client', 'zd' ),
+		'all_items'           => __( 'All Clients', 'zd' ),
+		'view_item'           => __( 'View Client', 'zd' ),
+		'add_new_item'        => __( 'Add New Client', 'zd' ),
+		'add_new'             => __( 'Add New', 'zd' ),
+		'edit_item'           => __( 'Edit Client', 'zd' ),
+		'update_item'         => __( 'Update Client', 'zd' ),
+		'search_items'        => __( 'Search Clients', 'zd' ),
+		'not_found'           => __( 'Not Found', 'zd' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'zd' ),
+	);
+	
+	// Set other options for Custom Post Type
+	$args = array(
+		'label'               => __( 'clients', 'zd' ),
+		'description'         => __( 'Featured Clients', 'zd' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title' ),
+		'taxonomies'          => array( '' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'menu_icon'			      => 'dashicons-universal-access',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'post',
+	);
+	
+	// Registering your Custom Post Type
+	register_post_type( 'clients', $args );
+}
+add_action( 'init', 'register_clients', 0 );
+
 ?>

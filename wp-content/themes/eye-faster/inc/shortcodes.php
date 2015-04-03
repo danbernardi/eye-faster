@@ -185,7 +185,9 @@ function zd_label( $atts ) {
     ), $atts ) );
     
     $output .= '<div class="anchor" id="'.$id.'"></div>';
-    $output .= '<h3 class="label">'.$title.'</h3>';
+    if(strlen($title) != 0) {
+      $output .= '<h3 class="label">'.$title.'</h3>';
+    }
     
     return $output;
 }
@@ -200,6 +202,67 @@ function zd_divider( $atts ) {
     return $output;
 }
 add_shortcode( 'divider', 'zd_divider' );
+
+
+
+// list_clients
+function zd_list_clients( $atts ) {
+    
+    extract( shortcode_atts( array(
+		  'title' => 'A few of our clients',
+    ), $atts ) );
+    ?>
+    
+    <?php
+      ob_start();
+      $query = new WP_Query( array(
+          'post_type' => 'clients',
+          'posts_per_page' => -1,
+          'order' => 'ASC',
+      ) );
+      if ( $query->have_posts() ) { ?>
+        
+        <div class="clients">
+        <h5><?php echo $title; ?></h5>
+        <div class="slick">
+        <?php 
+          while ( $query->have_posts() ) : $query->the_post();
+          $image = get_post_meta( get_the_ID(), '_zd_client_img', true );
+        ?>
+
+        <div>
+          <img src="<?php echo $image; ?>" alt="<?php the_title(); ?>">
+        </div>
+    <?php
+        endwhile; wp_reset_postdata();
+        $myvariable = ob_get_clean();
+        return $myvariable;
+      }
+    ?>
+    
+    </div></div>
+
+<?php }
+add_shortcode( 'list_clients', 'zd_list_clients' );
+/*
+<div class="clients">
+		<h5>A few of our clients</h5>
+		<div class="slick">
+			<div><img src="img/clients/walgreens.png"></div>
+			<div><img src="img/clients/walmart.png"></div>
+			<div><img src="img/clients/wilson.png"></div>
+			<div><img src="img/clients/microsoft.png"></div>
+			<div><img src="img/clients/bedbathbeyond.png"></div>
+			<div><img src="img/clients/target.png"></div>
+			<div><img src="img/clients/walgreens.png"></div>
+			<div><img src="img/clients/walmart.png"></div>
+			<div><img src="img/clients/wilson.png"></div>
+			<div><img src="img/clients/microsoft.png"></div>
+			<div><img src="img/clients/bedbathbeyond.png"></div>
+			<div><img src="img/clients/target.png"></div>
+		</div>
+	</div>
+*/
 
 
 /* ------------------------------------------------
@@ -229,7 +292,7 @@ add_shortcode( 'call_to_action', 'zd_footer_cta' );
 
 // disables automatic spacing & p tags inside selected shortcodes. Add shortcode name to array inside $block
 function the_content_filter($content) {
-	$block = join("|",array( 'list_testimonials', 'section', 'list_team_members', 'list_services', 'label', 'divider', 'call_to_action' ));
+	$block = join("|",array( 'list_testimonials', 'section', 'list_team_members', 'list_services', 'label', 'divider', 'call_to_action', 'list_clients' ));
 	$rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
 	$rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
 return $rep;

@@ -58,10 +58,11 @@ function zd_theme_setup() {
 	
 	// define custom thumbnail sizes
 	if ( function_exists( 'add_image_size' ) ) {
-        add_image_size( 'b-thumb', 258, 160, true );
-		add_image_size( 'pagetitle', 1560, 600, true );
-    	add_image_size( 'team_member', 208, 250, true );
-    }
+    add_image_size( 'b-thumb', 258, 160, true );
+    add_image_size( 'pagetitle', 1560, 600, true );
+    add_image_size( 'team_member', 208, 250, true );
+    add_image_size( 'client', 450, 128, true );
+  }
     
     // adds page slug as body class
     function add_slug_body_class( $classes ) {
