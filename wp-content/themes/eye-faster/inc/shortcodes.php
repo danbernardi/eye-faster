@@ -191,7 +191,7 @@ function zd_list_projects( $atts ) {
       ob_start();
       $query = new WP_Query( array(
           'post_type' => 'projects',
-          'posts_per_page' => -1,
+          'posts_per_page' => 1,
           'order' => 'ASC',
       ) );
       if ( $query->have_posts() ) { ?>
