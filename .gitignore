@@ -2,6 +2,7 @@
 .dev/
 error_log
 php_errorlog
+_notes/
 
 temp/
 node_modules/
@@ -9,3 +10,4 @@ npm-debug.log
 .nodemonignore
 .sass-cache/
 wp-config.php
+wp-content/themes/irmr/_/css/jaime.css
