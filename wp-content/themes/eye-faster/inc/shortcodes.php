@@ -204,12 +204,12 @@ function zd_list_projects( $atts ) {
           <div class="project">
             <h3><?php the_title(); ?></h3>
             <p><?php the_content(); ?></p>
-            </div>
+          </div>
+      <?php endwhile; wp_reset_postdata(); ?>
         </div>
-      <?php
-        endwhile; wp_reset_postdata();
-        $myvariable = ob_get_clean();
-        return $myvariable;
+        <?php 
+          $myvariable = ob_get_clean();
+          return $myvariable;
       }
 }
 add_shortcode( 'list_projects', 'zd_list_projects' );
