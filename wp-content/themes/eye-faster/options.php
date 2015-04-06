@@ -159,6 +159,29 @@ function optionsframework_options() {
         'desc' => __('Enter the url for your youtube profile', 'zd'),
         'id' => 'zd_youtube',
         'type' => 'text');
+        
+    // Contact Call to Action Settings
+    $options[] = array(
+        'name' => __('Contact CTA Settings', 'zd'),
+        'type' => 'heading');
+        
+    $options[] = array(
+        'name' => __('Services Pages Call to action text', 'zd'),
+        'desc' => __('Enter the default text for the contact call to actin on the services pages', 'zd'),
+        'id' => 'zd_f_cta_services',
+        'type' => 'text');
+        
+    $options[] = array(
+        'name' => __('Solutions Pages Call to action text', 'zd'),
+        'desc' => __('Enter the default text for the contact call to actin on the solutions pages', 'zd'),
+        'id' => 'zd_f_cta_solutions',
+        'type' => 'text');
+        
+    $options[] = array(
+        'name' => __('Jobs Pages Call to action text', 'zd'),
+        'desc' => __('Enter the default text for the contact call to actin on the jobs pages', 'zd'),
+        'id' => 'zd_f_cta_jobs',
+        'type' => 'text');
 	
 
 	return $options;

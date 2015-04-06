@@ -8,6 +8,21 @@
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
         $f_cta_enable = get_post_meta( get_the_ID(), '_zd_add_footer_cta', true );
         $f_cta_text = get_post_meta( get_the_ID(), '_zd_footer_cta_text', true );
+        $current_post_type = get_post_type();
+        
+        switch ($current_post_type) {
+          case 'services':
+            $f_cta_text = of_get_option( 'zd_f_cta_services');
+            break;
+          case 'solutions':
+            $f_cta_text = of_get_option( 'zd_f_cta_solutions');
+            break;
+          case 'jobs':
+            $f_cta_text = of_get_option( 'zd_f_cta_jobs');
+            break;
+          default:
+            $f_cta_text = of_get_option( 'zd_f_cta_post');
+        }
       ?>
 
       <article>
@@ -37,10 +52,10 @@
     <div class="clear"></div>
   </section>
 
-<?php if( $f_cta_enable == 'on') { ?>
+<?php if( strlen($f_cta_text) != 0 ) { ?>
   <!-- contact cta section -->
   <section class="contact-cta">
-    <h4><?php _e('Get in touch with us today to learn how we can help you.', 'zd'); ?></h4>
+    <h4><?php echo $f_cta_text; ?></h4>
     <a class="btn contactscroll" href="<?php echo get_site_url(); ?>/#connect"><?php _e('Contact Us', 'zd'); ?></a>
   </section>
 <?php } ?>
