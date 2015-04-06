@@ -22,7 +22,7 @@
         endwhile; 
     ?>
 	
-<?php if( $f_cta_enable == 'on') { ?>
+<?php if( strlen($f_cta_text) != 0 ) { ?>
   <!-- contact cta section -->
   <section class="contact-cta">
     <h4><?php echo $f_cta_text; ?></h4>
