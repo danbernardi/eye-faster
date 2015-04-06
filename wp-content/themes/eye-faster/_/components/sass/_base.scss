@@ -19,6 +19,13 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 1px;
 	font-weight: bold;
 }
+ul, ol {
+  margin-bottom: 20px; 
+  li {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+}
 a {
 	color: $blue;
 	&:hover {
@@ -136,9 +143,11 @@ header {
 			text-align: right;
 			display: inline-block;
 			float: right;
+      margin-bottom: 0;
 		}
 		li {
 			display: inline-block;
+      margin-left: 0;
 			&.current-menu-item a {
 				
 				color: $blue;
@@ -174,6 +183,7 @@ header {
 	li {
 		display: inline-block;
 		font-size: 14px;
+    margin-left: 0;
 		a {
 			@include transition(background, 0.2s);
 			color: inherit;
@@ -312,6 +322,7 @@ header {
 				padding: 20px;
 				background: #eaeaea;
 				margin-bottom: 10px;
+        margin-left: 0;
 				border-radius: 4px;
 				&:last-child {
 					margin-bottom: 0;
@@ -588,8 +599,8 @@ section.services {
 		font-size: 13px;
 		
 		li {
-			margin-right: 0;
-			margin-lefT: 9px;
+			margin-right: 9px;
+      margin-left: 0;
 		}
 		i {
 			margin-right: 5px;
@@ -625,6 +636,7 @@ section.services {
       li {
         @include transition(background-color, 0.2s);
         margin-bottom: 11px;
+        margin-left: 0;
         position: relative;
         background: #DDD;
         padding: 10px 10px 2px;
@@ -707,6 +719,10 @@ footer.main {
 	display: block;
 	color: white;
 	font-size: 13px;
+  
+  ul {
+    margin-bottom: 0;
+  }
 	
 	.topfooter {
 		@extend .clearfix;
@@ -816,6 +832,7 @@ section.mission {
 	
 	li {
 		font-size: 14px;
+    margin-left: 0;
 	}
 }
 
@@ -908,6 +925,7 @@ section.leadership {
 				padding: 20px;
 				background: #eaeaea;
 				margin-bottom: 10px;
+        margin-left: 0;
 				border-radius: 4px;
 				&:last-child {
 					margin-bottom: 0;
@@ -942,6 +960,7 @@ section.leadership {
 	ul li {
 		display: inline-block;
 		margin-right: 5px;
+    margin-left: 0;
 		
 		a {
 			@include transition(all, 0.2s);
@@ -1028,8 +1047,14 @@ section.leadership {
 
 .socialshare {
   float: right; 
+  
+  ul {
+    margin-bottom: 0;
+  }
+  
   li {
     display: inline-block;
+    margin-left: 0;
     
     a {
       transition: background 0.2s ease-in-out;
