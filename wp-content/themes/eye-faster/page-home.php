@@ -87,7 +87,7 @@ include('header.php'); ?>
             <h5 class="label"><i class="fa fa-calendar"></i><?php _e('Upcoming Events'); ?></h5>
             <?php echo do_shortcode('[recent_posts type="events"]'); ?>
               
-            <h5 class="label"><i class="fa fa-calendar"></i><?php _e('Recent Posts'); ?></h5>
+            <h5 class="label"><i class="fa fa-toggle-left"></i><?php _e('Recent Posts'); ?></h5>
             <?php echo do_shortcode('[recent_posts type="post"]'); ?>
           </div>
         </section>

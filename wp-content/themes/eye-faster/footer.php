@@ -11,7 +11,7 @@
                 $linkedin = of_get_option( 'zd_linkedin');
             ?>
             <li><i class="fa fa-phone"></i><a href="tel:<?php echo $trimmedPhone; ?>"><?php echo $phoneNumber; ?></a></li>
-            <li><a href="#">Job Opportunities</a></li>
+            <li><a href="<?php echo get_page_link(20); ?>">Job Opportunities</a></li>
           </ul>
         </div>
         <div class="social">
