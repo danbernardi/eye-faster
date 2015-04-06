@@ -41,6 +41,47 @@ function zd_page_options( array $meta_boxes ) {
 add_filter( 'cmb2_meta_boxes', 'zd_page_options' );
 
 
+// contact cta options
+function zd_contact_cta_options( array $meta_boxes ) {
+
+    // Start with an underscore to hide fields from custom fields list
+    $prefix = '_zd_';
+
+    /**
+     * Sample metabox to demonstrate each field type included
+     */
+    $meta_boxes['contact_cta_options'] = array(
+        'id'            => 'contact_cta_options',
+        'title'         => __( 'Contact Link Options', 'zd' ),
+        'object_types'  => array( 'page', 'post', 'services', 'solutions', 'jobs' ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+            array(
+                'name'       => __( 'Page has Contact Link', 'zd' ),
+                'desc'       => __( 'Check this box to add the contact page call to action to the footer', 'zd' ),
+                'id'         => $prefix . 'add_footer_cta',
+                'type'       => 'checkbox',
+                'show_on_cb' => 'cmb2_hide_if_no_cats',
+            ),
+            array(
+                'name'       => __( 'Contact Link Text', 'zd' ),
+                'desc'       => __( 'Enter the text that will appear in the contact page call to action', 'zd' ),
+                'id'         => $prefix . 'footer_cta_text',
+                'type'       => 'textarea_small',
+                'show_on_cb' => 'cmb2_hide_if_no_cats',
+            ),
+        ),
+    );
+
+    return $meta_boxes;
+}
+add_filter( 'cmb2_meta_boxes', 'zd_contact_cta_options' );
+
+
 // success story options
 function zd_success_story_options( array $meta_boxes ) {
 

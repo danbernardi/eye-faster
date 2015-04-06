@@ -99,10 +99,12 @@ function zd_list_services( $atts ) {
             <?php $icon = get_post_meta( get_the_ID(), '_zd_icon', true ); ?>
             
             <div id="post-<?php the_ID(); ?>" <?php post_class('col'); ?>>
-                <i class="fa <?php echo $icon; ?>"></i>
-                <h6><?php the_title(); ?></h6>
-                <?php the_excerpt(); ?>
-                <a href="<?php the_permalink(); ?>">Learn More</a>
+                <a href="<?php the_permalink(); ?>">
+                  <i class="fa <?php echo $icon; ?>"></i>
+                  <h6><?php the_title(); ?></h6>
+                  <?php the_excerpt(); ?>
+                  <span class="link">Learn More</span>
+                </a>
             </div>
             <?php endwhile; wp_reset_postdata(); ?>
     <?php $myvariable = ob_get_clean();

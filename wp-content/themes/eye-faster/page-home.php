@@ -8,6 +8,8 @@ include('header.php'); ?>
 		while ( have_posts() ) : the_post();
     $disablePageTitle = get_post_meta( get_the_ID(), '_zd_disable_page_title', true );
     $addTopNav = get_post_meta( get_the_ID(), '_zd_add_topnav', true ); 
+    $f_cta_enable = get_post_meta( get_the_ID(), '_zd_add_footer_cta', true );
+    $f_cta_text = get_post_meta( get_the_ID(), '_zd_footer_cta_text', true );
   ?>
     
     <div class="flag home"></div>
@@ -52,10 +54,13 @@ include('header.php'); ?>
           <?php echo do_shortcode('[list_clients]'); ?>
         </section>
         
-        <section class="contact-cta">
-          <h4>Nullam quis risus eget urna mollis ornare vel eu leo risus eget urna!</h4>
-          <a class="btn scrollbtn" href="#connect" data-target="contact"><?php _e('Contact Us', 'zd'); ?></a>
-        </section>
+        <?php if( $f_cta_enable == 'on') { ?>
+          <!-- contact cta section -->
+          <section class="contact-cta">
+            <h4><?php echo $f_cta_text; ?></h4>
+            <a class="btn contactscroll" href="<?php echo get_site_url(); ?>/#connect"><?php _e('Contact Us', 'zd'); ?></a>
+          </section>
+        <?php } ?>
         
         <section class="testimonials">
           <div class="anchor" id="testimonials"></div>

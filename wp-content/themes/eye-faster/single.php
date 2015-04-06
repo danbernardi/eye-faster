@@ -5,7 +5,10 @@
 	<section class="blog">
     <div class="anchor" id="blog"></div>
     <div class="row700">      
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+        $f_cta_enable = get_post_meta( get_the_ID(), '_zd_add_footer_cta', true );
+        $f_cta_text = get_post_meta( get_the_ID(), '_zd_footer_cta_text', true );
+      ?>
 
       <article>
         <h2><?php the_title(); ?></h2>
@@ -34,4 +37,11 @@
     <div class="clear"></div>
   </section>
 
+<?php if( $f_cta_enable == 'on') { ?>
+  <!-- contact cta section -->
+  <section class="contact-cta">
+    <h4><?php echo $f_cta_text; ?></h4>
+    <a class="btn contactscroll" href="<?php echo get_site_url(); ?>/#connect"><?php _e('Contact Us', 'zd'); ?></a>
+  </section>
+<?php } ?>
 <?php include('footer.php'); ?>

@@ -522,13 +522,21 @@ section.services {
 		p {
 			font-size: 14px;
 		}
-		a {
+		.link {
 			font-weight: bold;
+      color: $blue;
+      &:hover {
+        color: lighten($blue, 6);
+      }
 			&:after {
 				@include fontawesome('\f0da');
 				padding-left: 7px;
 			}
 		}
+    a {
+      display: block;
+      color: #555;
+    }
 	}
 	.cta {
 		display: block;
