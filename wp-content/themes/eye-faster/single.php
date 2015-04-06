@@ -44,9 +44,11 @@
         
         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
       <?php endif; ?>
-
-      <div class="divider"></div>
-      <?php comments_template('comments.php'); ?>
+      
+      <?php if( comments_open() ) { ?> 
+        <div class="divider"></div>
+        <?php comments_template('comments.php'); ?>
+      <?php } ?>
       
     </div>
     <div class="clear"></div>
