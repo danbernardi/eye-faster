@@ -422,7 +422,7 @@ function register_jobs() {
 	);
 	
 	// Registering your Custom Post Type
-	register_post_type( 'clients', $args );
+	register_post_type( 'jobs', $args );
 }
 add_action( 'init', 'register_jobs', 0 );
 
