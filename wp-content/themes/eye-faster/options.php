@@ -167,20 +167,25 @@ function optionsframework_options() {
         
     $options[] = array(
         'name' => __('Services Pages Call to action text', 'zd'),
-        'desc' => __('Enter the default text for the contact call to actin on the services pages', 'zd'),
+        'desc' => __('Enter the default text for the contact call to action on the services pages', 'zd'),
         'id' => 'zd_f_cta_services',
         'type' => 'text');
         
     $options[] = array(
         'name' => __('Solutions Pages Call to action text', 'zd'),
-        'desc' => __('Enter the default text for the contact call to actin on the solutions pages', 'zd'),
+        'desc' => __('Enter the default text for the contact call to action on the solutions pages', 'zd'),
         'id' => 'zd_f_cta_solutions',
         'type' => 'text');
         
     $options[] = array(
         'name' => __('Jobs Pages Call to action text', 'zd'),
-        'desc' => __('Enter the default text for the contact call to actin on the jobs pages', 'zd'),
+        'desc' => __('Enter the default text for the contact call to action on the jobs pages', 'zd'),
         'id' => 'zd_f_cta_jobs',
+        'type' => 'text');
+    $options[] = array(
+        'name' => __('Blog Pages Call to action text', 'zd'),
+        'desc' => __('Enter the default text for the contact call to action on the blog pages', 'zd'),
+        'id' => 'zd_f_cta_post',
         'type' => 'text');
 	
 
