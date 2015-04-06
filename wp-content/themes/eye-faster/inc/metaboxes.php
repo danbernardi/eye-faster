@@ -61,9 +61,9 @@ function zd_contact_cta_options( array $meta_boxes ) {
         // 'closed'     => true, // Keep the metabox closed by default
         'fields'        => array(
             array(
-                'name'       => __( 'Page has Contact Link', 'zd' ),
-                'desc'       => __( 'Check this box to add the contact page call to action to the footer', 'zd' ),
-                'id'         => $prefix . 'add_footer_cta',
+                'name'       => __( 'Disable Contact Link', 'zd' ),
+                'desc'       => __( 'Check this box to remove the contact page call to action', 'zd' ),
+                'id'         => $prefix . 'disable_footer_cta',
                 'type'       => 'checkbox',
                 'show_on_cb' => 'cmb2_hide_if_no_cats',
             ),

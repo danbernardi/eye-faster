@@ -183,8 +183,8 @@ function optionsframework_options() {
         'id' => 'zd_f_cta_jobs',
         'type' => 'text');
     $options[] = array(
-        'name' => __('Blog Pages Call to action text', 'zd'),
-        'desc' => __('Enter the default text for the contact call to action on the blog pages', 'zd'),
+        'name' => __('Default Call to action text', 'zd'),
+        'desc' => __('Enter the default text for the contact call to action', 'zd'),
         'id' => 'zd_f_cta_post',
         'type' => 'text');
 	

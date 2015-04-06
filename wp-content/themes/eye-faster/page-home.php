@@ -8,8 +8,9 @@ include('header.php'); ?>
 		while ( have_posts() ) : the_post();
     $disablePageTitle = get_post_meta( get_the_ID(), '_zd_disable_page_title', true );
     $addTopNav = get_post_meta( get_the_ID(), '_zd_add_topnav', true ); 
-    $f_cta_enable = get_post_meta( get_the_ID(), '_zd_add_footer_cta', true );
+    $f_cta_disable = get_post_meta( get_the_ID(), '_zd_disable_footer_cta', true );
     $f_cta_text = get_post_meta( get_the_ID(), '_zd_footer_cta_text', true );
+    $f_cta_text_default = of_get_option( 'zd_f_cta_post');
   ?>
     
     <div class="flag home"></div>
@@ -54,10 +55,15 @@ include('header.php'); ?>
           <?php echo do_shortcode('[list_clients]'); ?>
         </section>
         
-        <?php if( $f_cta_enable == 'on') { ?>
+        <?php if( $f_cta_disable != 'on' ) { ?>
           <!-- contact cta section -->
           <section class="contact-cta">
-            <h4><?php echo $f_cta_text; ?></h4>
+            <?php if( strlen($f_cta_text) != 0 ) { ?>
+              <h4><?php echo $f_cta_text; ?></h4>
+            <?php } else { ?>
+              <h4><?php echo $f_cta_text_default; ?></h4>
+            <?php } ?>
+
             <a class="btn contactscroll" href="<?php echo get_site_url(); ?>/#connect"><?php _e('Contact Us', 'zd'); ?></a>
           </section>
         <?php } ?>
