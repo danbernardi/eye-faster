@@ -179,6 +179,10 @@ header {
 	padding: 0 60px;
 	background: #e8e8e8;
 	text-align: center;
+  
+  ul {
+    margin-bottom: 0;
+  }
 	
 	li {
 		display: inline-block;
@@ -324,6 +328,7 @@ header {
 				margin-bottom: 10px;
         margin-left: 0;
 				border-radius: 4px;
+        list-style: none;
 				&:last-child {
 					margin-bottom: 0;
 				}
@@ -598,10 +603,6 @@ section.services {
 		right: 60px;
 		font-size: 13px;
 		
-		li {
-			margin-right: 9px;
-      margin-left: 0;
-		}
 		i {
 			margin-right: 5px;
 			color: #999;
@@ -641,6 +642,7 @@ section.services {
         background: #DDD;
         padding: 10px 10px 2px;
         border-radius: 4px;
+        list-style: none;
 
         a {
           color: $body;
@@ -761,6 +763,7 @@ footer.main {
 	li {
 		display: inline-block;
 		margin-right: 9px;
+    margin-left: 0;
 	}
 }
 .social {
