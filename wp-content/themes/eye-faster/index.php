@@ -40,7 +40,7 @@
 <?php if( $f_cta_enable == 'on') { ?>
   <!-- contact cta section -->
   <section class="contact-cta">
-    <h4><?php echo $f_cta_text; ?></h4>
+    <h4><?php _e('Get in touch with us today to learn how we can help you.', 'zd'); ?></h4>
     <a class="btn contactscroll" href="<?php echo get_site_url(); ?>/#connect"><?php _e('Contact Us', 'zd'); ?></a>
   </section>
 <?php } ?>

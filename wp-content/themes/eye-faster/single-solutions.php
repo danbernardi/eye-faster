@@ -39,7 +39,7 @@
 
   <!-- contact cta section -->
   <section class="contact-cta">
-    <h4><?php e_('Would you like to add our services to your client’s in-store research methodology?', 'zd'); </h4>
+    <h4><?php e_('Can we help you come up with a solution to your in store research needs?', 'zd'); </h4>
     <a class="btn contactscroll" href="<?php echo get_site_url(); ?>/#connect"><?php _e('Contact Us', 'zd'); ?></a>
   </section>
   
