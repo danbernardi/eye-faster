@@ -69,6 +69,9 @@ $(document).ready(function () {
 	// subnav scroll to fixed
 	(function initScrolltofixed() {
 		$('.subnav').scrollToFixed();
+    $('.socialshare').scrollToFixed({
+      marginTop: 20
+    });
 	}());
 	
 	// subnav waypoints
