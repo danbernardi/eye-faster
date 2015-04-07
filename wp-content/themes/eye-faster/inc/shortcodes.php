@@ -245,7 +245,7 @@ function zd_list_past_projects( $atts ) {
               <?php if(has_post_thumnail) {
                 the_post_thumbnail();
               } ?>
-              <h6><?php the_title(); ?></h6>
+              <span><?php the_title(); ?></span>
             </a>
             </li>
             <?php endwhile; wp_reset_postdata(); ?>
@@ -321,8 +321,7 @@ function zd_recent_blog_posts( $atts ) {
           <li>
             <a href="<?php the_permalink(); ?>">
               <?php if( has_post_thumbnail() ) { the_post_thumbnail( 'tiny' ); } ?>
-              <h6><?php the_title(); ?></h6>
-              <span><?php the_excerpt(); ?></span>
+              <span><?php the_title(); ?></span>
             </a>
           </li>
           
@@ -341,31 +340,6 @@ function zd_recent_blog_posts( $atts ) {
 
 <?php }
 add_shortcode( 'recent_blog_posts', 'zd_recent_blog_posts' );
-
-/*
-<ul class="pprojects">
-			<li>
-				<img src="img/projects/thumb01.jpg">
-				<h6>Tristique Ipsum Cras Tellus</h6>
-				<span>Nullam quis risus eget urna mollis ornare vel eu leo.</span>
-			</li>
-			<li>
-				<img src="img/projects/thumb01.jpg">
-				<h6>Tristique Ipsum Cras Tellus</h6>
-				<span>Nullam quis risus eget urna mollis ornare vel eu leo.</span>
-			</li>
-			<li>
-				<img src="img/projects/thumb01.jpg">
-				<h6>Tristique Ipsum Cras Tellus</h6>
-				<span>Nullam quis risus eget urna mollis ornare vel eu leo.</span>
-			</li>
-			<li>
-				<img src="img/projects/thumb01.jpg">
-				<h6>Tristique Ipsum Cras Tellus</h6>
-				<span>Nullam quis risus eget urna mollis ornare vel eu leo.</span>
-			</li>
-		</ul>
-*/
 
 
 /* ------------------------------------------------
