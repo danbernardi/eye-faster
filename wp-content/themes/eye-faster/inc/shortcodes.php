@@ -132,7 +132,9 @@ function zd_list_videos( $atts ) {
             
             <div id="post-<?php the_ID(); ?>" <?php post_class('col lb'); ?>>
                 <a href="#" data-target="vgallery">
-                  <div class="thumb"><img src="/img/videogallery/standin01.jpg"></div>
+                  <?php if( ( $video_thumbnail = get_video_thumbnail() ) != null ) { 
+                    echo "<div class='thumb'><img src='" . $video_thumbnail . "' alt='" . get_the_title() . "' /></div>"; 
+                  } ?>
                   <h6><?php the_title(); ?></h6>
                   <p><?php the_excerpt(); ?></p>
                 </a>
