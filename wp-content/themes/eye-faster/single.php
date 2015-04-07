@@ -8,9 +8,10 @@
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
         $f_cta_enable = get_post_meta( get_the_ID(), '_zd_add_footer_cta', true );
         $f_cta_text = get_post_meta( get_the_ID(), '_zd_footer_cta_text', true );
-        $current_post_type = get_post_type();
+        $icon = get_post_meta( get_the_ID(), '_zd_icon', true );
+        $post_type = get_post_type();
         
-        switch ($current_post_type) {
+        switch ($post_type) {
           case 'services':
             $f_cta_text = of_get_option( 'zd_f_cta_services');
             break;
@@ -24,20 +25,32 @@
             $f_cta_text = of_get_option( 'zd_f_cta_post');
         }
       ?>
-
+    
       <article>
-        <h2><?php the_title(); ?></h2>
-        <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span> <?php _e('on ', 'zd') . '<span class="date">' .  the_date() . '</span>'; ?>
-        <div class="socialshare">
-          <ul>
-            <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"></i></a></li>
-            <li><a target="_blank" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><i class="fa fa-google-plus"></i></a></li>
-            <li><a target="_blank" href="https://twitter.com/home?status=<?php the_permalink(); ?>"><i class="fa fa-twitter"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=&summary=&source="><i class="fa fa-linkedin"></i></a></li>
-          </ul>
+        <?php if( $post_type == 'services' || $post_type == 'solutions' || $post_type == 'jobs' ) { 
+          if( strlen($icon) != 0 ) { ?>
+            <div class="post-icon">
+              <i class="fa <?php echo $icon; ?>"></i>
+            </div>
+          <?php } ?>
+        <?php } ?>
+        <h2 class="post-title"><?php the_title(); ?></h2>
+        <div class="meta">
+          <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span> <?php _e('on ', 'zd') . '<span class="date">' .  the_date() . '</span>'; ?>
         </div>
         
-        <p><?php the_content(); ?></p>
+        <div class="post-content">
+          <div class="socialshare">
+            <strong><?php _e('Share', 'zd'); ?></strong>
+            <ul>
+              <li><a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="google-plus" target="_blank" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="twitter" target="_blank" href="https://twitter.com/home?status=<?php the_permalink(); ?>"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=&summary=&source="><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <?php the_content(); ?>
+        </div>
       </article>
       
       <?php endwhile; else : ?>
