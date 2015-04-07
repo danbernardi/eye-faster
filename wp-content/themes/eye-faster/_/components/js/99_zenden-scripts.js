@@ -103,12 +103,13 @@ $(document).ready(function () {
       $('#team-member .content-holder').load(url + ' .leader', function () {
         $('#team-member').addClass('open');
         $('#loader').fadeOut(100);
+        $('body').addClass('noscroll');
         $('#overlay, .close').on('click', function () {
           $('#team-member').removeClass('open');
           $('#overlay').fadeOut(500);
+          $('body').removeClass('noscroll');
         });
       });
-      
     });
   }());
   

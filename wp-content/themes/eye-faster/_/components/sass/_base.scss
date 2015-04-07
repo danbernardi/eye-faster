@@ -13,6 +13,10 @@ body {
 	font-size: 16px;
 	color: $body;
 }
+.noscroll {
+  height: 100%;
+  overflow: hidden;
+}
 h1, h2, h3, h4, h5, h6 {
 	font-family: $serif;
 	margin-bottom: .2rem;
@@ -388,24 +392,32 @@ header {
 	z-index: 1000;
 }
 .lightbox {
-	@include transition(transform, 0.3s);
-	transition-timing-function: cubic-bezier(.79,-0.08,.26,1.11);
+  transition: transform 0.3s cubic-bezier(.79,-0.08,.26,1.11),
+              visibility 0s linear 0.3s;
 	position: fixed;
 	width: 644px;
 	height: 400px;
 	right: 0;
 	z-index: 1001;
-	bottom: 0;
-	margin-top: -200px;
+	bottom: 15%;
+  max-height: 90%;
 	left: 50%;
 	margin-left: -322px;
 	background: white;
 	padding: 10px;
-	transform: translateY(150%);
+	transform: translateY(230%);
 	border-radius: 4px;
+  visibility: hidden;
+  
+  .boxscroll {
+    overflow-y: scroll;
+  }
 	
 	&.open {
-		transform: translateY(-50%);
+    transition: transform 0.3s cubic-bezier(.79,-0.08,.26,1.11),
+              visibility 0s linear 0s;
+		transform: translateY(0);
+    visibility: visible;
 	}
 	
 	form {
@@ -448,33 +460,6 @@ header {
 		color: white;
     font-weight: 100;
 	}
-  
-  &#team-member {
-    padding: 40px 40px 20px;
-    height: auto;
-    
-    h4 {
-      margin-bottom: 7px;
-      color: $blue;
-    }
-    h4, h6 {
-      text-align: center;
-    }
-    .bio {
-      margin-top: 15px;
-      padding-top: 13px;
-      position: relative;
-      &:before {
-        content: '';
-        background: #ddd;
-        height: 1px;
-        width: calc(100% + 80px);
-        margin-left: -40px;
-        position: absolute;
-        top: 0;
-      }
-    }
-  }
 }
 #vgallery {
 	width: 664px;
@@ -498,6 +483,36 @@ header {
 			padding: 0 7px;
 		}
 	}
+}
+#team-member {
+  padding: 40px 0 20px;
+  height: auto;
+  max-height: 564px;
+  bottom: 50%;
+  margin-bottom: -282px;
+    
+  h4 {
+    margin-bottom: 7px;
+    color: $blue;
+    text-align: center;
+    position: relative;
+    &:after {
+      content: '';
+      background: #DDD;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+    }
+  }
+  .bio {
+    margin-top: 15px;
+    padding: 13px 40px 0;
+    position: relative;
+    max-height: 484px;
+    overflow: scroll;
+  }
 }
 #loader {
   z-index: 99999;

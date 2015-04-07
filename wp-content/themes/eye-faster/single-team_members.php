@@ -32,7 +32,9 @@
           <h6><?php echo $job_title; ?></h6>
         <?php } ?>
         <div class="bio">
-          <?php the_content(); ?>
+          <div class="boxscroll">
+            <?php the_content(); ?>
+          </div>
         </div>
       </article>
       
