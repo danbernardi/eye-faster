@@ -29,7 +29,7 @@
 
       <article>
         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-        <p><?php the_excerpt(); ?></p>
+        <?php the_excerpt(); ?>
         <a class="btn" href="<?php the_permalink(); ?>"><i class="fa fa-play"></i><?php _e('Read More', 'zd'); ?></a>
       </article>
       
