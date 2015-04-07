@@ -965,7 +965,7 @@ section.leadership {
 		
 		h3 {
 			text-align: left;
-			margin-bottom: 20px;
+			margin-bottom: 12px;
       line-height: 1.3;
 		}
 		img {
@@ -1301,4 +1301,16 @@ section.leadership {
 			list-style: none;
 		}
 	}
+}
+
+.backto {
+  display: block;
+  text-align: center;
+  border-top: 1px solid #DDD;
+  padding-top: 30px;
+  margin-top: 30px;
+  
+  .btn {
+    @include btn($green);
+  }
 }

@@ -50,6 +50,33 @@
             </ul>
           </div>
           <?php the_content(); ?>
+          <?php if( $post_type == 'services' || $post_type == 'solutions' ) { ?>
+            <div class="backto">
+              <a href="<?php echo get_permalink(12); ?>" class="btn">
+                <i class="fa fa-caret-left"></i>
+                <?php _e('Back to Services Page', 'zd'); ?>
+              </a>
+            </div>
+          <?php } ?>
+          
+          <?php if( $post_type == 'jobs' ) { ?>
+            <div class="backto">
+              <a href="<?php echo get_permalink(20); ?>" class="btn">
+                <i class="fa fa-caret-left"></i>
+                <?php _e('Back to Job Listings', 'zd'); ?>
+              </a>
+            </div>
+          <?php } ?>
+          
+          <?php if( $post_type == 'post' ) { ?>
+            <div class="backto">
+              <a href="<?php echo get_permalink(16); ?>" class="btn">
+                <i class="fa fa-caret-left"></i>
+                <?php _e('Back to Blog', 'zd'); ?>
+              </a>
+            </div>
+          <?php } ?>
+          
         </div>
       </article>
       
