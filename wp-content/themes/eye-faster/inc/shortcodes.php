@@ -207,7 +207,7 @@ function zd_list_projects( $atts ) {
             <div class="project">
               <h3 class="post-title"><?php the_title(); ?></h3>
               <span class="meta">
-                <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span> <?php _e('on ', 'zd') . '<span class="date">' .  the_date() . '</span>'; ?>
+                <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span><?php _e(' on ', 'zd') ?> <span class="date"><?php echo get_the_date(); ?></span>
               </span>
               <span class="post-content"><?php the_excerpt(); ?></span>
               <a class="btn" href="<?php the_permalink(); ?>"><?php _e('Learn More', 'zd'); ?></a>
