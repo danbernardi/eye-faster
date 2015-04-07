@@ -206,7 +206,7 @@ function zd_videos_options( array $meta_boxes ) {
         'fields'        => array(
             array(
                 'name' => 'Youtube URL',
-                'desc' => 'Enter the embed url from the youtube video.',
+                'desc' => 'Enter the embed url from the youtube video. Must match this format: https://youtu.be/q_DuNL886x8',
                 'id' => $prefix . 'embed_url',
                 'type' => 'text_url',
 			     ),

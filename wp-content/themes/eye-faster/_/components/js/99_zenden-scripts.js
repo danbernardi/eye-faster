@@ -48,7 +48,7 @@ $(document).ready(function () {
 	}());
 	
 	// lightbox
-	(function initLightbox() {
+	/*(function initLightbox() {
 		// establish lightbox btn
 		var lb = $('.lb a, .lb-btn');
 		// on click, open lightbox with matching data-target and id
@@ -64,7 +64,7 @@ $(document).ready(function () {
 				$('#overlay').fadeOut(500);
 			});
 		});
-	}());
+	}());*/
 	
 	// subnav scroll to fixed
 	(function initScrolltofixed() {
@@ -106,6 +106,26 @@ $(document).ready(function () {
         $('body').addClass('noscroll');
         $('#overlay, .close').on('click', function () {
           $('#team-member').removeClass('open');
+          $('#overlay').fadeOut(500);
+          $('body').removeClass('noscroll');
+        });
+      });
+    });
+    
+    $('.videogallery .lb').on('click', function (e) {
+      e.preventDefault();
+      
+      $('#loader').fadeIn(100);
+      $('#overlay').fadeIn(100);
+      var url = $(this).find('a').attr('href');
+      
+      $('#vgallery .content-holder').load(url + ' .video', function () {
+        $('#vgallery').addClass('open');
+        $('#loader').fadeOut(100);
+        $('body').addClass('noscroll');
+        $('#overlay, .close').on('click', function () {
+          $('#youtube_player')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+          $('#vgallery').removeClass('open');
           $('#overlay').fadeOut(500);
           $('body').removeClass('noscroll');
         });

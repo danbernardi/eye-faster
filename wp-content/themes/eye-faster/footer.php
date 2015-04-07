@@ -32,14 +32,7 @@
     </div>
 </footer>
 </section>
-<div id="overlay"></div>
-<div id="loader">
-  <i class="fa fa-spinner fa-spin"></i>
-</div>
-<div class="lightbox" id="team-member">
-  <div class="close"></div>
-  <div class="content-holder"></div>
-</div>
+<?php include('lightbox.php'); ?>
 <?php wp_footer(); // WordPress hook for loading JavaScript, toolbar, and other things in the footer. ?>
 </body>
 </html>
