@@ -499,6 +499,21 @@ header {
 		}
 	}
 }
+#loader {
+  z-index: 99999;
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  
+  i {
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+  }
+}
 
 .contact-cta {
 	@extend .fullwidth;

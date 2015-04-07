@@ -96,11 +96,13 @@ $(document).ready(function () {
     $('.leader').on('click', function (e) {
       e.preventDefault();
       
+      $('#loader').fadeIn(100);
+      $('#overlay').fadeIn(100);
       var url = $(this).find('a').attr('href');
       
       $('#team-member .content-holder').load(url + ' .leader', function () {
         $('#team-member').addClass('open');
-			  $('#overlay').fadeIn(100);
+        $('#loader').fadeOut(100);
         $('#overlay, .close').on('click', function () {
           $('#team-member').removeClass('open');
           $('#overlay').fadeOut(500);
