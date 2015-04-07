@@ -32,6 +32,7 @@ $(document).ready(function () {
 			draggable: false
 		});
 	}());
+  
 	// init testimonial slider
 	(function initTestimonialSlider() {
 		$('.testimonials .slick').slick({
@@ -46,25 +47,21 @@ $(document).ready(function () {
 			dots: true
 		});
 	}());
-	
-	// lightbox
-	/*(function initLightbox() {
-		// establish lightbox btn
-		var lb = $('.lb a, .lb-btn');
-		// on click, open lightbox with matching data-target and id
-		lb.on('click', function (e) {
-			e.preventDefault();
-			// prevent page from scrolling
-			var target = $(this).attr('data-target');
-			$('#' + target).addClass('open');
-			$('#overlay').fadeIn(100);
-			// click overlay or close button to close lightbox
-			$('#overlay, .close').on('click', function () {
-				$('#' + target).removeClass('open');
-				$('#overlay').fadeOut(500);
-			});
+  
+  // init testimonial slider
+	(function initProjectSlider() {
+		$('.featured .slick').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: false,
+			arrows: true,
+			pauseOnHover: true,
+			draggable: false,
+			dots: false
 		});
-	}());*/
+	}());
+  
 	
 	// subnav scroll to fixed
 	(function initScrolltofixed() {

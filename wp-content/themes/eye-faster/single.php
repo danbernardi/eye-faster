@@ -68,6 +68,15 @@
             </div>
           <?php } ?>
           
+          <?php if( $post_type == 'projects' ) { ?>
+            <div class="backto">
+              <a href="<?php echo get_home_url(); ?>#showcase" class="btn">
+                <i class="fa fa-caret-left"></i>
+                <?php _e('Back to Projects', 'zd'); ?>
+              </a>
+            </div>
+          <?php } ?>
+          
           <?php if( $post_type == 'post' ) { ?>
             <div class="backto">
               <a href="<?php echo get_permalink(16); ?>" class="btn">

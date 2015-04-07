@@ -51,7 +51,6 @@ include('header.php'); ?>
         <section class="showcase">
           <div class="anchor" id="showcase"></div>
           <?php echo do_shortcode('[list_projects]'); ?>
-          <?php echo do_shortcode('[list_past_projects]'); ?>
           <?php echo do_shortcode('[list_clients]'); ?>
         </section>
         

@@ -195,24 +195,25 @@ function zd_list_projects( $atts ) {
       ob_start();
       $query = new WP_Query( array(
           'post_type' => 'projects',
-          'posts_per_page' => 1,
+          'posts_per_page' => 5,
           'order' => 'ASC',
       ) );
       if ( $query->have_posts() ) { ?>
         
-        <div class="featured">
+        <div class="featured row700">
           <h5 class="label center"><i class="fa fa-trophy"></i><?php _e('Featured Project', 'zd'); ?></h5>
-          <?php 
-            while ( $query->have_posts() ) : $query->the_post();
-          ?>
-          <div class="project">
-            <h3 class="post-title"><?php the_title(); ?></h3>
-            <div class="meta">
-              <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span> <?php _e('on ', 'zd') . '<span class="date">' .  the_date() . '</span>'; ?>
+          <div class="slick">
+            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="project">
+              <h3 class="post-title"><?php the_title(); ?></h3>
+              <span class="meta">
+                <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span> <?php _e('on ', 'zd') . '<span class="date">' .  the_date() . '</span>'; ?>
+              </span>
+              <span class="post-content"><?php the_excerpt(); ?></span>
+              <a class="btn" href="<?php the_permalink(); ?>"><?php _e('Learn More', 'zd'); ?></a>
             </div>
-            <div class="post-content"><?php the_content(); ?></div>
+            <?php endwhile; wp_reset_postdata(); ?>
           </div>
-      <?php endwhile; wp_reset_postdata(); ?>
         </div>
         <?php 
           $myvariable = ob_get_clean();
