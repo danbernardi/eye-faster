@@ -1,5 +1,5 @@
 /*jslint browser: true*/
-/*global $, jQuery, alert, console, Modernizr, Waypoint*/
+/*global $, jQuery, alert, console, Modernizr, Waypoint, ajaxpagination*/
 
 $(document).ready(function () {
 	"use strict";
@@ -91,5 +91,25 @@ $(document).ready(function () {
 			}
 		});
 	}());
+  
+  (function initAjaxLoad() {
+    $('.leader').on('click', function (e) {
+      e.preventDefault();
+      
+      var url = $(this).find('a').attr('href');
+      
+      $('.lightbox').load(url + ' .leader', function () {
+        $('#team-member').addClass('open');
+			  $('#overlay').fadeIn(100);
+        $('#overlay, .close').on('click', function () {
+          $('#team-member').removeClass('open');
+          $('#overlay').fadeOut(500);
+        });
+      });
+      
+    });
+  }());
+  
+  
 	
 });

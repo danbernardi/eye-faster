@@ -32,6 +32,11 @@
     </div>
 </footer>
 </section>
+<div id="overlay"></div>
+<div class="lightbox" id="team-member">
+  <div class="close"></div>
+  
+</div>
 <?php wp_footer(); // WordPress hook for loading JavaScript, toolbar, and other things in the footer. ?>
 </body>
 </html>

@@ -47,14 +47,19 @@ function zd_theme_setup() {
 	// hides the admin bar
 	show_admin_bar( false );
 	
-    // disable security warning for uploading svgs
-    function custom_upload_mimes ( $existing_mimes=array() ) {
-        // add the file extension to the array
-        $existing_mimes['svg'] = 'mime/type';
-        // call the modified list of extensions
-        return $existing_mimes;
-    }
-    add_filter('upload_mimes', 'custom_upload_mimes');
+	// initialize ajax pagination
+	wp_localize_script( 'ajax-pagination', 'ajaxpagination', array(
+	  'ajaxurl' => admin_url( 'admin-ajax.php' )
+  ));
+	
+  // disable security warning for uploading svgs
+  function custom_upload_mimes ( $existing_mimes=array() ) {
+    // add the file extension to the array
+    $existing_mimes['svg'] = 'mime/type';
+    // call the modified list of extensions
+    return $existing_mimes;
+  }
+  add_filter('upload_mimes', 'custom_upload_mimes');
 	
 	// define custom thumbnail sizes
 	if ( function_exists( 'add_image_size' ) ) {
