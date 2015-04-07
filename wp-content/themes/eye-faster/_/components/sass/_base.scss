@@ -1244,8 +1244,8 @@ section.leadership {
 	}
 }
 .comment.depth-1 {
-	border-bottom: 1px solid #f1f1f1;
-	padding: 20px 0;	
+	border-bottom: 1px solid #ddd;
+	padding: 20px 0 0;	
 	&:nth-child(2n) {
 		.comment-body {
 			border-color: #eee;
@@ -1253,9 +1253,6 @@ section.leadership {
 	}
 	> .comment-body {
 		border-top: none;
-	}
-	&:first-child {
-		border-top: 1px solid #eee;
 	}
 }
 .commentlist {
@@ -1268,6 +1265,7 @@ section.leadership {
 		margin-left: 0;
 		padding-left: 40px;
 		position: relative;
+    margin-bottom: 0;
 		
 		.comment-body:before {
 			@include fontawesome('\f112');
