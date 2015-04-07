@@ -446,11 +446,34 @@ header {
 		top: 0;
 		font-size: 26px;
 		color: white;
+    font-weight: 100;
 	}
   
   &#team-member {
     padding: 40px 40px 20px;
     height: auto;
+    
+    h4 {
+      margin-bottom: 7px;
+      color: $blue;
+    }
+    h4, h6 {
+      text-align: center;
+    }
+    .bio {
+      margin-top: 15px;
+      padding-top: 13px;
+      position: relative;
+      &:before {
+        content: '';
+        background: #ddd;
+        height: 1px;
+        width: calc(100% + 80px);
+        margin-left: -40px;
+        position: absolute;
+        top: 0;
+      }
+    }
   }
 }
 #vgallery {

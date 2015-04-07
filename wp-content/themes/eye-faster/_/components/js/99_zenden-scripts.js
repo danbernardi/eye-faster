@@ -98,7 +98,7 @@ $(document).ready(function () {
       
       var url = $(this).find('a').attr('href');
       
-      $('.lightbox').load(url + ' .leader', function () {
+      $('#team-member .content-holder').load(url + ' .leader', function () {
         $('#team-member').addClass('open');
 			  $('#overlay').fadeIn(100);
         $('#overlay, .close').on('click', function () {

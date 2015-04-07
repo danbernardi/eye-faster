@@ -31,7 +31,9 @@
         <?php if( strlen($job_title) != 0) { ?>
           <h6><?php echo $job_title; ?></h6>
         <?php } ?>
-        <?php the_content(); ?>
+        <div class="bio">
+          <?php the_content(); ?>
+        </div>
       </article>
       
       <?php endwhile; else : ?>
