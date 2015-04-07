@@ -201,13 +201,16 @@ function zd_list_projects( $atts ) {
       if ( $query->have_posts() ) { ?>
         
         <div class="featured">
-          <h5 class="label"><i class="fa fa-trophy"></i><?php _e('Featured Project', 'zd'); ?></h5>
+          <h5 class="label center"><i class="fa fa-trophy"></i><?php _e('Featured Project', 'zd'); ?></h5>
           <?php 
             while ( $query->have_posts() ) : $query->the_post();
           ?>
           <div class="project">
-            <h3><?php the_title(); ?></h3>
-            <p><?php the_content(); ?></p>
+            <h3 class="post-title"><?php the_title(); ?></h3>
+            <div class="meta">
+              <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span> <?php _e('on ', 'zd') . '<span class="date">' .  the_date() . '</span>'; ?>
+            </div>
+            <div class="post-content"><?php the_content(); ?></div>
           </div>
       <?php endwhile; wp_reset_postdata(); ?>
         </div>

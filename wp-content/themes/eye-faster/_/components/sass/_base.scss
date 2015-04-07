@@ -300,6 +300,9 @@ header {
 		margin-right: 7px;
 	}
 }
+.center {
+  text-align: center;
+}
 .showcase {
 	padding: 80px 0 0;
 	
@@ -307,8 +310,7 @@ header {
 		@include span(8 of 12 last);
 		
 		h3 {
-			text-align: left;
-			margin-bottom: 20px;
+			margin-bottom: 4px;
 		}
 		img {
 			width: 72px;
