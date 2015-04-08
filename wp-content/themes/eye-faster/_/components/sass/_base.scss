@@ -1352,7 +1352,6 @@ section.leadership {
   text-align: center;
   border-top: 1px solid #DDD;
   padding-top: 30px;
-  margin-top: 30px;
   
   .btn {
     @include btn($green);
@@ -1361,7 +1360,9 @@ section.leadership {
 
 .taglist {
   position: relative;
-  padding-left: 44px;
+  border-top: 1px solid #DDD;
+  padding: 10px 0 10px 44px;
+  margin: 40px 0 0;
   
   strong {
     position: absolute;
