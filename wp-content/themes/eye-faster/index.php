@@ -28,8 +28,10 @@
       ?>
 
       <article>
+        <div class="index-meta"><span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span> <?php _e('on ', 'zd'); ?><span class="date"><?php echo get_the_date(); ?></span></div>
         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
         <?php the_excerpt(); ?>
+        <?php echo get_the_tag_list('<p class="index-taglist"><strong>Tags: </strong>',', ','</p>'); ?>
         <a class="btn" href="<?php the_permalink(); ?>"><i class="fa fa-play"></i><?php _e('Read More', 'zd'); ?></a>
       </article>
       

@@ -991,6 +991,8 @@ section.leadership {
 	}
 }
 
+
+
 .blogroll {
 	@extend .clearfix;
 	padding: 80px 0;
@@ -1101,6 +1103,20 @@ section.leadership {
     width: 150px;
     left: 50%;
     margin-left: -75px;
+  }
+}
+.index-meta,
+.index-taglist {
+  font-size: 13px;
+}
+.index-taglist {
+  margin-top: -10px;
+  
+  a {
+    color: $blue !important;
+    &:hover {
+      color: #555 !important;
+    }
   }
 }
 
