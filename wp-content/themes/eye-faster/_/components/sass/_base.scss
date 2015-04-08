@@ -1360,9 +1360,16 @@ section.leadership {
 }
 
 .taglist {
+  position: relative;
+  padding-left: 44px;
+  
+  strong {
+    position: absolute;
+    left: 0;
+  }
   a {
     @include btn(darken($blue, 10));
-    margin-left: 3px;
+    margin-right: 3px;
     margin-bottom: 3px;
     padding: 3px 20px;
     &:hover {
