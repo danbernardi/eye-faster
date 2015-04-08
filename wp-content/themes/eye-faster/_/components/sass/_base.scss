@@ -1121,12 +1121,12 @@ section.leadership {
     line-height: 1;
     margin-bottom: 5px;
     &:nth-of-type(2n) a {
-      background: lighten($blue, 5);
+      background: lighten($green, 5);
     }
     
     a {
       display: block;
-      background: darken($blue, 5);
+      background: $green;
       color: #FFF;
       border-radius: 3px;
       padding: 6px 11px;
