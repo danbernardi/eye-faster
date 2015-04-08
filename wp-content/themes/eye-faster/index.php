@@ -51,7 +51,6 @@
     </div>
 
     <aside class="sidebar">
-      <h5 class="label"><i class="fa fa-toggle-left"></i><?php _e('Recent Posts', 'zd'); ?></h5>
       <?php dynamic_sidebar('blog_sidebar'); ?>
     </aside>
     <div class="clear"></div>
