@@ -1349,12 +1349,17 @@ section.leadership {
 
 .backto {
   display: block;
-  text-align: center;
   border-top: 1px solid #DDD;
   padding-top: 30px;
   
-  .btn {
-    @include btn($green);
+  a {
+    color: #555;
+    &:hover {
+      color: $blue;
+    }
+    i {
+      padding-right: 6px;
+    }
   }
 }
 

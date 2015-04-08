@@ -54,7 +54,7 @@
           
           <?php if( $post_type == 'services' || $post_type == 'solutions' ) { ?>
             <div class="backto">
-              <a href="<?php echo get_permalink(12); ?>" class="btn">
+              <a href="<?php echo get_permalink(12); ?>">
                 <i class="fa fa-caret-left"></i>
                 <?php _e('Back to Services Page', 'zd'); ?>
               </a>
@@ -63,7 +63,7 @@
           
           <?php if( $post_type == 'jobs' ) { ?>
             <div class="backto">
-              <a href="<?php echo get_permalink(20); ?>" class="btn">
+              <a href="<?php echo get_permalink(20); ?>">
                 <i class="fa fa-caret-left"></i>
                 <?php _e('Back to Job Listings', 'zd'); ?>
               </a>
@@ -72,7 +72,7 @@
           
           <?php if( $post_type == 'projects' ) { ?>
             <div class="backto">
-              <a href="<?php echo get_home_url(); ?>#showcase" class="btn">
+              <a href="<?php echo get_home_url(); ?>#showcase">
                 <i class="fa fa-caret-left"></i>
                 <?php _e('Back to Projects', 'zd'); ?>
               </a>
@@ -81,7 +81,7 @@
           
           <?php if( $post_type == 'post' ) { ?>
             <div class="backto">
-              <a href="<?php echo get_permalink(16); ?>" class="btn">
+              <a href="<?php echo get_permalink(16); ?>">
                 <i class="fa fa-caret-left"></i>
                 <?php _e('Back to Blog', 'zd'); ?>
               </a>
