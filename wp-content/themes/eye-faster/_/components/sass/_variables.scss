@@ -9,6 +9,15 @@ $susy: (
 	global-box-sizing: border-box,
 );
 
+// breakpoint configuration
+$breakpoint-default-media: only screen;
+$breakpoint-default-feature: max-width;
+
+// define breakpoints
+$mw-1200: 1200px;
+$mw-1060: 1060px;
+$mw-960: 960px;
+$mw-768: 768px;
 
 // modular scale
 $ms-base: 1rem 1.9rem;

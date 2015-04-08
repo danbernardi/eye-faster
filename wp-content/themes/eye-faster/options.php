@@ -100,22 +100,17 @@ function optionsframework_options() {
 	$imagepath =  get_template_directory_uri() . '/images/';
 
 	$options = array();
-
-    // Header Settings
-    $options[] = array(
-        'name' => __('Header Settings', 'zd'),
-        'type' => 'heading');
-
-    $options[] = array(
-        'name' => __('Logo', 'zd'),
-        'desc' => __('Upload your logo', 'zd'),
-        'id' => 'zd_logo',
-        'type' => 'upload');
         
     // General Settings
     $options[] = array(
         'name' => __('General Settings', 'zd'),
         'type' => 'heading');
+        
+    $options[] = array(
+        'name' => __('Logo', 'zd'),
+        'desc' => __('Upload your logo', 'zd'),
+        'id' => 'zd_logo',
+        'type' => 'upload');
 		
     $options[] = array(
         'name' => __('Contact Email', 'zd'),
@@ -142,11 +137,6 @@ function optionsframework_options() {
         'desc' => __('Enter the contact form shortcode for the form that appears on the homepage', 'zd'),
         'id' => 'zd_contact_form',
         'type' => 'text');
-        
-    // Footer Settings
-    $options[] = array(
-        'name' => __('Footer Settings', 'zd'),
-        'type' => 'heading');
         
     $options[] = array(
         'name' => __('Linkedin Url', 'zd'),
@@ -187,6 +177,11 @@ function optionsframework_options() {
         'desc' => __('Enter the default text for the contact call to action', 'zd'),
         'id' => 'zd_f_cta_post',
         'type' => 'text');
+        
+    // Home Page Hero Section Secttions
+    $options[] = array(
+        'name' => __('Home Page Hero Section', 'zd'),
+        'type' => 'heading');
 	
 
 	return $options;

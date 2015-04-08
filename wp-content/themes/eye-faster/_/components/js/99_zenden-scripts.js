@@ -133,6 +133,24 @@ $(document).ready(function () {
     });
   }());
   
+  // init mobile menu
+  (function mobmenuInit() {
+    $('#mobmenu').css('visibility', 'visible');
+    $("#mobmenu").mmenu({
+      // options
+    }, {
+      // configuration
+      offCanvas: {
+        pageNodetype: "section"
+      }
+    });
+    
+    // When the browser / device is resized, the menu will close
+    var API = $("#mobmenu").data("mmenu");
+		$(window).resize(function () {
+		  API.close();
+		});
+  }());
   
 	
 });
