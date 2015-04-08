@@ -28,7 +28,11 @@
       ?>
 
       <article>
-        <div class="index-meta"><span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span> <?php _e('on ', 'zd'); ?><span class="date"><?php echo get_the_date(); ?></span></div>
+        <div class="index-meta">
+          <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span>
+          <?php _e('on ', 'zd'); ?>
+          <span class="date"><?php echo get_the_date(); ?></span>
+        </div>
         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
         <?php the_excerpt(); ?>
         <?php echo get_the_tag_list('<p class="index-taglist"><strong>Tags: </strong>',', ','</p>'); ?>
@@ -48,8 +52,7 @@
 
     <aside class="sidebar">
       <h5 class="label"><i class="fa fa-toggle-left"></i><?php _e('Recent Posts', 'zd'); ?></h5>
-      <?php echo do_shortcode('[recent_blog_posts]'); ?>
-      
+      <?php dynamic_sidebar('blog_sidebar'); ?>
     </aside>
     <div class="clear"></div>
   </section>

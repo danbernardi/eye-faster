@@ -1021,7 +1021,7 @@ section.leadership {
 		margin-bottom: 30px;
 		border-bottom: 1px solid #ddd;
 		padding-bottom: 30px;
-		&:last-child {
+		&:last-of-type {
 			border: none;
 		}
 		a:not(.btn) {
@@ -1073,6 +1073,17 @@ section.leadership {
 			}
 		}
 	}
+}
+
+.sidebar {
+  .widget {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 10px;
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
 }
 
 .post-icon {
