@@ -1358,3 +1358,24 @@ section.leadership {
     @include btn($green);
   }
 }
+
+.taglist {
+  a {
+    @include btn(darken($blue, 10));
+    margin-left: 3px;
+    margin-bottom: 3px;
+    padding: 3px 20px;
+    &:hover {
+      background: #555 !important;
+    }
+    &:nth-of-type(2n) {
+      background: $blue;
+    }
+    &:nth-of-type(3n) {
+      background: lighten($blue, 10);
+    }
+    &:nth-of-type(4n) {
+      background: lighten($blue, 20);
+    }
+  }
+}

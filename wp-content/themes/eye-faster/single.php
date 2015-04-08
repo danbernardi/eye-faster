@@ -50,6 +50,8 @@
             </ul>
           </div>
           <?php the_content(); ?>
+          <?php echo get_the_tag_list('<p class="taglist"><strong>Tags:</strong> ','','</p>'); ?>
+          
           <?php if( $post_type == 'services' || $post_type == 'solutions' ) { ?>
             <div class="backto">
               <a href="<?php echo get_permalink(12); ?>" class="btn">
