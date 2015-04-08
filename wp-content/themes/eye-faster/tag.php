@@ -7,7 +7,7 @@
     <div class="post">
       
       <?php if ( have_posts() ) : ?>
-        <h5 class="label"><i class="fa fa-tags"></i><?php single_tag_title('Currently Browsing: '); ?></h5>
+        <h5 class="label"><i class="fa fa-tags"></i><?php single_tag_title('Current Tag: '); ?></h5>
         <?php while ( have_posts() ) : the_post();
           $f_cta_enable = get_post_meta( get_the_ID(), '_zd_add_footer_cta', true );
           $f_cta_text = get_post_meta( get_the_ID(), '_zd_footer_cta_text', true );
@@ -29,8 +29,14 @@
         ?>
 
       <article>
-        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <div class="index-meta">
+          <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span>
+          <?php _e('on ', 'zd'); ?>
+          <span class="date"><?php echo get_the_date(); ?></span>
+        </div>
+        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
         <?php the_excerpt(); ?>
+        <?php echo get_the_tag_list('<p class="index-taglist"><strong>Tags: </strong>',', ','</p>'); ?>
         <a class="btn" href="<?php the_permalink(); ?>"><i class="fa fa-play"></i><?php _e('Read More', 'zd'); ?></a>
       </article>
       
@@ -46,9 +52,7 @@
     </div>
 
     <aside class="sidebar">
-      <h5 class="label"><i class="fa fa-toggle-left"></i><?php _e('Recent Posts', 'zd'); ?></h5>
-      <?php echo do_shortcode('[recent_blog_posts]'); ?>
-      
+      <?php dynamic_sidebar('blog_sidebar'); ?>
     </aside>
     <div class="clear"></div>
   </section>
