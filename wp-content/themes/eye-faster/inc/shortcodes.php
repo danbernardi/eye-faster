@@ -136,7 +136,7 @@ function zd_list_videos( $atts ) {
                     echo "<div class='thumb'><img src='" . $video_thumbnail . "' alt='" . get_the_title() . "' /></div>"; 
                   } ?>
                   <h6><?php the_title(); ?></h6>
-                  <p><?php the_excerpt(); ?></p>
+                  <p><?php echo excerpt(22); ?></p>
                 </a>
             </div>
             <?php endwhile; wp_reset_postdata(); ?>
