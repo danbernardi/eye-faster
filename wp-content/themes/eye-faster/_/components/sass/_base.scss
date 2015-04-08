@@ -734,7 +734,7 @@ section.services {
 		float: left;
 		position: relative;
 	}
-	.events {
+	.recent {
 		width: 40%;
 		padding: 80px 60px 0;
 		float: left;
@@ -792,8 +792,26 @@ section.services {
           }
         }
       }
+      &.events li {
+        padding: 10px 15px;
+        
+        .event-title {
+          display: block;
+          line-height: 1.3;
+          font-size: 14px;
+        }
+        .event-time {
+          font-size: 12px;
+          display: block;
+        }
+      }
     }
 	}
+}
+
+.event-title {
+  font-weight: bold;
+  display: block;
 }
 
 form {
@@ -1082,6 +1100,10 @@ section.leadership {
     padding-bottom: 10px;
     &:last-of-type {
       border-bottom: none;
+    }
+    
+    h6 {
+      color: #888;
     }
   }
 }

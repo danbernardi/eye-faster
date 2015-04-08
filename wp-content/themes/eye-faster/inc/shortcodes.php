@@ -280,24 +280,39 @@ function zd_recent_posts( $atts ) {
         
         <ul class="<?php echo $type; ?>">
           <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-
-          <li>
-            <a href="<?php the_permalink(); ?>">
-              <span class="date"><?php echo get_the_date('M j'); ?></span>
-              <span class="title"><?php the_title(); ?></span>
-            </a>
-          </li>
+          
+          <?php if( $type == 'events' ) { ?>
+            <?php $dateTime = get_post_meta( get_the_ID(), '_zd_date_time', true ); ?>
+            <li>
+              <a>
+                <span class="event-title"><?php the_title(); ?></span>
+                <span class="event-time"><?php echo $dateTime; ?></span>
+              </a>
+            </li>
+          <?php } else { ?>
+            <li>
+              <a href="<?php the_permalink(); ?>">
+                <span class="date"><?php echo get_the_date('M j'); ?></span>
+                <span class="title"><?php the_title(); ?></span>
+              </a>
+            </li>
+          <?php } ?>
           
           <?php endwhile; wp_reset_postdata(); ?>
 
-          </div>
-        </div>
+        </ul>
         <?php $myvariable = ob_get_clean();
         return $myvariable;
       } else { ?>
-        <ul>
-          <li><span class="noposts">There are currently no posts in this category.</span></li>
-        </ul>
+        <?php if( $type == 'events' ) { ?>
+          <ul>
+            <li><span class="noposts"><?php _e('There are currently no upcoming events', 'zd'); ?></span></li>
+          </ul>
+        <?php } else { ?>
+          <ul>
+            <li><span class="noposts"><?php _e('There are currently no posts in this category', 'zd'); ?></span></li>
+          </ul>
+        <?php } ?>
       <?php }
     ?>
 

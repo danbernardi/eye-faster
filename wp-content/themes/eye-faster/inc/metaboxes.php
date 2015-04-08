@@ -250,6 +250,38 @@ function zd_client_options( array $meta_boxes ) {
 add_filter( 'cmb2_meta_boxes', 'zd_client_options' );
 
 
+// Event Options
+function zd_event_options( array $meta_boxes ) {
+    // Start with an underscore to hide fields from custom fields list
+    $prefix = '_zd_';
+
+    /**
+     * Sample metabox to demonstrate each field type included
+     */
+    $meta_boxes['event_options'] = array(
+        'id'            => 'event_options',
+        'title'         => __( 'Event Options', 'zd' ),
+        'object_types'  => array( 'events' ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+            array(
+                'name' => 'Date &amp; Time',
+                'desc' => 'Enter the events date &amp; time.',
+                'id' => $prefix . 'date_time',
+                'type' => 'text',
+            ),
+        ),
+    );
+
+    return $meta_boxes;
+}
+add_filter( 'cmb2_meta_boxes', 'zd_event_options' );
+
+
 // Project Options
 /*
 function zd_project_options( array $meta_boxes ) {

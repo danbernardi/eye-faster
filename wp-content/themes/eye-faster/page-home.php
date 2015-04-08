@@ -93,10 +93,9 @@ include('header.php'); ?>
             <?php echo do_shortcode($contact); ?>
           </div>
             
-          <div class="events">
+          <div class="recent">
             <h5 class="label"><i class="fa fa-calendar"></i><?php _e('Upcoming Events'); ?></h5>
             <?php echo do_shortcode('[recent_posts type="events"]'); ?>
-              
             <h5 class="label"><i class="fa fa-toggle-left"></i><?php _e('Recent Posts'); ?></h5>
             <?php echo do_shortcode('[recent_posts type="post"]'); ?>
           </div>
