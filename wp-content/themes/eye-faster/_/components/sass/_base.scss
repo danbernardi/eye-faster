@@ -74,6 +74,10 @@ img {
 .fullwidth {
 	width: calc(100% + 120px);
 	margin-left: -60px;
+  @include breakpoint($mw-580) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
 }
 .anchor {
     display: block;
@@ -94,6 +98,10 @@ img {
 section {
 	@extend .clearfix;
 	padding: 80px 60px;
+  @include breakpoint($mw-580) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 #pagewrap {
 	@include container();
@@ -103,6 +111,10 @@ section {
 	border-top: 20px solid #eee;
 	box-shadow: 0 0 22px rgba(black, 0.3);
   z-index: 1;
+  @include breakpoint($mw-580) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .clear {
 	clear: both;
@@ -149,6 +161,9 @@ header {
     }
     @include breakpoint($mw-960) {
       width: 300px;
+    }
+    @include breakpoint($mw-480) {
+      width: 180px;
     }
 		
 		img {
@@ -208,6 +223,9 @@ header {
 	padding: 0 60px;
 	background: #e8e8e8;
 	text-align: center;
+  @include breakpoint($mw-768) {
+    display: none;
+  }
   
   ul {
     margin-bottom: 0;
@@ -226,6 +244,9 @@ header {
 				color: $blue;
 				background: #ddd;
 			}
+      @include breakpoint($mw-960) {
+        padding: 10px;
+      }
 			&.active {
 				background: $blue;
 				color: white;
@@ -250,13 +271,25 @@ header {
 		text-align: center;
 		text-shadow: 2px 2px 3px rgba(black, 0.4);
 		z-index: 6;
+    line-height: 0;
 		
-		span {
+		.smaller {
 			font-size: 19px;
 		}
+    .larger {
+      display: block;
+      line-height: 1;
+      @include breakpoint($mw-480) {
+        font-size: 42px;
+      }
+    }
 		strong {
 			font-weight: bold;
 			color: $green;
+      @include breakpoint($mw-680) {
+        display: block;
+        margin-bottom: 12px;
+      }
 		}
 	}
 	.video {
@@ -290,6 +323,10 @@ header {
 		display: block;
 		float: left;
 		text-align: center;
+    @include breakpoint($mw-580) {
+      width: 100%;
+    }
+    
 		a {
 			@include transition(all, 0.2s);
 			color: inherit;
@@ -297,6 +334,11 @@ header {
 			font-size: 23px;
 			display: block;
 			background: rgba(white, 0.3);
+      @include breakpoint($mw-580) {
+        padding: 28px 0 24px;
+        font-size: 20px;
+      }
+      
 			&:hover {
 				background: rgba(white, 0.35);
 			}
@@ -325,12 +367,21 @@ header {
 }
 .showcase {
 	padding: 80px 0 0;
+  @include breakpoint($mw-480) {
+    padding-top: 50px;
+  }
 	
 	.featured {
 		padding-bottom: 60px;
+    @include breakpoint($mw-580) {
+      padding-bottom: 0;
+    }
     
 		h3 {
 			margin-bottom: 4px;
+      @include breakpoint($mw-480) {
+        font-size: 22px;
+      }
 		}
 		img {
 			width: 72px;
@@ -348,6 +399,15 @@ header {
       left: 50%;
       margin-left: -100px;
 		}
+    
+    .label {
+      @include breakpoint($mw-480) {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        border-top: 1px solid #DDD;
+        padding-top: 50px;
+      }
+    }
 	}
 	.past {
 		@include span(4 of 12);
@@ -624,6 +684,14 @@ section.services {
 				color: $blue;
 			}
 		}
+    @include breakpoint($mw-480) {
+      padding: 130px 30px 30px;
+      text-align: center;
+    }
+    @include breakpoint($mw-360) {
+      padding: 130px 20px 30px;
+    }
+      
 		i {
 			@include transition(color, 0.2s);
 			font-size: 75px;
@@ -632,6 +700,12 @@ section.services {
 			color: rgba(black, 0.1);
 			width: 86px;
 			text-align: center;
+      @include breakpoint($mw-480) {
+        left: 50%;
+        margin-left: -43px;
+        top: 30px;
+      }
+      
 			&.fa-mobile-phone {
 				font-size: 100px;
 				top: 21px;
@@ -682,15 +756,27 @@ section.services {
 	background: url('../../img/herobg.jpg') center center no-repeat;
 	background-size: cover;
 	color: #fff;
+  @include breakpoint($mw-768) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @include breakpoint($mw-580) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 	
 	.testimonial {
     p {
       font-size: 23px;
       font-weight: 300;
       text-align: center;
+      @include breakpoint($mw-580) {
+        font-size: 18px;
+      }
     }
     h6 {
       text-align: center;
+      line-height: 1.5;
     }
 	}
 	.label {
@@ -709,10 +795,16 @@ section.services {
   width: 26px;
   top: 50%;
   margin-top: -48px;
-    &:before {
-      font-size: 80px;
-      color: #ccc;
+  @include breakpoint($mw-960) {
+    height: 35px;
+  }
+  &:before {
+    font-size: 80px;
+    color: #ccc;
+    @include breakpoint($mw-960) {
+      font-size: 35px;
     }
+  }
 }
 .slick-next {
   right: -170px;
@@ -720,12 +812,12 @@ section.services {
     right: -90px;
   }
   @include breakpoint($mw-960) {
-    right: 60px;
-    top: -94px;
+    right: 0;
+    top: -57px;
     margin: 0;
   }
-  @include breakpoint($mw-768) {
-    right: 0;
+  @include breakpoint($mw-480) {
+    top: -143px;
   }
 }
 .slick-prev {
@@ -734,12 +826,15 @@ section.services {
     left: -90px;
   }
   @include breakpoint($mw-960) {
-    left: 60px;
-    top: -94px;
+    left: auto;
+    right: 42px;
+    top: -57px;
     margin: 0;
   }
-  @include breakpoint($mw-768) {
+  @include breakpoint($mw-480) {
+    top: -143px;
     left: 0;
+    right: auto;
   }
 }
 
@@ -756,6 +851,17 @@ section.services {
 		top: 80px;
 		right: 60px;
 		font-size: 13px;
+    @include breakpoint($mw-960) {
+      right: auto;
+      left: 30px;
+      top: 106px;
+    }
+    @include breakpoint($mw-680) {
+      left: 60px;
+    }
+    @include breakpoint($mw-580) {
+      left: 20px;
+    }
 		
 		i {
 			margin-right: 5px;
@@ -775,11 +881,44 @@ section.services {
 		padding: 80px 60px 30px;
 		float: left;
 		position: relative;
+    @include breakpoint($mw-960) {
+      width: 50%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @include breakpoint($mw-680) {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    @include breakpoint($mw-580) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    .label {
+      margin-bottom: 45px;
+    }
 	}
 	.recent {
 		width: 40%;
 		padding: 80px 60px 0;
 		float: left;
+    @include breakpoint($mw-960) {
+      width: 50%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @include breakpoint($mw-680) {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 30px;
+    }
+    @include breakpoint($mw-580) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 		
     .label {
       margin-bottom: 20px;
@@ -893,6 +1032,10 @@ footer.main {
 	display: block;
 	color: white;
 	font-size: 13px;
+  @include breakpoint($mw-580) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   
   ul {
     margin-bottom: 0;
@@ -912,6 +1055,11 @@ footer.main {
 		clear: both;
 		display: block;
 		text-align: right;
+    @include breakpoint($mw-580) {
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: left;
+    }
 	}
 	.fa {
 		margin-right: 5px;
@@ -928,6 +1076,17 @@ footer.main {
 	}
 	.address {
 		float: left;
+    
+    li {
+      @include breakpoint($mw-680) {
+        font-size: 12px;
+      }
+      @include breakpoint($mw-580) {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 14px;
+      }
+    }
 	}
 }
 
@@ -1519,8 +1678,14 @@ section.leadership {
 .mobmenu-trigger {
   display: none;
   position: absolute;
-  right: 45px;
+  right: 60px;
   top: 35px;
+  @include breakpoint($mw-580) {
+    right: 20px;
+  }
+  @include breakpoint($mw-480) {
+    top: 27px;
+  }
     
   a {
     display: block;
@@ -1533,6 +1698,9 @@ section.leadership {
       padding-left: 7px;
       position: relative;
       top: -4px;
+      @include breakpoint($mw-480) {
+          display: none;
+      }
     }
   }
   @include breakpoint($mw-960) {
@@ -1567,6 +1735,10 @@ section.leadership {
     &:hover {
       background: rgba(black, 0.1);
     }
+    @include breakpoint($mw-480) {
+      font-size: 14px;
+    }
+    
     &:after {
       @include fontawesome('\f105');
       position: absolute;
@@ -1585,4 +1757,11 @@ section.leadership {
 }
 .mm-listview>li:not(.mm-divider):after {
   left: 0;
+}
+
+.hideDesk {
+  display: none;
+  @include breakpoint($mw-680) {
+    display: block;
+  }
 }

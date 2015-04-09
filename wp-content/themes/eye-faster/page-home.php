@@ -16,8 +16,8 @@ include('header.php'); ?>
     <div class="flag home"></div>
     <!-- hero section -->
     <section class="hero">
-      <h1><span>We use mobile <span class="blue">eye-tracking</span> to analyze the world from</span><br>
-      <strong>the shoppers</strong> point of view<br></h1>
+      <h1><span class="smaller">We use mobile <span class="blue">eye-tracking</span><br class="hideDesk"> to analyze the world from</span><br>
+      <span class="larger"><strong>the shoppers</strong> point of view</span></h1>
       <span class="video"><a class="lb-btn" href="#" data-target="youtube"><i class="fa fa-play"></i></a><br>
       How it works</span>
       <div class="left">

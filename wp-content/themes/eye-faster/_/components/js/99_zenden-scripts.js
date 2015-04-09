@@ -20,7 +20,7 @@ $(document).ready(function () {
 	
 	
 	// init hero slider
-	(function initHeroSlider() {
+	(function initClientSlider() {
 		$('.clients .slick').slick({
 			infinite: true,
 			slidesToShow: 6,
@@ -29,7 +29,23 @@ $(document).ready(function () {
 			autoplaySpeed: 2000,
 			arrows: false,
 			pauseOnHover: false,
-			draggable: false
+			draggable: false,
+      responsive: [{
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 4
+        }
+      }, {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 3
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2
+        }
+      }]
 		});
 	}());
   
