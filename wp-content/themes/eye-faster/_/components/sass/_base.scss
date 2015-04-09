@@ -490,11 +490,11 @@ header {
               visibility 0s linear 0.3s;
 	position: fixed;
 	width: 644px;
-	height: 400px;
+	height: auto;
 	right: 0;
 	z-index: 1001;
 	bottom: 40px;
-  max-height: calc(100vh - 80px);
+  max-height: calc(100% - 80px);
 	left: 50%;
 	margin-left: -322px;
 	background: white;
@@ -629,9 +629,6 @@ header {
 #team-member {
   padding: 40px 0 20px;
   height: auto;
-  max-height: 564px;
-  bottom: 50%;
-  margin-bottom: -282px;
   @include breakpoint($mw-480) {
     padding-bottom: 6px;
   }
@@ -655,11 +652,9 @@ header {
     margin-top: 15px;
     padding: 13px 40px 0;
     position: relative;
-    max-height: 484px;
+    max-height: calc(80vh - 95px);
     overflow: scroll;
-    @include breakpoint(max-height 580px) {
-      max-height: 60vh;
-    }
+    
     @include breakpoint($mw-480) {
       padding: 13px 25px 0;
     }
