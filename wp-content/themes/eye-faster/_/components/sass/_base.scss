@@ -1786,7 +1786,7 @@ section.blog {
     }
   }
   a {
-    @include btn(darken($blue, 10));
+    @include btn(darken($blue, 9));
     margin-right: 3px;
     margin-bottom: 3px;
     padding: 3px 20px;
@@ -1799,13 +1799,13 @@ section.blog {
       background: #555 !important;
     }
     &:nth-of-type(2n) {
-      background: $blue;
+      background: darke($blue, 6);
     }
     &:nth-of-type(3n) {
-      background: lighten($blue, 10);
+      background: darken($blue, 3);
     }
     &:nth-of-type(4n) {
-      background: lighten($blue, 20);
+      background: $blue;
     }
   }
 }
