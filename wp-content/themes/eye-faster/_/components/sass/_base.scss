@@ -536,7 +536,7 @@ header {
 		}
 		input[type=submit] {
 			@extend .pointer;
-      -webkit-appearance: none;
+      -webkit-appearance: none !important;
 			background: $blue;
 			color: white;
 			&:hover {
@@ -1043,7 +1043,7 @@ form {
 	input[type=submit] {
 		@include btn($green);
 		@extend .pointer;
-    -webkit-appearance: none;
+    -webkit-appearance: none !important;
 	}
 	textarea {
 		height: 184px;
@@ -1706,6 +1706,7 @@ section.blog {
 		@include btn($blue);
 		@extend .pointer;
 		border: none;
+    -webkit-appearance: none !important;
 	}
 }
 .comment.depth-1 {
