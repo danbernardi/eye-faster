@@ -35,7 +35,7 @@
                 $youtube_id = str_replace( 'https://youtu.be/', '', strstr($embed_url, 'https://youtu.be/') ); 
             ?>
               <span class="share">Click the<i class="fa fa-share-alt"></i>icon to share <i class="fa fa-caret-down"></i></span>
-              <iframe id="youtube_player" width="624" height="380" src="https://www.youtube.com/embed/<?php echo $youtube_id; ?>?enablejsapi=1&version=3&playerapiid=ytplayer" allowfullscreen></iframe>
+              <div class="embed_wrapper"><iframe id="youtube_player" width="624" height="380" src="https://www.youtube.com/embed/<?php echo $youtube_id; ?>?enablejsapi=1&version=3&playerapiid=ytplayer" allowfullscreen></iframe></div>
             <?php } else { ?>
               <div class="novid"><p>There is no video here.</p></div>
             <?php } ?>
