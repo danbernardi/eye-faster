@@ -536,6 +536,7 @@ header {
 		}
 		input[type=submit] {
 			@extend .pointer;
+      -webkit-appearance: none;
 			background: $blue;
 			color: white;
 			&:hover {
@@ -1042,6 +1043,7 @@ form {
 	input[type=submit] {
 		@include btn($green);
 		@extend .pointer;
+    -webkit-appearance: none;
 	}
 	textarea {
 		height: 184px;
