@@ -1,0 +1,4 @@
+CREATE TABLE `ef_users` (  `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,  `user_login` varchar(60) NOT NULL DEFAULT '',  `user_pass` varchar(64) NOT NULL DEFAULT '',  `user_nicename` varchar(50) NOT NULL DEFAULT '',  `user_email` varchar(100) NOT NULL DEFAULT '',  `user_url` varchar(100) NOT NULL DEFAULT '',  `user_registered` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',  `user_activation_key` varchar(60) NOT NULL DEFAULT '',  `user_status` int(11) NOT NULL DEFAULT '0',  `display_name` varchar(250) NOT NULL DEFAULT '',  PRIMARY KEY (`ID`),  KEY `user_login_key` (`user_login`),  KEY `user_nicename` (`user_nicename`)) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40000 ALTER TABLE `ef_users` DISABLE KEYS */;
+INSERT INTO `ef_users` VALUES('1', 'zenden', '$P$Bryxr7Eq2wMcThrsCbPo4fmBj.P4ST0', 'zenden', 'dan@zendenwebdesign.com', '', '2015-03-17 17:59:20', '', '0', 'zenden');
+/*!40000 ALTER TABLE `ef_users` ENABLE KEYS */;

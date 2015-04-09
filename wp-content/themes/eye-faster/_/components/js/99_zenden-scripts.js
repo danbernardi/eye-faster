@@ -82,7 +82,7 @@ $(document).ready(function () {
 	// subnav scroll to fixed
 	(function initScrolltofixed() {
 		$('.subnav').scrollToFixed();
-    $('.socialshare').scrollToFixed({
+    $('.socialshare.desk').scrollToFixed({
       marginTop: 20
     });
 	}());

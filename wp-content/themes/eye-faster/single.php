@@ -40,7 +40,7 @@
         </div>
         
         <div class="post-content">
-          <div class="socialshare">
+          <div class="socialshare desk">
             <strong><?php _e('Share', 'zd'); ?></strong>
             <ul>
               <li><a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"></i></a></li>
@@ -50,6 +50,15 @@
             </ul>
           </div>
           <?php the_content(); ?>
+          <div class="socialshare mob">
+            <strong><?php _e('Share this post:', 'zd'); ?></strong>
+            <ul>
+              <li><a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="google-plus" target="_blank" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="twitter" target="_blank" href="https://twitter.com/home?status=<?php the_permalink(); ?>"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=&summary=&source="><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
           <?php echo get_the_tag_list('<p class="taglist"><strong>Tags:</strong> ','','</p>'); ?>
           
           <?php if( $post_type == 'services' || $post_type == 'solutions' ) { ?>

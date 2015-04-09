@@ -647,17 +647,40 @@ header {
 	padding: 30px 60px;
 	background: darken($blue, 10);
 	color: white;
+  position: relative;
+  @include breakpoint($mw-580) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 85px;
+  }
 	
 	h4 {
-		@include span(10 of 12);
+		padding-right: 160px;
     font-size: 1.3em;
     margin-bottom: 0;
     line-height: 1.5em;
+    @include breakpoint($mw-580) {
+      padding-right: 0;
+      text-align: center;
+    }
+    @include breakpoint($mw-480) {
+      font-size: 18px;
+    }
 	}
 	.btn {
 		@include btn($green);
-		@include span(2 of 12 last);
 		text-align: center;
+    position: absolute;
+    width: 142px;
+    right: 60px;
+    top: 50%;
+    margin-top: -17px;
+    @include breakpoint($mw-580) {
+      right: 50%;
+      margin-right: -71px;
+      top: auto;
+      bottom: 30px;
+    }
 	}
 }
 
@@ -667,6 +690,9 @@ section.services {
 	
 	.label {
 		text-align: center;
+    @include breakpoint($mw-480) {
+      text-align: left;
+    }
 	}
 	
 	.col {
@@ -1117,6 +1143,9 @@ section.experience {
 	.label {
 		text-align: center;
 		color: $blue;
+    @include breakpoint($mw-480) {
+      text-align: left;
+    }
 	}
 }
 
@@ -1126,6 +1155,9 @@ section.mission {
 	.label {
 		text-align: center;
 		color: $blue;
+    @include breakpoint($mw-480) {
+      text-align: left;
+    }
 	}
 	
 	ul > li {
@@ -1182,6 +1214,17 @@ section.mission {
 section.leadership {
 	@extend .fullwidth;
 	padding: 80px;
+  @include breakpoint($mw-960) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @include breakpoint($mw-580) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @include breakpoint($mw-480) {
+    
+  }
 	
 	.label {
 		text-align: center;
@@ -1190,6 +1233,17 @@ section.leadership {
 	.leader {
 		@include span(3 of 12);
 		text-align: center;
+    @include breakpoint($mw-768) {
+      @include span(6 of 12);
+      margin-bottom: 40px;
+      
+      &:nth-child(2n) {
+        @include last();
+      }
+    }
+    @include breakpoint($mw-480) {
+      @include span(12 of 12 last);
+    }
 		
 		&:nth-child(4n) {
 			@include last();
@@ -1211,6 +1265,12 @@ section.leadership {
 }
 
 
+section.blog {
+  @include breakpoint($mw-580) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .blogroll {
 	@extend .clearfix;
@@ -1218,6 +1278,11 @@ section.leadership {
 	
 	.post {
 		@include span(8 of 12);
+    padding-right: 40px;
+    @include breakpoint($mw-840) {
+      @include span(12 of 12 last);
+      padding-right: 0;
+    }
 		
 		h4 {
 			text-align: left;
@@ -1253,6 +1318,9 @@ section.leadership {
 	}
 	.sidebar {
 		@include span(4 of 12 last);
+    @include breakpoint($mw-840) {
+      @include span(12 of 12 last);
+    }
 		
 		.pprojects {
 			
@@ -1351,6 +1419,9 @@ section.leadership {
   text-align: center;
   margin-bottom: 0;
   line-height: 1.3;
+  @include breakpoint($mw-960) {
+    font-size: 30px;
+  }
 }
 .meta {
   position: relative;
@@ -1432,6 +1503,25 @@ section.leadership {
 		min-height: 444px;
 		margin-bottom: 30px;
 		border: 1px solid #fff;
+    @include breakpoint($mw-960) {
+      @include span(6 of 12);
+      
+      &:nth-child(2n) {
+        @include last();
+      }
+      &:nth-child(3n) {
+        @include span(6 of 12);
+      }
+    }
+    @include breakpoint($mw-680) {
+      @include span(12 of 12 last);
+      min-height: 0;
+      
+      &:nth-child(3n) {
+        @include span(12 of 12 last);
+      }
+    }
+    
 		&:hover {
 			border-color: $body;
 			
@@ -1491,6 +1581,35 @@ section.leadership {
   top: 4px;
   width: 50px;
   text-align: center;
+  @include breakpoint($mw-580) {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  &.desk {
+    @include breakpoint($mw-580) {
+      display: none;
+    }
+  }
+  &.mob {
+    display: none;
+    position: relative;
+    margin-top: 50px;
+    
+    @include breakpoint($mw-580) {
+      display: block;
+      
+      li {
+        display: inline-block;
+        margin-bottom: 0;
+        width: calc(25% - 3px);
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
   
   ul {
     margin-bottom: 0;
@@ -1647,16 +1766,31 @@ section.leadership {
   border-top: 1px solid #DDD;
   padding: 10px 0 10px 44px;
   margin: 40px 0 0;
+  @include breakpoint($mw-580) {
+    margin-top: 25px;
+    padding: 10px 0;
+  }
   
   strong {
     position: absolute;
     left: 0;
+    @include breakpoint($mw-580) {
+      display: block;
+      width: 100%;
+      position: relative;
+      text-align: center;
+    }
   }
   a {
     @include btn(darken($blue, 10));
     margin-right: 3px;
     margin-bottom: 3px;
     padding: 3px 20px;
+    @include breakpoint($mw-580) {
+      width: 100%;
+      margin-right: 0;
+    }
+    
     &:hover {
       background: #555 !important;
     }

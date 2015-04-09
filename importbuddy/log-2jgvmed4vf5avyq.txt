@@ -1,0 +1,759 @@
+[Apr 9, 2015 21:29:30 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (zip) trying executable path: `/usr/local/bin`.
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (zip) FAILED: Test zip file not found.
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (zip) FAILED: exec Exit Code: 127
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (zip) trying executable path: ``.
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (zip) PASSED.
+[Apr 9, 2015 21:29:30 0-details] [] Checking zip version...
+[Apr 9, 2015 21:29:30 0-details] [] Found zip version: 3.0
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (unzip) checking test file readable: /Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/lib/zipbuddy/zbzip.php
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (unzip) trying executable path: `/usr/local/bin`.
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (unzip) FAILED: Test unzip file test failed.
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (unzip) FAILED: exec Exit Code: 127
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (unzip) trying executable path: ``.
+[Apr 9, 2015 21:29:30 0-details] [] Exec test (unzip) PASSED.
+[Apr 9, 2015 21:29:30 0-details] [] Checking unzip version...
+[Apr 9, 2015 21:29:30 0-details] [] Found unzip version: 5.52
+[Apr 9, 2015 21:29:30 0-details] [] ZipArchive test PASSED.
+[Apr 9, 2015 21:29:30 0-details] [] PCLZip class not found. Attempting to load from `/Users/danielbernardi/Documents/Websites/EF/ef/wp-admin/includes/class-pclzip.php`.
+[Apr 9, 2015 21:29:30 0-details] [] PclZip test PASSED.
+[Apr 9, 2015 21:29:30 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Apr 9, 2015 21:29:30 0-details] [] exec (unzip) retrieved comment in file /Users/danielbernardi/Documents/Websites/EF/ef/backup-ef_zendentest_com-2015_04_06-04_26pm-db-73cyizcmce.zip
+[Apr 9, 2015 21:29:30 0-details] [] Running ImportBuddy v5.1.1.18 (downloaded 2015-03-24T22:06:09+00:00).
+[Apr 9, 2015 21:29:30 0-details] [] Finished step.
+[Apr 9, 2015 21:29:47 0-error] #TITLE# #MESSAGE# <a href="http://ithemes.com/codex/page/BackupBuddy:_Error_Codes#9021" target="_blank"><i>ImportBuddy Error Code 9021 - Click for more details.</i></a> Error Code: 9021
+[Apr 9, 2015 21:29:47 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (zip) trying executable path: `/usr/local/bin`.
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (zip) FAILED: Test zip file not found.
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (zip) FAILED: exec Exit Code: 127
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (zip) trying executable path: ``.
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (zip) PASSED.
+[Apr 9, 2015 21:29:47 0-details] [] Checking zip version...
+[Apr 9, 2015 21:29:47 0-details] [] Found zip version: 3.0
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (unzip) checking test file readable: /Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/lib/zipbuddy/zbzip.php
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (unzip) trying executable path: `/usr/local/bin`.
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (unzip) FAILED: Test unzip file test failed.
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (unzip) FAILED: exec Exit Code: 127
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (unzip) trying executable path: ``.
+[Apr 9, 2015 21:29:47 0-details] [] Exec test (unzip) PASSED.
+[Apr 9, 2015 21:29:47 0-details] [] Checking unzip version...
+[Apr 9, 2015 21:29:47 0-details] [] Found unzip version: 5.52
+[Apr 9, 2015 21:29:47 0-details] [] ZipArchive test PASSED.
+[Apr 9, 2015 21:29:47 0-details] [] PCLZip class not found. Attempting to load from `/Users/danielbernardi/Documents/Websites/EF/ef/wp-admin/includes/class-pclzip.php`.
+[Apr 9, 2015 21:29:47 0-details] [] PclZip test PASSED.
+[Apr 9, 2015 21:29:47 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Apr 9, 2015 21:29:47 0-details] [] exec (unzip) retrieved comment in file /Users/danielbernardi/Documents/Websites/EF/ef/backup-ef_zendentest_com-2015_04_06-04_26pm-db-73cyizcmce.zip
+[Apr 9, 2015 21:29:47 0-details] [] exec (unzip) retrieved comment in file /Users/danielbernardi/Documents/Websites/EF/ef/backup-ef_zendentest_com-2015_04_09-07_28pm-db-ncb2h6mp5j.zip
+[Apr 9, 2015 21:29:47 0-details] [] Running ImportBuddy v5.1.1.18 (downloaded 2015-03-24T22:06:09+00:00).
+[Apr 9, 2015 21:29:47 0-details] [] Finished step.
+[Apr 9, 2015 21:29:54 0-details] [] Loading step 2.
+[Apr 9, 2015 21:29:54 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:29:54 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:29:54 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:29:54 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:29:54 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:29:54 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:29:54 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:29:54 0-details] [] Starting function `start`.
+[Apr 9, 2015 21:29:54 0-details] [] Attempting to retrieve zip meta data from comment.
+[Apr 9, 2015 21:29:54 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Apr 9, 2015 21:29:54 0-details] [] Exec test (zip) trying executable path: `/usr/local/bin`.
+[Apr 9, 2015 21:29:54 0-details] [] Exec test (zip) FAILED: Test zip file not found.
+[Apr 9, 2015 21:29:54 0-details] [] Exec test (zip) FAILED: exec Exit Code: 127
+[Apr 9, 2015 21:29:54 0-details] [] Exec test (zip) trying executable path: ``.
+[Apr 9, 2015 21:29:54 0-details] [] Exec test (zip) PASSED.
+[Apr 9, 2015 21:29:54 0-details] [] Checking zip version...
+[Apr 9, 2015 21:29:54 0-details] [] Found zip version: 3.0
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) checking test file readable: /Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/lib/zipbuddy/zbzip.php
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) trying executable path: `/usr/local/bin`.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) FAILED: Test unzip file test failed.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) FAILED: exec Exit Code: 127
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) trying executable path: ``.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] Checking unzip version...
+[Apr 9, 2015 21:29:55 0-details] [] Found unzip version: 5.52
+[Apr 9, 2015 21:29:55 0-details] [] ZipArchive test PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] PCLZip class not found. Attempting to load from `/Users/danielbernardi/Documents/Websites/EF/ef/wp-admin/includes/class-pclzip.php`.
+[Apr 9, 2015 21:29:55 0-details] [] PclZip test PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Apr 9, 2015 21:29:55 0-details] [] exec (unzip) retrieved comment in file /Users/danielbernardi/Documents/Websites/EF/ef/backup-ef_zendentest_com-2015_04_09-07_28pm-db-ncb2h6mp5j.zip
+[Apr 9, 2015 21:29:55 0-details] [] Found zip meta data.
+[Apr 9, 2015 21:29:55 0-details] [] Loading zipbuddy.
+[Apr 9, 2015 21:29:55 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (zip) trying executable path: `/usr/local/bin`.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (zip) FAILED: Test zip file not found.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (zip) FAILED: exec Exit Code: 127
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (zip) trying executable path: ``.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (zip) PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] Checking zip version...
+[Apr 9, 2015 21:29:55 0-details] [] Found zip version: 3.0
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) checking test file readable: /Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/lib/zipbuddy/zbzip.php
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) trying executable path: `/usr/local/bin`.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) FAILED: Test unzip file test failed.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) FAILED: exec Exit Code: 127
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) trying executable path: ``.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] Checking unzip version...
+[Apr 9, 2015 21:29:55 0-details] [] Found unzip version: 5.52
+[Apr 9, 2015 21:29:55 0-details] [] ZipArchive test PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] PclZip test PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Apr 9, 2015 21:29:55 0-details] [] Zipbuddy loaded.
+[Apr 9, 2015 21:29:55 0-details] [] Calculating possible DAT file locations.
+[Apr 9, 2015 21:29:55 0-details] [] Possible DAT file locations: `backupbuddy_dat.php;wp-content/uploads/backupbuddy_temp/ncb2h6mp5j/backupbuddy_dat.php;backupbuddy_dat.php`.
+[Apr 9, 2015 21:29:55 0-details] [] Looking for DAT file in zip archive itself.
+[Apr 9, 2015 21:29:55 0-details] [] File found (exec): backupbuddy_dat.php
+[Apr 9, 2015 21:29:55 0-details] [] Confirmed DAT file location: `backupbuddy_dat.php`.
+[Apr 9, 2015 21:29:55 0-details] [] Creating temporary file directory `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_2jgvmed4vf5avyq/`.
+[Apr 9, 2015 21:29:55 0-details] [] Extracting DAT file.
+[Apr 9, 2015 21:29:55 0-details] [] Extracting into temporary directory "/var/folders/sc/dk2flrj143s1w7njcwzprrp00000gn/T/backupbuddy-ncb2h6mp5j".
+[Apr 9, 2015 21:29:55 0-details] [] Files to extract: `backupbuddy_dat.php =&gt; backupbuddy_dat.php`.
+[Apr 9, 2015 21:29:55 0-details] [] exec (unzip) extracted file contents (backupbuddy_dat.php from /Users/danielbernardi/Documents/Websites/EF/ef/backup-ef_zendentest_com-2015_04_09-07_28pm-db-ncb2h6mp5j.zip to /var/folders/sc/dk2flrj143s1w7njcwzprrp00000gn/T/backupbuddy-ncb2h6mp5j/backupbuddy_dat.php)
+[Apr 9, 2015 21:29:55 0-details] [] Recursively moved `/var/folders/sc/dk2flrj143s1w7njcwzprrp00000gn/T/backupbuddy-ncb2h6mp5j/backupbuddy_dat.php` to `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_2jgvmed4vf5avyq/backupbuddy_dat.php`.<br>
+[Apr 9, 2015 21:29:55 0-details] [] Cleaned up temporary files.
+[Apr 9, 2015 21:29:55 0-message] [] File retrieval completed successfully.
+[Apr 9, 2015 21:29:55 0-details] [] Loading backup dat file.
+[Apr 9, 2015 21:29:55 0-details] [] Successfully loaded backup dat file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_2jgvmed4vf5avyq/backupbuddy_dat.php`.
+[Apr 9, 2015 21:29:55 0-details] [] DAT contents: Array; (;     [backupbuddy_version] => 5.1.1.18;     [wordpress_version] => 4.1.1;     [backup_time] => 1428607718;     [backup_type] => db;     [profile] => Array;         (;             [type] => db;             [title] => Database Only;             [skip_database_dump] => 0;             [mysqldump_additional_includes] => ;             [mysqldump_additional_excludes] => ;             [backup_nonwp_tables] => 0;             [excludes] => ;             [integrity_check] => 1;             [profile_globaltables] => 1;             [profile_globalexcludes] => 1;             [backup_mode] => 2;             [tip] => Just your database. I like your minimalist style.;         ); ;     [default_profile] => Array;         (;             [type] => defaults;             [title] => Global Defaults;             [skip_database_dump] => 0;             [backup_nonwp_tables] => 0;             [integrity_check] => 1;             [mysqldump_additional_includes] => ;             [mysqldump_additional_excludes] => ;             [excludes] => ;         ); ;     [serial] => ncb2h6mp5j;     [trigger] => manual;     [wp-config_in_parent] => ;     [deployment_direction] => ;     [abspath] => /home/zendente/public_html/ef/;     [siteurl] => http://ef.zendentest.com;     [homeurl] => http://ef.zendentest.com;     [blogname] => Eye Faster;     [blogdescription] => Just another WordPress site;     [active_plugins] => backupbuddy/backupbuddy.php, contact-form-7/wp-contact-form-7.php, custom-sidebars/customsidebars.php, custom-tag-widget/tag_cloud.php, options-framework/options-framework.php, video-thumbnails/video-thumbnails.php;     [posts] => 5;     [pages] => 8;     [comments] => 7;     [users] => 1;     [db_prefix] => ef_;     [db_server] => localhost;     [db_name] => zendente_ef;     [db_user] => zendente_ef;     [db_password] => *HIDDEN*;     [db_exclusions] => ;     [db_inclusions] => ;     [breakout_tables] => Array;         (;             [0] => ef_posts;             [1] => ef_postmeta;         ); ;     [tables_sizes] => Array;         (;             [ef_commentmeta] => 49152;             [ef_comments] => 98304;             [ef_links] => 32768;             [ef_options] => 507904;             [ef_postmeta] => 163840;             [ef_posts] => 442368;             [ef_term_relationships] => 32768;             [ef_term_taxonomy] => 49152;             [ef_terms] => 49152;             [ef_usermeta] => 49152;             [ef_users] => 49152;         ); ;     [is_multisite] => ;     [is_multisite_export] => ;     [domain] => ;     [path] => ;     [upload_url] => ;     [upload_url_rewrite] => ; ); 
+[Apr 9, 2015 21:29:55 0-details] [] DAT file extracted.
+[Apr 9, 2015 21:29:55 0-details] [] Finished starting function.
+[Apr 9, 2015 21:29:55 0-details] [] Starting function `getDefaultUrl`.
+[Apr 9, 2015 21:29:55 0-details] [] Starting function `getDefaultDomain`.
+[Apr 9, 2015 21:29:55 0-details] [] Starting function `getDefaultUrl`.
+[Apr 9, 2015 21:29:55 0-details] [] Database backup OR not restoring files.
+[Apr 9, 2015 21:29:55 0-details] [] Starting function `maintenanceOn`.
+[Apr 9, 2015 21:29:55 0-details] [] Turning on maintenance mode on.
+[Apr 9, 2015 21:29:55 0-details] [] .maintenance file generated to prevent viewing partially migrated site.
+[Apr 9, 2015 21:29:55 0-details] [] Starting function `restoreFiles`.
+[Apr 9, 2015 21:29:55 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (zip) trying executable path: `/usr/local/bin`.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (zip) FAILED: Test zip file not found.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (zip) FAILED: exec Exit Code: 127
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (zip) trying executable path: ``.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (zip) PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] Checking zip version...
+[Apr 9, 2015 21:29:55 0-details] [] Found zip version: 3.0
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) checking test file readable: /Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/lib/zipbuddy/zbzip.php
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) trying executable path: `/usr/local/bin`.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) FAILED: Test unzip file test failed.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) FAILED: exec Exit Code: 127
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) trying executable path: ``.
+[Apr 9, 2015 21:29:55 0-details] [] Exec test (unzip) PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] Checking unzip version...
+[Apr 9, 2015 21:29:55 0-details] [] Found unzip version: 5.52
+[Apr 9, 2015 21:29:55 0-details] [] ZipArchive test PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] PclZip test PASSED.
+[Apr 9, 2015 21:29:55 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Apr 9, 2015 21:29:55 0-message] [] Unzipping archive `/Users/danielbernardi/Documents/Websites/EF/ef/backup-ef_zendentest_com-2015_04_09-07_28pm-db-ncb2h6mp5j.zip` into `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/`
+[Apr 9, 2015 21:29:55 0-details] [] Using all available unzip methods in preferred order.
+[Apr 9, 2015 21:29:55 0-details] [] exec (unzip) extracted file contents (/Users/danielbernardi/Documents/Websites/EF/ef/backup-ef_zendentest_com-2015_04_09-07_28pm-db-ncb2h6mp5j.zip to /Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/)
+[Apr 9, 2015 21:29:55 0-details] [] Zip Archive file size: 145293 bytes, owned by user:group 501:80 with permissions 0644
+[Apr 9, 2015 21:29:55 0-details] [] Success extracting backup archive.
+[Apr 9, 2015 21:29:55 0-details] [] SKIPPING restore of files based on settings from Step 1.
+[Apr 9, 2015 21:29:55 0-details] [] Finishing step 2.
+[Apr 9, 2015 21:29:55 0-details] [] Starting function `renameHtaccessTemp`.
+[Apr 9, 2015 21:29:55 0-message] [] Renamed `.htaccess` file to `.htaccess.bb_temp` until final ImportBuddy step.
+[Apr 9, 2015 21:29:55 0-details] [] Starting function `determineDatabaseFiles`.
+[Apr 9, 2015 21:29:55 0-details] [] Determining SQL file location...
+[Apr 9, 2015 21:29:55 0-details] [] Looking for SQL files in `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/wp-content/uploads/temp_ncb2h6mp5j/`.
+[Apr 9, 2015 21:29:55 0-details] [] Looking for SQL files in `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/wp-content/uploads/backupbuddy_temp/ncb2h6mp5j/`.
+[Apr 9, 2015 21:29:55 0-details] [] Looking for SQL files in `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/`.
+[Apr 9, 2015 21:29:55 0-details] [] Found 11 SQL files in `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/`.
+[Apr 9, 2015 21:29:55 0-details] [] About to load Step 3.
+[Apr 9, 2015 21:30:14 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:14 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:14 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:14 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:14 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:14 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:14 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:14 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:14 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:14 0-message] [] Wiping existing database tables with the prefix `ef_` based on settings...
+[Apr 9, 2015 21:30:14 0-message] [] Beginning wipe of database tables matching prefix `ef_`...
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_commentmeta`.
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_comments`.
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_links`.
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_options`.
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_postmeta`.
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_posts`.
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_term_relationships`.
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_term_taxonomy`.
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_terms`.
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_usermeta`.
+[Apr 9, 2015 21:30:14 0-details] [] Dropping table `ef_users`.
+[Apr 9, 2015 21:30:14 0-message] [] Wiped database of 11 tables.
+[Apr 9, 2015 21:30:14 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:14 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:14 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:14 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:14 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:14 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:14 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:14 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:14 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:14 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:14 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:14 0-details] [] SQL files to import: 11
+[Apr 9, 2015 21:30:14 0-details] [] Importing SQL file `ef_commentmeta.sql` (size: 442 Bytes).
+[Apr 9, 2015 21:30:14 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:14 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_commentmeta.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:14 0-details] [] About to flush...
+[Apr 9, 2015 21:30:14 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:14 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:14 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_commentmeta.sql`.
+[Apr 9, 2015 21:30:14 0-details] [] Creating table `ef_commentmeta`.
+[Apr 9, 2015 21:30:14 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:14 0-message] [] Took 0.027 seconds on 3 queries. 
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:14 0-message] [] Database import of `ef_commentmeta.sql` succeeded.
+[Apr 9, 2015 21:30:14 0-details] [] Finished importing SQL file `ef_commentmeta.sql`. Database files remaining: 10
+[Apr 9, 2015 21:30:14 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:14 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:14 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:14 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:14 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:14 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:14 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:14 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:14 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:14 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:14 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:14 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:14 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:14 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:14 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:14 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:14 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:14 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:14 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:14 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:14 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:14 0-details] [] SQL files to import: 10
+[Apr 9, 2015 21:30:14 0-details] [] Importing SQL file `ef_comments.sql` (size: 4 KB).
+[Apr 9, 2015 21:30:14 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:14 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_comments.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:14 0-details] [] About to flush...
+[Apr 9, 2015 21:30:14 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:14 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:15 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:15 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_comments.sql`.
+[Apr 9, 2015 21:30:15 0-details] [] Creating table `ef_comments`.
+[Apr 9, 2015 21:30:15 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:15 0-message] [] Took 0.032 seconds on 7 queries. 
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:15 0-message] [] Database import of `ef_comments.sql` succeeded.
+[Apr 9, 2015 21:30:15 0-details] [] Finished importing SQL file `ef_comments.sql`. Database files remaining: 9
+[Apr 9, 2015 21:30:15 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:15 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:15 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:15 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:15 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:15 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:15 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:15 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:15 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:15 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:15 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:15 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:15 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:15 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:15 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:15 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:15 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:15 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:15 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:15 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:15 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:15 0-details] [] SQL files to import: 9
+[Apr 9, 2015 21:30:15 0-details] [] Importing SQL file `ef_links.sql` (size: 865 Bytes).
+[Apr 9, 2015 21:30:15 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:15 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_links.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:15 0-details] [] About to flush...
+[Apr 9, 2015 21:30:15 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:15 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:15 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_links.sql`.
+[Apr 9, 2015 21:30:15 0-details] [] Creating table `ef_links`.
+[Apr 9, 2015 21:30:15 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:15 0-message] [] Took 0.022 seconds on 3 queries. 
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:15 0-message] [] Database import of `ef_links.sql` succeeded.
+[Apr 9, 2015 21:30:15 0-details] [] Finished importing SQL file `ef_links.sql`. Database files remaining: 8
+[Apr 9, 2015 21:30:15 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:15 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:15 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:15 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:15 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:15 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:15 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:15 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:15 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:15 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:15 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:15 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:15 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:15 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:15 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:15 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:15 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:15 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:15 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:15 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:15 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:15 0-details] [] SQL files to import: 8
+[Apr 9, 2015 21:30:15 0-details] [] Importing SQL file `ef_options.sql` (size: 409 KB).
+[Apr 9, 2015 21:30:15 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:15 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_options.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:15 0-details] [] About to flush...
+[Apr 9, 2015 21:30:15 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:15 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:15 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_options.sql`.
+[Apr 9, 2015 21:30:15 0-details] [] Creating table `ef_options`.
+[Apr 9, 2015 21:30:15 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:15 0-message] [] Took 0.101 seconds on 161 queries. 
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:15 0-message] [] Database import of `ef_options.sql` succeeded.
+[Apr 9, 2015 21:30:15 0-details] [] Finished importing SQL file `ef_options.sql`. Database files remaining: 7
+[Apr 9, 2015 21:30:15 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:15 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:15 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:15 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:15 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:15 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:15 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:15 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:15 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:15 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:15 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:15 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:15 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:15 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:15 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:15 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:15 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:15 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:15 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:15 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:15 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:15 0-details] [] SQL files to import: 7
+[Apr 9, 2015 21:30:15 0-details] [] Importing SQL file `ef_postmeta.sql` (size: 87 KB).
+[Apr 9, 2015 21:30:15 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:15 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_postmeta.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:15 0-details] [] About to flush...
+[Apr 9, 2015 21:30:15 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:15 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:15 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_postmeta.sql`.
+[Apr 9, 2015 21:30:15 0-details] [] Creating table `ef_postmeta`.
+[Apr 9, 2015 21:30:15 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:15 0-message] [] Took 0.275 seconds on 541 queries. 
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:15 0-message] [] Database import of `ef_postmeta.sql` succeeded.
+[Apr 9, 2015 21:30:15 0-details] [] Finished importing SQL file `ef_postmeta.sql`. Database files remaining: 6
+[Apr 9, 2015 21:30:15 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:15 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:15 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:15 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:15 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:15 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:15 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:15 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:15 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:15 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:15 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:15 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:15 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:15 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:15 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:15 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:15 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:15 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:15 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:15 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:15 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:15 0-details] [] SQL files to import: 6
+[Apr 9, 2015 21:30:15 0-details] [] Importing SQL file `ef_posts.sql` (size: 308 KB).
+[Apr 9, 2015 21:30:15 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:15 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_posts.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:15 0-details] [] About to flush...
+[Apr 9, 2015 21:30:15 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:15 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:15 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:15 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_posts.sql`.
+[Apr 9, 2015 21:30:15 0-details] [] Creating table `ef_posts`.
+[Apr 9, 2015 21:30:16 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:16 0-message] [] Took 0.169 seconds on 245 queries. 
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:16 0-message] [] Database import of `ef_posts.sql` succeeded.
+[Apr 9, 2015 21:30:16 0-details] [] Finished importing SQL file `ef_posts.sql`. Database files remaining: 5
+[Apr 9, 2015 21:30:16 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:16 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:16 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:16 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:16 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:16 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:16 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:16 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:16 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:16 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:16 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:16 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:16 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:16 0-details] [] SQL files to import: 5
+[Apr 9, 2015 21:30:16 0-details] [] Importing SQL file `ef_term_relationships.sql` (size: 3 KB).
+[Apr 9, 2015 21:30:16 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:16 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_term_relationships.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:16 0-details] [] About to flush...
+[Apr 9, 2015 21:30:16 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:16 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:16 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_term_relationships.sql`.
+[Apr 9, 2015 21:30:16 0-details] [] Creating table `ef_term_relationships`.
+[Apr 9, 2015 21:30:16 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:16 0-message] [] Took 0.041 seconds on 39 queries. 
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:16 0-message] [] Database import of `ef_term_relationships.sql` succeeded.
+[Apr 9, 2015 21:30:16 0-details] [] Finished importing SQL file `ef_term_relationships.sql`. Database files remaining: 4
+[Apr 9, 2015 21:30:16 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:16 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:16 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:16 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:16 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:16 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:16 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:16 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:16 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:16 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:16 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:16 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:16 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:16 0-details] [] SQL files to import: 4
+[Apr 9, 2015 21:30:16 0-details] [] Importing SQL file `ef_term_taxonomy.sql` (size: 2 KB).
+[Apr 9, 2015 21:30:16 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:16 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_term_taxonomy.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:16 0-details] [] About to flush...
+[Apr 9, 2015 21:30:16 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:16 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:16 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_term_taxonomy.sql`.
+[Apr 9, 2015 21:30:16 0-details] [] Creating table `ef_term_taxonomy`.
+[Apr 9, 2015 21:30:16 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:16 0-message] [] Took 0.033 seconds on 22 queries. 
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:16 0-message] [] Database import of `ef_term_taxonomy.sql` succeeded.
+[Apr 9, 2015 21:30:16 0-details] [] Finished importing SQL file `ef_term_taxonomy.sql`. Database files remaining: 3
+[Apr 9, 2015 21:30:16 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:16 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:16 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:16 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:16 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:16 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:16 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:16 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:16 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:16 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:16 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:16 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:16 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:16 0-details] [] SQL files to import: 3
+[Apr 9, 2015 21:30:16 0-details] [] Importing SQL file `ef_terms.sql` (size: 2 KB).
+[Apr 9, 2015 21:30:16 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:16 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_terms.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:16 0-details] [] About to flush...
+[Apr 9, 2015 21:30:16 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:16 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:16 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_terms.sql`.
+[Apr 9, 2015 21:30:16 0-details] [] Creating table `ef_terms`.
+[Apr 9, 2015 21:30:16 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:16 0-message] [] Took 0.026 seconds on 22 queries. 
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:16 0-message] [] Database import of `ef_terms.sql` succeeded.
+[Apr 9, 2015 21:30:16 0-details] [] Finished importing SQL file `ef_terms.sql`. Database files remaining: 2
+[Apr 9, 2015 21:30:16 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:16 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:16 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:16 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:16 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:16 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:16 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:16 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:16 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:16 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:16 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:16 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:16 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:16 0-details] [] SQL files to import: 2
+[Apr 9, 2015 21:30:16 0-details] [] Importing SQL file `ef_usermeta.sql` (size: 5 KB).
+[Apr 9, 2015 21:30:16 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:16 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_usermeta.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:16 0-details] [] About to flush...
+[Apr 9, 2015 21:30:16 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:16 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:16 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_usermeta.sql`.
+[Apr 9, 2015 21:30:16 0-details] [] Creating table `ef_usermeta`.
+[Apr 9, 2015 21:30:16 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:16 0-message] [] Took 0.039 seconds on 37 queries. 
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:16 0-message] [] Database import of `ef_usermeta.sql` succeeded.
+[Apr 9, 2015 21:30:16 0-details] [] Finished importing SQL file `ef_usermeta.sql`. Database files remaining: 1
+[Apr 9, 2015 21:30:16 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:16 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:16 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:16 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:16 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:16 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:16 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:16 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:16 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:16 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:16 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:16 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:16 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:16 0-details] [] SQL files to import: 1
+[Apr 9, 2015 21:30:16 0-details] [] Importing SQL file `ef_users.sql` (size: 949 Bytes).
+[Apr 9, 2015 21:30:16 0-message] [] Restoring database dump. This may take a moment...
+[Apr 9, 2015 21:30:16 0-message] [] Starting database import procedure.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Old prefix: `ef_`; New prefix: `ef_`.
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_users.sql`. Old prefix: `ef_`. Query start: ``.
+[Apr 9, 2015 21:30:16 0-details] [] About to flush...
+[Apr 9, 2015 21:30:16 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Apr 9, 2015 21:30:16 0-message] [] Starting import of SQL data... This may take a moment...
+[Apr 9, 2015 21:30:16 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/EF/ef/importbuddy/temp_w01v50f319uv/ef_users.sql`.
+[Apr 9, 2015 21:30:16 0-details] [] Creating table `ef_users`.
+[Apr 9, 2015 21:30:16 0-message] [] Import of SQL data in PHP mode complete.
+[Apr 9, 2015 21:30:16 0-message] [] Took 0.018 seconds on 4 queries. 
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Apr 9, 2015 21:30:16 0-message] [] Database import of `ef_users.sql` succeeded.
+[Apr 9, 2015 21:30:16 0-details] [] Finished importing SQL file `ef_users.sql`. Database files remaining: 0
+[Apr 9, 2015 21:30:16 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Apr 9, 2015 21:30:16 0-details] [] Loading step 4.
+[Apr 9, 2015 21:30:16 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:16 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:16 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:16 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:16 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:16 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] About to restore database.
+[Apr 9, 2015 21:30:16 0-details] [] Starting function `restoreDatabase`.
+[Apr 9, 2015 21:30:16 0-details] [] Restoring database tables.
+[Apr 9, 2015 21:30:16 0-details] [] Database method set to PHP only.
+[Apr 9, 2015 21:30:16 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Apr 9, 2015 21:30:16 0-details] [] Database host for dumping: `localhost`
+[Apr 9, 2015 21:30:16 0-details] [] Loading mysqlbuddy library.
+[Apr 9, 2015 21:30:16 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Apr 9, 2015 21:30:16 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Apr 9, 2015 21:30:16 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Apr 9, 2015 21:30:16 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Apr 9, 2015 21:30:16 0-details] [] SQL files to import: 0
+[Apr 9, 2015 21:30:16 0-details] [] Database restore finished importing all SQL files.
+[Apr 9, 2015 21:30:16 0-details] [] Database restore completed.
+[Apr 9, 2015 21:30:16 0-details] [] Finishing step 4.
+[Apr 9, 2015 21:30:20 0-details] [] Loading step 5.
+[Apr 9, 2015 21:30:20 0-details] [] Constructing rollback class.
+[Apr 9, 2015 21:30:20 0-details] [] Setting restore state defaults.
+[Apr 9, 2015 21:30:20 0-details] [] Using provided restore state data.
+[Apr 9, 2015 21:30:20 0-details] [] Restore class constructed in `restore` mode.
+[Apr 9, 2015 21:30:20 0-details] [] Maximum PHP execution time was not modified
+[Apr 9, 2015 21:30:20 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Apr 9, 2015 21:30:20 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Apr 9, 2015 21:30:20 0-message] [] Migrating `.htaccess.bb_temp` file...
+[Apr 9, 2015 21:30:20 0-message] [] Checking `.htaccess.bb_temp` file.
+[Apr 9, 2015 21:30:20 0-message] [] No changes needed for `.htaccess.bb_temp` file.
+[Apr 9, 2015 21:30:20 0-details] [] Starting function `connectDatabase`.
+[Apr 9, 2015 21:30:20 0-details] [] Using normal mode database prefix based on settings: `ef_`.
+[Apr 9, 2015 21:30:20 0-message] [] Migrating database content...
+[Apr 9, 2015 21:30:20 0-details] [] Destination site table prefix: ef_
+[Apr 9, 2015 21:30:20 0-details] [] Migration type: `standalone` to `standalone`.
+[Apr 9, 2015 21:30:20 0-details] [] Destination Site URL: http://localhost:8888
+[Apr 9, 2015 21:30:20 0-details] [] Destination Home URL: http://localhost:8888
+[Apr 9, 2015 21:30:20 0-details] [] Steps to run: `migrateCommon,_calculateNewOldURLs,bruteForceTables,finalize,verifyDatabase`.
+[Apr 9, 2015 21:30:20 0-details] [] Starting step `migrateCommon`.
+[Apr 9, 2015 21:30:20 0-details] [] Starting migration steps for `all` sites.
+[Apr 9, 2015 21:30:20 0-details] [] ABSPATH change for database. Old Path: /home/zendente/public_html/ef/, New Path: /Users/danielbernardi/Documents/Websites/EF/ef/.
+[Apr 9, 2015 21:30:20 0-details] [] Calculated site URL update. Previous URL: `http://ef.zendentest.com`, New URL: `http://localhost:8888`.
+[Apr 9, 2015 21:30:20 0-details] [] Calculated home URL update. Previous URL: `http://ef.zendentest.com`, New URL: `http://localhost:8888`
+[Apr 9, 2015 21:30:20 0-details] [] Finished migration steps for `all` sites.
+[Apr 9, 2015 21:30:20 0-details] [] Finished step `migrateCommon`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration step `migrateCommon` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting step `_calculateNewOldURLs`.
+[Apr 9, 2015 21:30:20 0-details] [] Old URLs: http://ef.zendentest.com, http://www.ef.zendentest.com
+[Apr 9, 2015 21:30:20 0-details] [] New URLs: http://localhost:8888, http://localhost:8888
+[Apr 9, 2015 21:30:20 0-details] [] Old full replace: http://ef.zendentest.com, http://www.ef.zendentest.com, /home/zendente/public_html/ef/
+[Apr 9, 2015 21:30:20 0-details] [] New full replace: http://localhost:8888, http://localhost:8888, /Users/danielbernardi/Documents/Websites/EF/ef/
+[Apr 9, 2015 21:30:20 0-details] [] Finished step `_calculateNewOldURLs`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration step `_calculateNewOldURLs` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting step `bruteForceTables`.
+[Apr 9, 2015 21:30:20 0-message] [] Found 11 WordPress tables. 
+[Apr 9, 2015 21:30:20 0-details] [] Starting substep `Posts table site URLs.`.
+[Apr 9, 2015 21:30:20 0-details] [] Finished substep `Posts table site URLs.`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration substep `Posts table site URLs.` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting substep `WordPress core database text data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Finished substep `WordPress core database text data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration substep `WordPress core database text data.` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting substep `WordPress core database text data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Finished substep `WordPress core database text data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration substep `WordPress core database text data.` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting substep `WordPress core database text data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Finished substep `WordPress core database text data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration substep `WordPress core database text data.` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting substep `WordPress core database serialized data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Finding rows in table `ef_options` to update.
+[Apr 9, 2015 21:30:20 0-details] [] Table: `ef_options` - processing 158 rows ( Rows 0-157 of 158 )
+[Apr 9, 2015 21:30:20 0-details] [] Updated serialized data in table `ef_options`.
+[Apr 9, 2015 21:30:20 0-details] [] Finished substep `WordPress core database serialized data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration substep `WordPress core database serialized data.` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting substep `WordPress core database serialized data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Finding rows in table `ef_usermeta` to update.
+[Apr 9, 2015 21:30:20 0-details] [] Table: `ef_usermeta` - processing 34 rows ( Rows 0-33 of 34 )
+[Apr 9, 2015 21:30:20 0-details] [] Nothing found to update in table `ef_usermeta`.
+[Apr 9, 2015 21:30:20 0-details] [] Finished substep `WordPress core database serialized data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration substep `WordPress core database serialized data.` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting substep `WordPress core database serialized data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Finding rows in table `ef_postmeta` to update.
+[Apr 9, 2015 21:30:20 0-details] [] Table: `ef_postmeta` - processing 500 rows ( Rows 0-499 of 538 )
+[Apr 9, 2015 21:30:20 0-details] [] Table: `ef_postmeta` - processing 38 rows ( Rows 500-537 of 538 )
+[Apr 9, 2015 21:30:20 0-details] [] Updated serialized data in table `ef_postmeta`.
+[Apr 9, 2015 21:30:20 0-details] [] Finished substep `WordPress core database serialized data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration substep `WordPress core database serialized data.` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting substep `WordPress core database serialized data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Finding rows in table `ef_commentmeta` to update.
+[Apr 9, 2015 21:30:20 0-details] [] Table: `ef_commentmeta` - processing 0 rows ( of 0 )
+[Apr 9, 2015 21:30:20 0-details] [] Nothing found to update in table `ef_commentmeta`.
+[Apr 9, 2015 21:30:20 0-details] [] Finished substep `WordPress core database serialized data.`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration substep `WordPress core database serialized data.` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Old DB prefix: `ef_`; New final DB prefix (override does not apply): `ef_`. Network prefix: `ef_`
+[Apr 9, 2015 21:30:20 0-message] [] Migrated 0 tables via brute force.
+[Apr 9, 2015 21:30:20 0-details] [] Finished step `bruteForceTables`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration step `bruteForceTables` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting step `finalize`.
+[Apr 9, 2015 21:30:20 0-details] [] Modified 0 row(s) while updating Site URL in options table `ef_options` to `http://localhost:8888`.
+[Apr 9, 2015 21:30:20 0-details] [] Modified 0 row(s) while updating Home URL in options table to `http://localhost:8888`.
+[Apr 9, 2015 21:30:20 0-details] [] Finished step `finalize`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration step `finalize` finished successfully.
+[Apr 9, 2015 21:30:20 0-details] [] Starting step `verifyDatabase`.
+[Apr 9, 2015 21:30:20 0-details] [] Final site URL: `http://localhost:8888`.
+[Apr 9, 2015 21:30:20 0-details] [] Final home URL: `http://localhost:8888`.
+[Apr 9, 2015 21:30:20 0-details] [] Media upload path in database options table: ``.
+[Apr 9, 2015 21:30:20 0-details] [] Your media upload path is assigned a relative path; validity not tested.
+[Apr 9, 2015 21:30:20 0-details] [] Finished step `verifyDatabase`.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration step `verifyDatabase` finished successfully.
+[Apr 9, 2015 21:30:20 0-message] [] Took 0.297 seconds. Done.
+[Apr 9, 2015 21:30:20 0-message] [] Database content migrated.
+[Apr 9, 2015 21:30:20 0-details] [] Database migration completed.
+[Apr 9, 2015 21:30:20 0-details] [] Starting function `renameHtaccessTempBack`.
+[Apr 9, 2015 21:30:20 0-message] [] Renamed `.htaccess.bb_temp` file to `.htaccess` until final ImportBuddy step.
+[Apr 9, 2015 21:30:20 0-details] [] Starting function `maintenanceOff`.
+[Apr 9, 2015 21:30:20 0-details] [] Turn off maintenance mode off if on.
+[Apr 9, 2015 21:30:20 0-details] [] .maintenance file exists. Checking to see if ImportBuddy generated it.
+[Apr 9, 2015 21:30:20 0-details] [] Temporary .maintenance file created by ImportBuddy successfully deleted.
+[Apr 9, 2015 21:30:20 0-details] [] Starting function `scrubIndexFiles`.
+[Apr 9, 2015 21:30:21 0-details] [] index.htm file not found. Skipping deletion.
+[Apr 9, 2015 21:30:21 0-details] [] index.html file not found. Skipping deletion.
+[Apr 9, 2015 21:30:21 0-details] [] DAT file indicates wp-config.php was previously in the normal location.
+[Apr 9, 2015 21:30:21 0-details] [] Updating Database Settings and URLs in wp-config.php as this is not a Files Only Backup.
+[Apr 9, 2015 21:30:21 0-message] [] Starting migration of wp-config.php file...
+[Apr 9, 2015 21:30:21 0-details] [] Config file: `/Users/danielbernardi/Documents/Websites/EF/ef/wp-config.php`.
+[Apr 9, 2015 21:30:21 0-details] [] wp-config.php: Setting WP_SITEURL (if applicable) to `http://localhost:8888`.
+[Apr 9, 2015 21:30:21 0-details] [] wp-config.php: Setting WP_HOME (if applicable) to `http://localhost:8888`.
+[Apr 9, 2015 21:30:21 0-details] [] wp-config.php did not update DOMAIN_CURRENT_SITE as it was blank.
+[Apr 9, 2015 21:30:21 0-message] [] Migration of wp-config.php complete.
+[Apr 9, 2015 21:30:21 0-details] [] Checking wp-config.php file for unchanged URLs.
+[Apr 9, 2015 21:30:21 0-details] [] No potential problems detected.
+[Apr 9, 2015 21:30:21 0-details] [] Finished final actions function.
+[Apr 9, 2015 21:30:21 0-details] [] Finishing step 5.
