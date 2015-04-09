@@ -1026,6 +1026,7 @@ form {
 	input,
 	textarea {
 		@include transition(border-color, 0.2s);
+    -webkit-appearance: none !important;
 		display: block;
 		border-radius: 4px;
 		width: 100%;
