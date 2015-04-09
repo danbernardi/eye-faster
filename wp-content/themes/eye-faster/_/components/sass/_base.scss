@@ -1799,7 +1799,7 @@ section.blog {
       background: #555 !important;
     }
     &:nth-of-type(2n) {
-      background: darke($blue, 6);
+      background: darken($blue, 6);
     }
     &:nth-of-type(3n) {
       background: darken($blue, 3);
