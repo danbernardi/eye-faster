@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<style>
+	#mobmenu {
+    visibility: hidden;
+  }
+  </style>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -15,7 +20,4 @@
 				<?php wp_nav_menu( array('theme_location'  => 'primary') ); ?>
 			</nav>
 			<div class="mobmenu-trigger"><a href="#mobmenu"><i class="fa fa-bars"></i><span><?php _e('MENU', 'zd'); ?></span></a></div>
-			<div id="mobmenu">
-			  <?php wp_nav_menu( array('theme_location'  => 'primary') ); ?>
-			</div>
 	</header>

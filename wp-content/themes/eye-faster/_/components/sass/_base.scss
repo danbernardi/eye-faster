@@ -263,7 +263,7 @@ header {
 	padding: 0;
 	background: #222;
 	color: white;
-	background: url('../../img/herobg.jpg') no-repeat;
+	background: url('/img/herobg2.jpg') no-repeat;
 	background-size: cover;
 	
 	h1 {
@@ -579,10 +579,8 @@ header {
 	padding: 20px 0;
   
   .content-holder {
-    max-height: 80vh;
-    overflow: scroll; 
     position: relative;
-    max-height: calc(80vh - 95px);
+    max-height: calc(90vh - 95px);
     overflow: scroll;
   }
   .embed_wrapper {
@@ -815,7 +813,7 @@ section.services {
 .testimonials {
 	@extend .fullwidth;
 	padding: 80px 80px 130px;
-	background: url('../../img/herobg.jpg') center center no-repeat;
+	background: url('/img/testimonialsbg.jpg') center center no-repeat;
 	background-size: cover;
 	color: #fff;
   @include breakpoint($mw-768) {
@@ -1240,7 +1238,7 @@ section.mission {
 
 .pagetitle {
 	@extend .fullwidth;
-	background: url(../../img/herobg.jpg) center center no-repeat;
+	background: url(/img/herobg2.jpg) center center no-repeat;
 	background-size: cover;
 	height: 100px;
 	display: block;

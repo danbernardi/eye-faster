@@ -32,6 +32,9 @@
     </div>
 </footer>
 </section>
+<div id="mobmenu">
+  <?php wp_nav_menu( array('theme_location'  => 'primary') ); ?>
+</div>
 <?php include('lightbox.php'); ?>
 <?php wp_footer(); // WordPress hook for loading JavaScript, toolbar, and other things in the footer. ?>
 </body>
