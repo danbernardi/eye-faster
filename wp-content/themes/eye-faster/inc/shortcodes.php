@@ -152,7 +152,7 @@ add_shortcode( 'list_videos', 'zd_list_videos' );
 function zd_list_clients( $atts ) {
     
     extract( shortcode_atts( array(
-		  'title' => 'A few of our clients',
+		  'title' => 'Companies we work with',
     ), $atts ) );
     ?>
     
@@ -201,13 +201,12 @@ function zd_list_projects( $atts ) {
       if ( $query->have_posts() ) { ?>
         
         <div class="featured row700">
-          <h5 class="label center"><i class="fa fa-trophy"></i><?php _e('Featured Project', 'zd'); ?></h5>
+          <h5 class="label center"><i class="fa fa-star"></i><?php _e('Project Showcase', 'zd'); ?></h5>
           <div class="slick">
             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
             <div class="project">
               <h3 class="post-title"><?php the_title(); ?></h3>
-              <span class="meta">
-                <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span><?php _e(' on ', 'zd') ?> <span class="date"><?php echo get_the_date(); ?></span>
+              <span class="meta"></span>
               </span>
               <span class="post-content"><?php the_excerpt(); ?></span>
               <a class="btn" href="<?php the_permalink(); ?>"><?php _e('Learn More', 'zd'); ?></a>

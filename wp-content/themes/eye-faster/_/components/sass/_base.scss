@@ -111,7 +111,7 @@ section {
 	border-top: 20px solid #eee;
 	box-shadow: 0 0 22px rgba(black, 0.3);
   z-index: 1;
-  overflow-x: hidden;
+  overflow: hidden;
   @include breakpoint($mw-580) {
     padding-left: 20px;
     padding-right: 20px;
@@ -1300,6 +1300,7 @@ section.leadership {
 
 
 section.blog {
+  position: relative;
   @include breakpoint($mw-960) {
     padding-left: 0;
     padding-right: 0;
@@ -1949,5 +1950,149 @@ section.blog {
   display: none;
   @include breakpoint($mw-680) {
     display: block;
+  }
+}
+
+.post-navigation {
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  height: auto;
+  width: 40px;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.1);
+  @include breakpoint($mw-960) {
+    width: 30px;
+    i.nav-arrow {
+      width: 30px !important;
+    }
+    
+    &.open {
+      width: 240px;
+    }
+  }
+  @include breakpoint($mw-580) {
+    display: none;
+  }
+  &.open {
+    width: 260px;
+    &.nextlink .reveal,
+    &.prevlink .reveal {
+      transform: translateX(0);
+    }
+  }
+  
+  a {
+    display: block;
+    &:hover i.nav-arrow {
+      background: $blue;
+    }
+    h6 {
+      width: 100%;
+      overflow: hidden;
+      color: $body;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      line-height: 1.4;
+    }
+  }
+  .reveal {
+    transition: transform 0.3s ease-in-out;
+    background: #fafafa;
+    color: $body;
+    display: block;
+    border: 1px solid #DDD;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1);
+  }
+  
+  i.nav-arrow {
+    transition: background 0.2s ease-in-out;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    background: #666;
+    height: auto;
+    text-align: center;
+    height: 100%;
+    width: 40px;
+    top: 0;
+    z-index: 1;
+    &:before {
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+      left: 50%;
+      margin-left: -7px;
+    }
+  }
+  i.post-nav-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: $blue;
+  }
+  div {
+    text-align: center;
+  }
+  
+  &.prevlink {
+    left: -60px;
+    border-left: none;
+    .reveal {
+      transform: translateX(-220px);
+      padding: 20px 20px 20px 64px;
+    }
+    
+    i.nav-arrow {
+      left: 0;
+    }
+  }
+  &.nextlink {
+    right: -60px;
+    border-right: none;
+    .reveal {
+      transform: translateX(220px);
+      padding: 20px 64px 20px 20px;
+    }
+    
+    i.nav-arrow {
+      right: 0;
+    }
+  }
+}
+
+.post-navigation-mob {
+  @include span(6 of 12);
+  display: none;
+  text-align: center;
+  border: 1px solid #DDD;
+  background: #fafafa;
+  margin-top: 25px;
+  @include breakpoint($mw-580) {
+    display: block;
+  }
+  @include breakpoint($mw-360) {
+    @include span(12 of 12 last);
+  }
+  &.nextlink {
+    @include last();
+  }
+  
+  a {
+    display: block;
+    padding: 30px 0;
+    
+    h6 {
+      color: $body;
+      margin-bottom: 5px;
+    }
+    span {
+      font-size: 13px;
+      color: #999;
+    }
+    
+    i.post-nav-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
   }
 }

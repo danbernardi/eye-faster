@@ -28,6 +28,40 @@
     
       <article>
         <?php if( $post_type == 'services' || $post_type == 'solutions' || $post_type == 'jobs' ) { 
+          
+          $prev_post = get_previous_post();
+          $prev_post_icon = get_post_meta( $prev_post->ID, '_zd_icon', true );
+          $next_post = get_next_post();
+          $next_post_icon = get_post_meta( $next_post->ID, '_zd_icon', true ); 
+          
+          if (!empty( $prev_post )) { ?>
+            <div class="prevlink post-navigation hideMob">
+              <a href="<?php echo get_permalink( $prev_post->ID ); ?>"><i class="fa fa-fw fa-angle-left nav-arrow"></i></a>
+              <div class="reveal">
+                <div>
+                  <a href="<?php echo get_permalink( $prev_post->ID ); ?>">
+                    <i class="fa <?php echo $prev_post_icon; ?> post-nav-icon"></i>
+                    <h6><?php echo $prev_post->post_title; ?></h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          <?php }
+            
+          if (!empty( $next_post )) { ?>
+            <div class="nextlink post-navigation hideMob">
+              <a href="<?php echo get_permalink( $next_post->ID ); ?>"><i class="fa fa-fw fa-angle-right nav-arrow"></i></a>
+              <div class="reveal">
+                <div>
+                  <a href="<?php echo get_permalink( $next_post->ID ); ?>">
+                    <i class="fa <?php echo $next_post_icon; ?> post-nav-icon"></i>
+                    <h6><?php echo $next_post->post_title; ?></h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          <?php } 
+          
           if( strlen($icon) != 0 ) { ?>
             <div class="post-icon">
               <i class="fa <?php echo $icon; ?>"></i>
@@ -93,6 +127,26 @@
               <a href="<?php echo get_permalink(16); ?>">
                 <i class="fa fa-caret-left"></i>
                 <?php _e('Back to Blog', 'zd'); ?>
+              </a>
+            </div>
+          <?php } ?>
+          
+          <?php if (!empty( $prev_post )) { ?>
+            <div class="prevlink post-navigation-mob">
+              <a href="<?php echo get_permalink( $prev_post->ID ); ?>">
+                <i class="fa <?php echo $prev_post_icon; ?> post-nav-icon"></i>
+                <h6><?php echo $prev_post->post_title; ?></h6>
+                <span><?php _e('Previous Post', 'zd'); ?></span>
+              </a>
+            </div>
+          <?php }
+            
+          if (!empty( $next_post )) { ?>
+            <div class="nextlink post-navigation-mob">
+              <a href="<?php echo get_permalink( $next_post->ID ); ?>">
+                <i class="fa <?php echo $next_post_icon; ?> post-nav-icon"></i>
+                <h6><?php echo $next_post->post_title; ?></h6>
+                <span><?php _e('Next Post', 'zd'); ?></span>
               </a>
             </div>
           <?php } ?>

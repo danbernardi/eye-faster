@@ -168,5 +168,16 @@ $(document).ready(function () {
 		});
   }());
   
+  
+  // init post navigation
+  (function postNavInit() {
+    $('.post-navigation').on('mouseover', function () {
+      $(this).addClass('open');
+    });
+    $('.post-navigation').on('mouseout', function () {
+      $(this).removeClass('open');
+    });
+  }());
+  
 	
 });

@@ -69,7 +69,7 @@ include('header.php'); ?>
         
         <section class="testimonials">
           <div class="anchor" id="testimonials"></div>
-          <h3 class="label"><?php _e('What our clients are saying', 'zd'); ?></h3>
+          <h3 class="label"><?php _e('We value our relationships', 'zd'); ?></h3>
           <?php echo do_shortcode('[list_testimonials]'); ?>
         </section>
 
