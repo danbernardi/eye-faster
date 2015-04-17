@@ -172,13 +172,14 @@ $(document).ready(function () {
   // init post navigation
   (function postNavInit() {
     if (Modernizr.touch) {
-      var touched = false;
       $('.post-navigation').on('click', function (e) {
-        if (touched === false) {
+        if (!$(this).hasClass('touched') || !$(this).hasClass('open')) {
           e.preventDefault();
+          $('.post-navigation').removeClass('open');
+          $('.post-navigation').removeClass('touched');
           $(this).addClass('open');
-          touched = true;
-        } else if ($(this).hasClass('open') && touched === true) {
+          $(this).addClass('touched');
+        } else if ($(this).hasClass('open') && $(this).hasClass('touched')) {
           return true;
         }
       });
