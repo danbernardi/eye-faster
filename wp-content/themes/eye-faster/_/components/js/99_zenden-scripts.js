@@ -173,7 +173,7 @@ $(document).ready(function () {
   (function postNavInit() {
     if (Modernizr.touch) {
       var touched = false;
-      $('.post-navigation').on('tap', function (e) {
+      $('.post-navigation').on('click', function (e) {
         if (touched === false) {
           e.preventDefault();
           $(this).addClass('open');
