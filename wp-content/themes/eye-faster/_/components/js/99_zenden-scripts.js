@@ -171,17 +171,24 @@ $(document).ready(function () {
   
   // init post navigation
   (function postNavInit() {
-    $('.post-navigation').on('mouseover', function () {
-      $(this).addClass('open');
-    });
-    $('.post-navigation').on('mouseout', function () {
-      $(this).removeClass('open');
-    });
-    
-    if (Modernizr.touch){
-      alert('touch device');
+    if (Modernizr.touch) {
+      var touched = false;
+      $('.post-navigation').on('tap', function (e) {
+        if (touched) {
+          return true;
+        } else {
+          e.preventDefault();
+          $(this).addClass('open');
+          touched = true;
+        }
+      });
     } else {
-      alert('not a touch device');
+      $('.post-navigation').on('mouseover', function () {
+        $(this).addClass('open');
+      });
+      $('.post-navigation').on('mouseout', function () {
+        $(this).removeClass('open');
+      });
     }
   }());
   
