@@ -177,6 +177,12 @@ $(document).ready(function () {
     $('.post-navigation').on('mouseout', function () {
       $(this).removeClass('open');
     });
+    
+    if (Modernizr.touch){
+      alert('touch device');
+    } else {
+      alert('not a touch device');
+    }
   }());
   
 	
