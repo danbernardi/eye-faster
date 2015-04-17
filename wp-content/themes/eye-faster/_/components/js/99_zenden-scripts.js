@@ -174,9 +174,7 @@ $(document).ready(function () {
     if (Modernizr.touch) {
       var touched = false;
       $('.post-navigation').on('tap', function (e) {
-        if (touched) {
-          return true;
-        } else {
+        if (touched === false) {
           e.preventDefault();
           $(this).addClass('open');
           touched = true;
