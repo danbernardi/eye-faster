@@ -42,6 +42,7 @@
                   <a href="<?php echo get_permalink( $prev_post->ID ); ?>">
                     <i class="fa <?php echo $prev_post_icon; ?> post-nav-icon"></i>
                     <h6><?php echo $prev_post->post_title; ?></h6>
+                    <span><?php _e('Previous Post', 'zd'); ?></span>
                   </a>
                 </div>
               </div>
@@ -56,6 +57,7 @@
                   <a href="<?php echo get_permalink( $next_post->ID ); ?>">
                     <i class="fa <?php echo $next_post_icon; ?> post-nav-icon"></i>
                     <h6><?php echo $next_post->post_title; ?></h6>
+                    <span><?php _e('Next Post', 'zd'); ?></span>
                   </a>
                 </div>
               </div>
