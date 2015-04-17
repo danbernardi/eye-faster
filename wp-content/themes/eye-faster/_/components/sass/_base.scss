@@ -1604,7 +1604,7 @@ section.blog {
     margin-bottom: 7px;
   }
   
-  img {
+  img.border {
     padding: 20px;
     border: 1px solid #DDD;
   }
@@ -2102,3 +2102,7 @@ section.blog {
     }
   }
 }
+.featured-image {
+  margin-bottom: 20px;
+}
+

@@ -74,6 +74,7 @@
         <div class="meta">
           <span class="author"><?php _e('Posted by ', 'zd') . the_author(); ?></span> <?php _e('on ', 'zd') . '<span class="date">' .  the_date() . '</span>'; ?>
         </div>
+        <div class="featured-image"><?php if( has_post_thumbnail() ) { the_post_thumbnail(); } ?></div>
         
         <div class="post-content">
           <div class="socialshare desk">
