@@ -178,6 +178,8 @@ $(document).ready(function () {
           e.preventDefault();
           $(this).addClass('open');
           touched = true;
+        } else if ($(this).hasClass('open') && touched === true) {
+          return true;
         }
       });
     } else {
