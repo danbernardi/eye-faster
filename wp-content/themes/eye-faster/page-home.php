@@ -21,11 +21,11 @@ include('header.php'); ?>
       <span class="video"><a class="lb-btn" href="#" data-target="youtube"><i class="fa fa-play"></i></a><br>
       How it works</span>
       <div class="left">
-        <a href="#">Market Research Companies<br>
+        <a href="<?php echo get_post_permalink(65); ?>">Market Research Companies<br>
         <span>Click Here</span></a>
       </div>
       <div class="right">
-        <a href="#">Brands &amp; Retailers<br>
+        <a href="<?php echo get_post_permalink(67); ?>">Brands &amp; Retailers<br>
         <span>Click Here</span></a>
       </div>
     </section>
