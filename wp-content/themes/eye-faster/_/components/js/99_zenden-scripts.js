@@ -179,6 +179,12 @@ $(document).ready(function () {
           $('.post-navigation').removeClass('touched');
           $(this).addClass('open');
           $(this).addClass('touched');
+          
+          $(window).scroll(function () {
+            $('.post-navigation').removeClass('open');
+            $('.post-navigation').removeClass('touched');
+          });
+          
         } else if ($(this).hasClass('open') && $(this).hasClass('touched')) {
           return true;
         }
