@@ -60,7 +60,7 @@ function zd_team_members( $atts ) {
             <div id="post-<?php the_ID(); ?>" <?php post_class('leader'); ?>>
               <a href="<?php the_permalink(); ?>" data-target="team-member">
                 <?php if( has_post_thumbnail() ) {
-                		echo the_post_thumbnail();
+                		echo the_post_thumbnail('full');
                     } else { ?>
                       <img src="/img/team-standin.png"> 
                 <?php } ?>
